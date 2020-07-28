@@ -1,10 +1,10 @@
 import React from 'react';
-
+import MoviesPosters from './MoviesPosters';
 function App() {
   return (
-    <div>
-      <h1>The Movie Bubble</h1>
-    </div>
+    <>
+      <MoviesPosters />
+    </>
   );
 }
 
