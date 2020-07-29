@@ -1,11 +1,12 @@
 import React from 'react';
-
+import Sliders from './components/Sliders/Sliders';
 function App() {
-  return (
-    <div>
-      <h1 className="text-2xl bg-lightblue">The Movie Bubble</h1>
-    </div>
-  );
+  return( <>
+  <h1>the movie bubble</h1>;
+  <Sliders />
+  </>
+  )
+
 }
 
 export default App;
