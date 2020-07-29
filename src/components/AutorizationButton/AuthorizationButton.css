@@ -1,0 +1,139 @@
+/* roboto-regular - latin */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 139px;
+  height: 55px;
+  border: 0px;
+  margin-left: -20px;
+  background: linear-gradient(270deg, #ffb421 11.7%, #ff7521 90.81%);
+  border-radius: 9px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.register > h3 {
+  width: 72px;
+  height: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 139px;
+  height: 55px;
+  border: 0px;
+  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
+  border-radius: 9px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+.login > h3 {
+  width: 72px;
+  height: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.authorizationButtonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerLoginContainer {
+  display: flex;
+}
+
+.continueWithContainer {
+  display: flex;
+}
+
+.continueWith {
+  margin-top: 1rem;
+  width: 158px;
+  height: 55px;
+  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
+  border-radius: 9px;
+  padding: 1px;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+  border-top-right-radius: 0px;
+}
+
+.continueWith > div {
+  background-color: #1f3149;
+  width: 156px;
+  height: 53px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 0px;
+}
+
+.continueWith > div > h3 {
+  height: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.faceBook {
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4375rem;
+  height: 3.43rem;
+  background-color: #1097ff;
+  margin-top: 1rem;
+  margin-left: -1rem;
+  transform: skew(-30deg);
+}
+
+.faceBook > img {
+  transform: skew(30deg);
+}
+
+.google {
+  border: 0px;
+  display: flex;
+  padding-left: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  width: 4.75rem;
+  height: 3.43rem;
+  background-color: #ffffff;
+  margin-top: 1rem;
+  margin-left: -1rem;
+  border-radius: 9px;
+  border-bottom-left-radius: 0px;
+}

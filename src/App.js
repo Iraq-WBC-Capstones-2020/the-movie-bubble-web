@@ -1,9 +1,9 @@
 import React from 'react';
-
+import AuthorizationButton from './components/AutorizationButton/AuthorizationButton';
 function App() {
   return (
     <div>
-      <h1>The Movie Bubble</h1>
+      <AuthorizationButton />
     </div>
   );
 }
