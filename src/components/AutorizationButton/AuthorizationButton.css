@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .register {
   display: flex;
   flex-direction: column;
@@ -61,11 +66,6 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.authorizationButtonContainer {
-  display: flex;
-  flex-direction: column;
-}
-
 .registerLoginContainer {
   display: flex;
 }
@@ -107,7 +107,6 @@
 }
 
 .faceBook {
-  border: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,10 +116,15 @@
   margin-top: 1rem;
   margin-left: -1rem;
   transform: skew(-30deg);
+  border: 0px;
+  border-radius: 0px;
 }
 
-.faceBook > img {
+.faceBook > .faceBool__logo {
   transform: skew(30deg);
+  width: 1.375rem;
+  height: 1.375rem;
+  color: #ffffff;
 }
 
 .google {
@@ -136,4 +140,15 @@
   margin-left: -1rem;
   border-radius: 9px;
   border-bottom-left-radius: 0px;
+}
+
+.google > .google__logo {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+@keyframes f-grow {
+}
+
+@keyframes g-grow {
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import './AuthorizationButton.css';
-import faceBookLogo from './Shape.png';
-import googleLogo from './Group.png';
+import { FaFacebookF } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 export default function AuthorizationButton() {
   return (
-    <div className="authorizationButtonContainer">
+    <div className="wrapper">
       <div className="registerLoginContainer">
         <button className="login">
           <h3>Login</h3>
@@ -21,10 +21,10 @@ export default function AuthorizationButton() {
           </div>
         </div>
         <button className="faceBook">
-          <img src={faceBookLogo} alt="facebook logo"></img>
+          <FaFacebookF className="faceBool__logo"></FaFacebookF>
         </button>
         <button className="google">
-          <img src={googleLogo}></img>
+          <FcGoogle className="google__logo"></FcGoogle>
         </button>
       </div>
     </div>
