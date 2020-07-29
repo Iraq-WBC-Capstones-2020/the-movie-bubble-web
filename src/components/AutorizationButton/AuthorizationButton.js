@@ -1,5 +1,4 @@
 import React from 'react';
-import './AuthorizationButton.css';
 import { FaFacebookF } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 export default function AuthorizationButton() {
