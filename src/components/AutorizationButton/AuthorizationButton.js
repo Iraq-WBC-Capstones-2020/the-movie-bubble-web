@@ -6,7 +6,7 @@ export default function AuthorizationButton() {
     <>
       <div className="joinUsWrapper">
         <div className="joinUsWrapper__registerLoginWrapper">
-          <button className="login">
+          <button className="joinUsWrapper__registerLoginWrapper__login">
             <h3>Login</h3>
           </button>
 
