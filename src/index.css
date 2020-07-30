@@ -14426,6 +14426,10 @@ video {
   box-sizing: border-box;
 }
 
+body {
+  background: #1D2530;
+}
+
 .joinUsWrapper {
   display: flex;
   flex-direction: column;
@@ -14436,14 +14440,8 @@ video {
 }
 
 .joinUsWrapper__registerLoginWrapper__register {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 139px;
-  height: 55px;
-  border: 0px;
-  margin-left: -20px;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
   background: linear-gradient(270deg, #ffb421 11.7%, #ff7521 90.81%);
   border-radius: 9px;
   border-top-left-radius: 0px;
@@ -14470,13 +14468,6 @@ video {
 }
 
 .joinUsWrapper__registerLoginWrapper__login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 139px;
-  height: 55px;
-  border: 0px;
   background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
   border-radius: 9px;
   border-top-right-radius: 0px;
@@ -14495,6 +14486,15 @@ video {
   line-height: 21px;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-registerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 4rem;
+  border-style: none;
 }
 
 .joinUsWrapper__continueWithWrapper {
@@ -14534,7 +14534,7 @@ video {
   color: #ffffff;
 }
 
-.joinUsWrapper__faceBook {
+.joinUsWrapper__facebook {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14549,7 +14549,7 @@ video {
           clip-path: polygon(37% 0, 100% 0%, 63% 100%, 0% 100%);
 }
 
-.joinUsWrapper__faceBook>.joinUsWrapper__faceBook__faceBook__logo {
+.joinUsWrapper__facebook>.joinUsWrapper__facebook__facebook__logo {
   width: 1.375rem;
   height: 1.375rem;
   color: #ffffff;
@@ -14582,21 +14582,17 @@ video {
   transform: scale(1.2);
 }
 
-.joinUsWrapper__faceBook:hover {
-  z-index: 40;
-  transform: skew(-30deg);
+.joinUsWrapper__facebook:hover {
+  z-index: 4;
+  /* transform: skew(-30deg); */
   transition: 1s;
   transform: scale(1.2);
 }
 
-.formWrapper--bg-dark {
-  background: #232D3A;
-  min-height: 100%;
-  max-width: 30%;
-}
-
-body {
-  background: #1D2530;
+.facebook-google:hover {
+  z-index: 4;
+  transition: 1s;
+  transform: scale(1.2);
 }
 
 @media (min-width: 640px) {
