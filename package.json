@@ -10,7 +10,8 @@
     "framer-motion": "^2.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-test-renderer": "^16.13.1"
   },
   "scripts": {
     "build:css": "postcss src/tailwind.css -o src/index.css",
