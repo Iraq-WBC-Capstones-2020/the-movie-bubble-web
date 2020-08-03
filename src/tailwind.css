@@ -1,4 +1,5 @@
 /* purgecss start ignore */
+
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
@@ -6,3 +7,89 @@
 /* Override utils here*/
 
 @tailwind utilities;
+.button {
+  @apply rounded-full;
+  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
+}
+
+.FormWrapper {
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply justify-center;
+  @apply w-screen;
+  @apply h-screen;
+  background: #232d3a;
+}
+
+.inputWrapper__underLine {
+  /* button gradient */
+  height: 0.1rem;
+  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
+}
+
+.inputWrapper__underLine:focus {
+  @apply rounded-none;
+}
+
+.inputWrapper__input {
+  @apply rounded-none;
+  @apply text-white;
+  background: #232d3a;
+}
+
+.FormWrapper__Form {
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply justify-center;
+}
+
+.clossButton {
+  @apply absolute;
+  top: 10px;
+  left: 10px;
+}
+
+span.underline:hover {
+  color: #00c2ff;
+}
+
+@screen xl {
+  .FormWrapper {
+    width: 40%;
+  }
+  .loginFormWrapper__loginForm__notAMember {
+    @apply flex-row;
+    @apply justify-start;
+  }
+  .loginFormWrapper__loginForm__rememberForgetWeapper {
+    @apply flex-row justify-between;
+  }
+}
+
+@screen lg {
+  .FormWrapper {
+    width: 50%;
+  }
+  .loginFormWrapper__loginForm__notAMember {
+    @apply flex-row;
+    @apply justify-start;
+  }
+  .loginFormWrapper__loginForm__rememberForgetWeapper {
+    @apply flex-row justify-between;
+  }
+}
+
+@screen md {
+  .FormWrapper {
+    width: 70%;
+  }
+  .loginFormWrapper__loginForm__notAMember {
+    @apply flex-row;
+    @apply justify-start;
+  }
+  .loginFormWrapper__loginForm__rememberForgetWeapper {
+    @apply flex-row justify-between;
+  }
+}

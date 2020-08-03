@@ -1,9 +1,13 @@
 import React from 'react';
-
+import LoginForm from './components/AuthorizationForm/LoginForm/LoginForm';
+import RegisterForm from './components/AuthorizationForm/RegisterForm/RegisterForm';
+import Input from './components/AuthorizationForm/Input/Input';
 function App() {
   return (
     <div>
-      <h1 className="text-2xl bg-lightblue">The Movie Bubble</h1>
+      {/* <Input type="text" placeHolder="hello"></Input> */}
+      <LoginForm />
+      {/* <RegisterForm /> */}
     </div>
   );
 }
