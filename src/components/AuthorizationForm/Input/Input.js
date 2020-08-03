@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Input({ type, placeHolder, className }) {
+export default function Input({ type, placeHolder }) {
   Input.propTypes = {
     type: PropTypes.string.isRequired,
     placeHolder: PropTypes.string.isRequired,
