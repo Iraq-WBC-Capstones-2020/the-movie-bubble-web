@@ -6,6 +6,7 @@ function App() {
     <div>
       <LoginForm />
       <RegisterForm />
+      <div>the movie bubble</div>
     </div>
   );
 }
