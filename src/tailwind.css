@@ -9,7 +9,22 @@
 @tailwind utilities;
 .button {
   @apply rounded-full;
+  @apply px-8;
+  @apply py-2;
+  @apply text-white;
+  @apply shadow-xl;
   background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
+}
+
+.button:hover {
+  @apply opacity-75;
+}
+
+.button:focus {
+  @apply shadow-xs;
+  @apply outline-none;
+  @apply transform;
+  @apply translate-y-1;
 }
 
 .FormWrapper {
@@ -19,20 +34,17 @@
   @apply justify-center;
   @apply w-screen;
   @apply h-screen;
+  @apply relative;
   background: #232d3a;
 }
 
-.inputWrapper__underLine {
+.underLine {
   /* button gradient */
   height: 0.1rem;
   background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
 }
 
-.inputWrapper__underLine:focus {
-  @apply rounded-none;
-}
-
-.inputWrapper__input {
+.input {
   @apply rounded-none;
   @apply text-white;
   background: #232d3a;
@@ -43,12 +55,15 @@
   @apply flex-col;
   @apply items-center;
   @apply justify-center;
+  @apply w-full;
 }
 
 .clossButton {
   @apply absolute;
+  @apply w-5;
+  @apply h-5;
   top: 10px;
-  left: 10px;
+  right: 10px;
 }
 
 span.underline:hover {

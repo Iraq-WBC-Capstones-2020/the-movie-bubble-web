@@ -13,6 +13,6 @@ module.exports = {
       xl: { min: '1301px' },
     },
   },
-  variants: {},
+  variants: { backgroundColor: ['responsive', 'hover', 'focus', 'active'] },
   plugins: [],
 };

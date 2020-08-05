@@ -1,33 +1,37 @@
 import React from 'react';
 import Input from '../Input/Input';
-import clossButton from '../../../images/Form-closing-button.png';
+import clossButton from '../../assets/icons/icon-close-orange.png';
 
 export default function RegisterForm() {
   return (
-    <div className="FormWrapper">
-      <div className="clossButton top-0 left-0 absolutec">
+    <div className="FormWrapper ">
+      <div className="clossButton">
         <img src={clossButton} alt="clossButton" />
       </div>
-      <form className="FormWrapper__Form  w-full">
+      <form className="FormWrapper__Form">
         <div className="registerForm__name flex w-2/3 ">
-          <div className="firstnameWapper  w-1/3  ">
-            <Input type="text" placeHolder="firstname"></Input>
+          <div className="firstnameWapper  w-2/3  ">
+            <Input type="text" placeholder="Firstname" id="firstname"></Input>
           </div>
-          <div className="lastnameWrapper  w-1/3  ml-12">
-            <Input type="text" placeHolder="lastname" className="mx-5"></Input>
+          <div className="lastnameWrapper  w-2/3  ml-12">
+            <Input type="text" placeholder="Lastname" id="lastname"></Input>
           </div>
         </div>
         <div className=" w-2/3 ">
-          <Input type="text" placeHolder="username"></Input>
+          <Input type="text" placeholder="Username" id="username"></Input>
         </div>
         <div className=" w-2/3 ">
-          <Input type="text" placeHolder="Email"></Input>
+          <Input type="email" placeholder="Email" id="Email"></Input>
         </div>
         <div className=" w-2/3 ">
-          <Input type="password" placeHolder="password"></Input>
+          <Input type="password" placeholder="Password" id="R-password"></Input>
         </div>
         <div className=" w-2/3 ">
-          <Input type="password" placeHolder="confirm password"></Input>
+          <Input
+            type="password"
+            placeholder="Confirm password"
+            id="confirm password"
+          ></Input>
         </div>
         <div className="privacyPolicy my-5 w-2/3  ">
           <input
@@ -41,10 +45,7 @@ export default function RegisterForm() {
           </label>
         </div>
         <div className=" w-2/3 flex flex-col justify-center items-start">
-          <button
-            type="submit"
-            className="button text-white px-3 py-2 my-5 mx-24"
-          >
+          <button type="submit" className="button text-white my-5">
             Register
           </button>
         </div>
