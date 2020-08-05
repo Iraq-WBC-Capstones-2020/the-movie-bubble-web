@@ -8,7 +8,7 @@ import './Sliders.css';
 const Sliders = () => {
   return (
     <>
-      <div className="container flex flex-row">
+      <div className="slider__container hidden lg:flex flex-row ">
         <motion.div
           animate={{
             x: 79,
@@ -61,6 +61,7 @@ const Sliders = () => {
           </div>
         </motion.div>
       </div>
+      <div className="cover_md md:flex lg:hidden"></div>
     </>
   );
 };
