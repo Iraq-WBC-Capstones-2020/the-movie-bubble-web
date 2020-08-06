@@ -15012,20 +15012,6 @@ video {
   background: #232d3a;
 }
 
-.underLine {
-  /* button gradient */
-  height: 0.1rem;
-  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
-}
-
-.input {
-  border-radius: 0;
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
-  background: #232d3a;
-}
-
 .FormWrapper__Form {
   display: flex;
   flex-direction: column;

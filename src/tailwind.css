@@ -38,18 +38,6 @@
   background: #232d3a;
 }
 
-.underLine {
-  /* button gradient */
-  height: 0.1rem;
-  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
-}
-
-.input {
-  @apply rounded-none;
-  @apply text-white;
-  background: #232d3a;
-}
-
 .FormWrapper__Form {
   @apply flex;
   @apply flex-col;

@@ -1,6 +1,6 @@
 import React from 'react';
-import Input from '../Input/Input';
-import clossButton from '../../assets/icons/icon-close-orange.png';
+import Input from './Input';
+import clossButton from './../assets/icons/icon-close-orange.png';
 
 export default function RegisterForm() {
   return (

@@ -1,12 +1,12 @@
 import React from 'react';
-import Input from '../Input/Input';
-import clossButton from '../../assets/icons/icon-close-orange.png';
+import Input from './Input';
+import clossButton from './../assets/icons/icon-close-orange.png';
 export default function LoginForm() {
   return (
     <div className="FormWrapper">
-      <div className="clossButton ">
+      <button className="clossButton">
         <img src={clossButton} alt="clossButton" />
-      </div>
+      </button>
       <form className="FormWrapper__Form">
         <div className=" w-2/3 ">
           <Input
