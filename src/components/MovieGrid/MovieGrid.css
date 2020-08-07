@@ -1,0 +1,10 @@
+.movie-grid-card {
+  width: 300px;
+  height: 259px;
+  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
+  border-radius: 10px;
+}
+
+.dark-mode-background {
+  background-color: #1d2530;
+}

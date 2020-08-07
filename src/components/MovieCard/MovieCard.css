@@ -1,0 +1,20 @@
+.movie-card__poster,
+.movie-card__on-hover {
+  width: 293px;
+  height: 251px;
+  transition: transform 0.5s ease;
+}
+.text-background {
+  height: 90px;
+  border-radius: 10px;
+  margin-top: 170px;
+}
+.movie-card:hover .movie-card__on-hover {
+  display: table;
+}
+.movie-card:hover .movie-card__poster {
+  position: absolute;
+  opacity: 100%;
+  border-radius: 10px;
+  transform: scale(1.2);
+}
