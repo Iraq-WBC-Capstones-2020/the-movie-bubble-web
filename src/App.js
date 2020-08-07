@@ -1,9 +1,15 @@
 import React from 'react';
+import TeamMember from './components/TeamMember';
 
 function App() {
   return (
     <div>
-      <h1 className="text-2xl bg-lightblue">The Movie Bubble</h1>
+      <TeamMember isRight/>
+      <TeamMember />
+      <TeamMember isRight/>
+      <TeamMember />
+      <TeamMember isRight/>
+      
     </div>
   );
 }

@@ -6,3 +6,45 @@
 /* Override utils here*/
 
 @tailwind utilities;
+.aboutus{
+    height: 50vh;
+    margin-top: 3vh;
+}
+.orange{
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #FFB421, #FF7521  );
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    transform: translate3d(160px, 0, 0);
+    margin-left:-12%;
+    margin-right: 0%;
+}
+.black{
+    width: 60%;
+    height: 100%;
+    background-color: aquamarine;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    transform: translate3d(-160px, 0, 0)
+}
+.aboutus__name{
+    text-align:center;
+}
+.orange-left{
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(-90deg, #FFB421, #FF7521  );
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    transform: translate3d(-160px, 0, 0);
+    margin-right:-12%;
+    margin-left: 0%;
+}
+.black-left{
+    width: 60%;
+    height: 100%;
+    clip-path:polygon(20% 0, 100% 0, 100% 100%, 0% 100%); 
+    transform: translate3d(160px, 0, 0)
+}
+.aboutus__member{
+background-size: cover;
+}
+
