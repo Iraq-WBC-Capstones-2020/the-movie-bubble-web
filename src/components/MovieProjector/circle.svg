@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100%" height="100%" viewBox="0 0 740 790" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="633.163" y1="344.623" x2="633.163" y2="892.795" id="gradient-0" gradientTransform="matrix(0.997554, -0.070803, 0.042943, 0.620729, -34.719929, 382.188127)">
+      <stop offset="0" style="stop-color: rgb(255, 170, 0);"/>
+      <stop offset="1" style="stop-color: rgb(255, 247, 7);"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(1,0,0,1,-588.642,-127.232)">
+    <g id="logo" transform="matrix(3.88431,0,0,3.39231,1014.5,565)">
+      <g transform="matrix(1,0,0,1,-50.5,-65)">
+        <clipPath id="_clip1">
+          <rect x="0" y="0" width="101" height="130"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+          <g transform="matrix(1,0,0,1,-130.013,-237.729)">
+            <g/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="matrix(-0.100457,1.33674,-1.31973,-0.0991786,1843.71,-280.714)">
+      <path d="M 475.318 375.353 C 401.769 428.582 357.968 515.55 357.968 608.353 C 357.968 765.341 481.279 892.795 633.163 892.795 C 785.047 892.795 908.357 765.341 908.357 608.353 C 908.357 492.404 840.264 388.059 736.253 344.623 L 706.356 421.106 C 780.205 451.944 828.551 526.029 828.551 608.353 C 828.551 719.815 741.001 810.307 633.163 810.307 C 525.325 810.307 437.774 719.815 437.774 608.353 C 437.774 542.463 468.873 480.716 521.093 442.922 L 475.318 375.353 Z" style="fill: url(#gradient-0);"/>
+    </g>
+  </g>
+</svg>
