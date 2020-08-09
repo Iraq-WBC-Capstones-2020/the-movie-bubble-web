@@ -1,6 +1,5 @@
 import React from 'react';
-import MovieCard from '../../components/MovieCard/MovieCard';
-import './MovieGrid.css';
+import MovieCard from '../../components/ResultedMovies/MovieCard';
 export default function MovieGrid() {
   const movieData = [
     {
@@ -48,11 +47,11 @@ export default function MovieGrid() {
   ];
   return (
     <div className="grid justify-center">
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
         {movieData.map((movieItem, index) => (
           <div
             key={index}
-            className="flex items-center justify-center movie-grid-card  mb-4"
+            className="flex items-center justify-center gradient-orange w-1/5 h-3/12 borderRadius-10  mb-4 rounded-sm"
           >
             <MovieCard singleMovie={movieItem} />
           </div>
