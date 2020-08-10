@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useCycle } from 'framer-motion';
-import useDimensions from './UseDimensions';
+import useDimensions from './useDimensions';
 import Toggler from './Toggler';
 import NavList from './NavList';
 const sidebar = {
@@ -8,16 +8,15 @@ const sidebar = {
     clipPath: `circle(${height * 2 + 200}px at 86.8% 40px)`,
     transition: {
       type: 'spring',
-      stiffness: 20,
+      stiffness: 30,
       restDelta: 2,
     },
   }),
   closed: {
     clipPath: 'circle(28px at 84.5% 40px)',
     transition: {
-      delay: 0.5,
       type: 'spring',
-      stiffness: 400,
+      stiffness: 550,
       damping: 40,
     },
   },
@@ -37,7 +36,10 @@ export default function SidebarNav() {
         ref={containerRef}
       >
         <motion.div
-          className="absolute	 top-0 right-0 w-64 bottom-0 bg-orange-400"
+          style={{
+            background: `linear-gradient(270deg, #FF7521 11.7%, #FFB421 90.81%)`,
+          }}
+          className="absolute	 top-0 right-0 w-64 bottom-0 "
           variants={sidebar}
         />
         <NavList />
