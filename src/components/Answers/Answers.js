@@ -16,7 +16,7 @@ export default function Answers({ answers, className }) {
     </button>
   );
 }
-Answers.prototype = {
+Answers.propTypes = {
   answers: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
