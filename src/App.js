@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieProjector from './components/MovieProjector/MovieProjector';
+
 function App() {
   return (
     <div className="bg-gray-900">
