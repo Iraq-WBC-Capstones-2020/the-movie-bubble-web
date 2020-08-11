@@ -11,11 +11,8 @@ export default function Input({ type, placeholder, id, className }) {
   };
   return (
     <>
-      <label htmlFor={id} className="text-white">
-        {placeholder}
-      </label>
-      <div className={`w-5/6 -mb-1 mt-3`} style={underlineStyle}></div>
       <input
+        aria-label={placeholder}
         type={type}
         placeholder={placeholder}
         className={`input w-5/6 mt-4 rounded-none text-white focus:outline-none ${className}`}
