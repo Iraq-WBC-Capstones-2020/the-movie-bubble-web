@@ -7,180 +7,50 @@
 /* Override utils here*/
 
 @tailwind utilities;
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background: #1d2530;
-}
-
-.joinUsWrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.joinUsWrapper__registerLoginWrapper {
-  display: flex;
-}
-
-.joinUsWrapper__registerLoginWrapper__register {
-  @apply -mx-5;
-  background: linear-gradient(270deg, #ffb421 11.7%, #ff7521 90.81%);
-  border-radius: 9px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+.registerClipPath {
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.joinUsWrapper__registerLoginWrapper__register > h3 {
-  width: 72px;
-  height: 20px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.joinUsWrapper__registerLoginWrapper__register:hover,
-.joinUsWrapper__registerLoginWrapper__login:hover {
-  transition: 1s;
-  transform: scale(1.2);
-}
-
-.joinUsWrapper__registerLoginWrapper__login {
-  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
-  border-radius: 9px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+.loginClipPath {
   clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
 }
 
-.joinUsWrapper__registerLoginWrapper__login > h3 {
-  width: 72px;
-  height: 20px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.login-registerButton {
-  @apply flex;
-  @apply items-center;
-  @apply justify-center;
-  @apply w-32;
-  @apply h-16;
-  @apply border-none;
-}
-
-.joinUsWrapper__continueWithWrapper {
-  display: flex;
-}
-
-.joinUsWrapper__continueWithWrapper__continueWith {
-  margin-top: 1rem;
-  width: 158px;
-  height: 55px;
-  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
-  border-radius: 9px;
-  padding: 1px;
+.continueWithClipPath {
   clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
-  border-top-right-radius: 0px;
 }
 
-.joinUsWrapper__continueWithWrapper__continueWith > div {
-  background-color: #1d2530;
-  width: 156px;
-  height: 53px;
-  border-radius: 9px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-right-radius: 0px;
-}
-
-.joinUsWrapper__continueWithWrapper__continueWith > div > h3 {
-  height: 20px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-}
-
-.joinUsWrapper__facebook {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 4.4375rem;
-  height: 3.43rem;
-  background-color: #1097ff;
-  margin-top: 1rem;
-  margin-left: -1.9rem;
-  border: 0px;
-  border-radius: 0px;
+.facebookClipPath {
   clip-path: polygon(37% 0, 100% 0%, 63% 100%, 0% 100%);
 }
 
-.joinUsWrapper__facebook > .joinUsWrapper__facebook__facebook__logo {
-  width: 1.375rem;
-  height: 1.375rem;
-  color: #ffffff;
-}
-
-.joinUsWrapper__google {
-  border: 0px;
-  display: flex;
-  padding-left: 0.8rem;
-  align-items: center;
-  justify-content: center;
-  width: 4.75rem;
-  height: 3.43rem;
-  background-color: #ffffff;
-  margin-top: 1rem;
-  margin-left: -1.8rem;
-  border-radius: 9px;
-  border-bottom-left-radius: 0px;
+.googleClipPath {
   clip-path: polygon(37% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.joinUsWrapper__google > .joinUsWrapper__google__google__logo {
-  width: 1.375rem;
-  height: 1.375rem;
+.bubble-button path {
+  animation: bubblebutton 12s linear infinite;
 }
+@keyframes bubblebutton {
+  0% {
+    d: path(
+      'M55.7,-42.5C68.5,-28.4,72.6,-5.5,67,13.9C61.5,33.2,46.3,48.9,28.6,56.3C10.9,63.6,-9.4,62.6,-30.6,55.5C-51.9,48.4,-74.2,35.2,-80.5,15.9C-86.9,-3.4,-77.3,-28.7,-61.3,-43.5C-45.2,-58.4,-22.6,-62.7,-0.6,-62.2C21.5,-61.8,42.9,-56.6,55.7,-42.5Z'
+    );
+  }
 
-.joinUsWrapper__google:hover {
-  transition: 1s;
-  transform: scale(1.2);
-}
-
-.joinUsWrapper__facebook:hover {
-  z-index: 4;
-  /* transform: skew(-30deg); */
-  transition: 1s;
-  transform: scale(1.2);
-}
-
-.facebook-google:hover {
-  z-index: 4;
-  transition: 1s;
-  transform: scale(1.2);
-}
-
-.cotinueWithBackground {
-  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
-  @apply w-24;
-  top: 100px;
-  left: 100px;
-  z-index: 5;
+  50% {
+    d: path(
+      'M52.9,-40.2C67.5,-23.9,77.5,-2,74,18.3C70.5,38.7,53.6,57.3,34,64.5C14.3,71.6,-7.9,67.1,-26.8,57.4C-45.7,47.6,-61.1,32.6,-63.5,16.2C-65.8,-0.1,-55.1,-17.7,-42.3,-33.5C-29.5,-49.4,-14.8,-63.4,2.2,-65.2C19.2,-66.9,38.3,-56.4,52.9,-40.2Z'
+    );
+  }
+  75% {
+    d: path(
+      'M55.8,-44.9C67.5,-29.9,68.8,-6.9,63.1,13C57.5,33,44.9,50,27,60.1C9.2,70.2,-13.9,73.4,-29.5,64.6C-45.1,55.8,-53.3,34.9,-56.8,14.4C-60.3,-6.1,-59.1,-26.1,-48.9,-40.9C-38.6,-55.6,-19.3,-65.1,1.4,-66.2C22.1,-67.3,44.1,-60,55.8,-44.9Z'
+    );
+  }
+  100% {
+    d: path(
+      'M55.7,-42.5C68.5,-28.4,72.6,-5.5,67,13.9C61.5,33.2,46.3,48.9,28.6,56.3C10.9,63.6,-9.4,62.6,-30.6,55.5C-51.9,48.4,-74.2,35.2,-80.5,15.9C-86.9,-3.4,-77.3,-28.7,-61.3,-43.5C-45.2,-58.4,-22.6,-62.7,-0.6,-62.2C21.5,-61.8,42.9,-56.6,55.7,-42.5Z'
+    );
+  }
 }
