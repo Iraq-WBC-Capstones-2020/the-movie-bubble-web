@@ -8,26 +8,6 @@
 
 @tailwind utilities;
 
-.registerClipPath {
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.loginClipPath {
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-}
-
-.continueWithClipPath {
-  clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
-}
-
-.facebookClipPath {
-  clip-path: polygon(37% 0, 100% 0%, 63% 100%, 0% 100%);
-}
-
-.googleClipPath {
-  clip-path: polygon(37% 0, 100% 0%, 100% 100%, 0% 100%);
-}
-
 .bubble-button path {
   animation: bubblebutton 12s linear infinite;
 }

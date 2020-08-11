@@ -6,11 +6,17 @@ export default function AuthorizationButton() {
     <>
       <div className="flex flex-col bg-darkgray ">
         <div className="flex">
-          <button className="transform hover:scale-110 transition duration-1000 loginClipPath rounded-r-none rounded-lg flex items-center justify-center w-32 h-16 border-none main-gradient">
+          <button
+            style={{ clipPath: 'polygon(0 0, 100% 0, 80% 100%, 0% 100%)' }}
+            className="transform hover:scale-110 transition duration-1000 rounded-r-none rounded-lg flex items-center justify-center w-32 h-16 border-none main-gradient"
+          >
             <h3 className="text-2xl text-white">Login</h3>
           </button>
 
-          <button className="transform hover:scale-110 transition duration-1000 registerClipPath rounded-l-none rounded-lg -mx-5 flex items-center justify-center w-32 h-16 border-none main-gradient">
+          <button
+            style={{ clipPath: 'polygon(20% 0, 100% 0, 100% 100%, 0% 100%)' }}
+            className="transform hover:scale-110 transition duration-1000 rounded-l-none rounded-lg -mx-5 flex items-center justify-center w-32 h-16 border-none main-gradient"
+          >
             <h3 className="text-2xl text-white ">Register</h3>
           </button>
         </div>
@@ -20,10 +26,21 @@ export default function AuthorizationButton() {
               <h3>Continue With</h3>
             </div>
           </div>
-          <button className="transform hover:scale-110 transition duration-1000 flex items-center justify-center h-16 w-20 bg-lightblue mt-4 -ml-8 facebookClipPath ">
-            <FaFacebookF className="w-6 h-6 text-white"></FaFacebookF>
+          <button
+            style={{ clipPath: ' polygon(37% 0, 100% 0%, 63% 100%, 0% 100%)' }}
+            className="transform hover:scale-110 transition duration-1000 flex items-center justify-center h-16 w-20 bg-lightblue mt-4 -ml-8 facebookClipPath "
+          >
+            <FaFacebookF
+              style={{
+                clipPath: 'polygon(37% 0, 100% 0%, 63% 100%, 0% 100%)',
+              }}
+              className="w-6 h-6 text-white"
+            ></FaFacebookF>
           </button>
-          <button className="transform hover:scale-110 transition duration-1000 googleClipPath pl-3 flex items-center justify-center h-16 w-20 mt-4 -ml-8 bg-white rounded-lg rounded-l-none">
+          <button
+            style={{ clipPath: 'polygon(37% 0, 100% 0%, 100% 100%, 0% 100%)' }}
+            className="transform hover:scale-110 transition duration-1000 googleClipPath pl-3 flex items-center justify-center h-16 w-20 mt-4 -ml-8 bg-white rounded-lg rounded-l-none"
+          >
             <FcGoogle className="w-6 h-6"></FcGoogle>
           </button>
         </div>
