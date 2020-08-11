@@ -1,15 +1,9 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
+import React from 'react';
 import 'aos/dist/aos.css';
-import '../TeamMember.css';
+import '././TeamMember/TeamMember.css';
 
-export default function TeamMember(props) {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  });
-  const isRight = props.isRight;
+export default function TeamMember({ isRight, name, image }) {
+  // const isRight = props.isRight;
   if (isRight)
     return (
       <>
@@ -18,12 +12,10 @@ export default function TeamMember(props) {
             className="member-img w-3/5 h-full bg-black "
             data-aos="fade-right"
           >
-            <img className="bg-cover bg-black" alt="" src=""></img>
+            <img className="bg-cover bg-black" alt="" src={image}></img>
           </div>
           <div className="member-caption w-3/5 " data-aos="fade-left">
-            <h3 className="aboutus__name items-center">
-              {props.aboutus__name}
-            </h3>
+            <h3 className="items-center">{name}</h3>
           </div>
         </div>
       </>
@@ -35,10 +27,10 @@ export default function TeamMember(props) {
           className="member-img-left w-3/5 h-full bg-black"
           data-aos="fade-left"
         >
-          <img className="bg-cover " alt="" src=""></img>
+          <img className="bg-cover " alt="" src={image}></img>
         </div>
         <div className="member-caption-left w-3/5 h-full" data-aos="fade-right">
-          <h3 className="aboutus__name items-center">{props.aboutus__name}</h3>
+          <h3 className="aboutus__name items-center">{name}</h3>
         </div>
       </div>
     </>
