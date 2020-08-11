@@ -35,7 +35,7 @@
   @apply w-screen;
   @apply h-screen;
   @apply relative;
-  background: #232d3a;
+  @apply bg-darkgray;
 }
 
 .FormWrapper__Form {

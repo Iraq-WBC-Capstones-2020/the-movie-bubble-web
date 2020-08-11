@@ -30,7 +30,7 @@ export default function LoginForm() {
             Remember me
           </label>
         </div>
-        <div className="loginFormWrapper__loginForm__rememberForgetWeapper  flex flex-col items-center w-2/3 ">
+        <div className="md:flex-row md:justify-between sm:justify-start  flex flex-col w-2/3 ">
           <div className=" w-2/3">
             <span className="underline text-white cursor-pointer">
               Forget Password
@@ -43,10 +43,10 @@ export default function LoginForm() {
             </button>
           </div>
         </div>
-        <div className="loginFormWrapper__loginForm__notAMember flex flex-col w-2/3 justify-center items-center">
+        <div className="loginFormWrapper__loginForm__notAMember border flex flex-col w-2/3 justify-start items-start">
           <span className="text-white mr-4 ">Not a member yet?</span>
           <span className="text-white underline cursor-pointer">
-            Register Now{' '}
+            Register Now
           </span>
         </div>
       </form>
