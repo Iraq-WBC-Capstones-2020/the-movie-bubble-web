@@ -9,11 +9,11 @@ export default function RegisterForm() {
         <img src={clossButton} alt="clossButton" />
       </div>
       <form className="FormWrapper__Form">
-        <div className="flex w-2/3 sm:flex-col sm:justify-start ">
-          <div className="firstnameWapper  w-2/3 sm:w-full ">
+        <div className="flex w-2/3 sm:flex-col sm:justify-start xs:flex-col xs:justify-start ">
+          <div className="firstnameWapper  w-2/3 sm:w-full xs:w-full ">
             <Input type="text" placeholder="Firstname" id="firstname"></Input>
           </div>
-          <div className="lastnameWrapper  w-2/3 sm:w-full  ml-12 sm:ml-0">
+          <div className="lastnameWrapper  w-2/3 sm:w-full xs:w-full ml-12 sm:ml-0 xs:ml-0">
             <Input type="text" placeholder="Lastname" id="lastname"></Input>
           </div>
         </div>

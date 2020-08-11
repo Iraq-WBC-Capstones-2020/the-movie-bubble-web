@@ -613,6 +613,10 @@ video {
   }
 }
 
+.main-gradient {
+  background: linear-gradient(270deg, #ffb421 11.7%, #ff7521 90.81%);
+}
+
 /* purgecss end ignore */
 
 /* Override utils here*/
@@ -845,6 +849,18 @@ video {
   margin-left: calc(1px * calc(1 - var(--space-x-reverse)));
 }
 
+.space-y-0\.08 > :not(template) ~ :not(template) {
+  --space-y-reverse: 0;
+  margin-top: calc(0.08rem * calc(1 - var(--space-y-reverse)));
+  margin-bottom: calc(0.08rem * var(--space-y-reverse));
+}
+
+.space-x-0\.08 > :not(template) ~ :not(template) {
+  --space-x-reverse: 0;
+  margin-right: calc(0.08rem * var(--space-x-reverse));
+  margin-left: calc(0.08rem * calc(1 - var(--space-x-reverse)));
+}
+
 .-space-y-1 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(-0.25rem * calc(1 - var(--space-y-reverse)));
@@ -1059,6 +1075,18 @@ video {
   --space-x-reverse: 0;
   margin-right: calc(-1px * var(--space-x-reverse));
   margin-left: calc(-1px * calc(1 - var(--space-x-reverse)));
+}
+
+.-space-y-0\.08 > :not(template) ~ :not(template) {
+  --space-y-reverse: 0;
+  margin-top: calc(-0.08rem * calc(1 - var(--space-y-reverse)));
+  margin-bottom: calc(-0.08rem * var(--space-y-reverse));
+}
+
+.-space-x-0\.08 > :not(template) ~ :not(template) {
+  --space-x-reverse: 0;
+  margin-right: calc(-0.08rem * var(--space-x-reverse));
+  margin-left: calc(-0.08rem * calc(1 - var(--space-x-reverse)));
 }
 
 .space-y-reverse > :not(template) ~ :not(template) {
@@ -6903,6 +6931,10 @@ video {
   height: 1px;
 }
 
+.h-0\.08 {
+  height: 0.08rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -7107,6 +7139,10 @@ video {
   margin: 1px;
 }
 
+.m-0\.08 {
+  margin: 0.08rem;
+}
+
 .-m-1 {
   margin: -0.25rem;
 }
@@ -7177,6 +7213,10 @@ video {
 
 .-m-px {
   margin: -1px;
+}
+
+.-m-0\.08 {
+  margin: -0.08rem;
 }
 
 .my-0 {
@@ -7379,6 +7419,16 @@ video {
   margin-right: 1px;
 }
 
+.my-0\.08 {
+  margin-top: 0.08rem;
+  margin-bottom: 0.08rem;
+}
+
+.mx-0\.08 {
+  margin-left: 0.08rem;
+  margin-right: 0.08rem;
+}
+
 .-my-1 {
   margin-top: -0.25rem;
   margin-bottom: -0.25rem;
@@ -7557,6 +7607,16 @@ video {
 .-mx-px {
   margin-left: -1px;
   margin-right: -1px;
+}
+
+.-my-0\.08 {
+  margin-top: -0.08rem;
+  margin-bottom: -0.08rem;
+}
+
+.-mx-0\.08 {
+  margin-left: -0.08rem;
+  margin-right: -0.08rem;
 }
 
 .mt-0 {
@@ -7879,6 +7939,22 @@ video {
   margin-left: 1px;
 }
 
+.mt-0\.08 {
+  margin-top: 0.08rem;
+}
+
+.mr-0\.08 {
+  margin-right: 0.08rem;
+}
+
+.mb-0\.08 {
+  margin-bottom: 0.08rem;
+}
+
+.ml-0\.08 {
+  margin-left: 0.08rem;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -8165,6 +8241,22 @@ video {
 
 .-ml-px {
   margin-left: -1px;
+}
+
+.-mt-0\.08 {
+  margin-top: -0.08rem;
+}
+
+.-mr-0\.08 {
+  margin-right: -0.08rem;
+}
+
+.-mb-0\.08 {
+  margin-bottom: -0.08rem;
+}
+
+.-ml-0\.08 {
+  margin-left: -0.08rem;
 }
 
 .max-h-full {
@@ -8499,6 +8591,10 @@ video {
   padding: 1px;
 }
 
+.p-0\.08 {
+  padding: 0.08rem;
+}
+
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -8687,6 +8783,16 @@ video {
 .px-px {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.py-0\.08 {
+  padding-top: 0.08rem;
+  padding-bottom: 0.08rem;
+}
+
+.px-0\.08 {
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
 }
 
 .pt-0 {
@@ -8991,6 +9097,22 @@ video {
 
 .pl-px {
   padding-left: 1px;
+}
+
+.pt-0\.08 {
+  padding-top: 0.08rem;
+}
+
+.pr-0\.08 {
+  padding-right: 0.08rem;
+}
+
+.pb-0\.08 {
+  padding-bottom: 0.08rem;
+}
+
+.pl-0\.08 {
+  padding-left: 0.08rem;
 }
 
 .placeholder-transparent::placeholder {
@@ -12492,6 +12614,10 @@ video {
   width: 1px;
 }
 
+.w-0\.08 {
+  width: 0.08rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -12727,6 +12853,11 @@ video {
   gap: 1px;
 }
 
+.gap-0\.08 {
+  grid-gap: 0.08rem;
+  gap: 0.08rem;
+}
+
 .col-gap-0 {
   grid-column-gap: 0;
   column-gap: 0;
@@ -12822,6 +12953,11 @@ video {
   column-gap: 1px;
 }
 
+.col-gap-0\.08 {
+  grid-column-gap: 0.08rem;
+  column-gap: 0.08rem;
+}
+
 .row-gap-0 {
   grid-row-gap: 0;
   row-gap: 0;
@@ -12915,6 +13051,11 @@ video {
 .row-gap-px {
   grid-row-gap: 1px;
   row-gap: 1px;
+}
+
+.row-gap-0\.08 {
+  grid-row-gap: 0.08rem;
+  row-gap: 0.08rem;
 }
 
 .grid-flow-row {
@@ -13870,6 +14011,10 @@ video {
   --transform-translate-x: 1px;
 }
 
+.translate-x-0\.08 {
+  --transform-translate-x: 0.08rem;
+}
+
 .-translate-x-1 {
   --transform-translate-x: -0.25rem;
 }
@@ -13940,6 +14085,10 @@ video {
 
 .-translate-x-px {
   --transform-translate-x: -1px;
+}
+
+.-translate-x-0\.08 {
+  --transform-translate-x: -0.08rem;
 }
 
 .-translate-x-full {
@@ -14034,6 +14183,10 @@ video {
   --transform-translate-y: 1px;
 }
 
+.translate-y-0\.08 {
+  --transform-translate-y: 0.08rem;
+}
+
 .-translate-y-1 {
   --transform-translate-y: -0.25rem;
 }
@@ -14104,6 +14257,10 @@ video {
 
 .-translate-y-px {
   --transform-translate-y: -1px;
+}
+
+.-translate-y-0\.08 {
+  --transform-translate-y: -0.08rem;
 }
 
 .-translate-y-full {
@@ -14198,6 +14355,10 @@ video {
   --transform-translate-x: 1px;
 }
 
+.hover\:translate-x-0\.08:hover {
+  --transform-translate-x: 0.08rem;
+}
+
 .hover\:-translate-x-1:hover {
   --transform-translate-x: -0.25rem;
 }
@@ -14268,6 +14429,10 @@ video {
 
 .hover\:-translate-x-px:hover {
   --transform-translate-x: -1px;
+}
+
+.hover\:-translate-x-0\.08:hover {
+  --transform-translate-x: -0.08rem;
 }
 
 .hover\:-translate-x-full:hover {
@@ -14362,6 +14527,10 @@ video {
   --transform-translate-y: 1px;
 }
 
+.hover\:translate-y-0\.08:hover {
+  --transform-translate-y: 0.08rem;
+}
+
 .hover\:-translate-y-1:hover {
   --transform-translate-y: -0.25rem;
 }
@@ -14432,6 +14601,10 @@ video {
 
 .hover\:-translate-y-px:hover {
   --transform-translate-y: -1px;
+}
+
+.hover\:-translate-y-0\.08:hover {
+  --transform-translate-y: -0.08rem;
 }
 
 .hover\:-translate-y-full:hover {
@@ -14526,6 +14699,10 @@ video {
   --transform-translate-x: 1px;
 }
 
+.focus\:translate-x-0\.08:focus {
+  --transform-translate-x: 0.08rem;
+}
+
 .focus\:-translate-x-1:focus {
   --transform-translate-x: -0.25rem;
 }
@@ -14596,6 +14773,10 @@ video {
 
 .focus\:-translate-x-px:focus {
   --transform-translate-x: -1px;
+}
+
+.focus\:-translate-x-0\.08:focus {
+  --transform-translate-x: -0.08rem;
 }
 
 .focus\:-translate-x-full:focus {
@@ -14690,6 +14871,10 @@ video {
   --transform-translate-y: 1px;
 }
 
+.focus\:translate-y-0\.08:focus {
+  --transform-translate-y: 0.08rem;
+}
+
 .focus\:-translate-y-1:focus {
   --transform-translate-y: -0.25rem;
 }
@@ -14760,6 +14945,10 @@ video {
 
 .focus\:-translate-y-px:focus {
   --transform-translate-y: -1px;
+}
+
+.focus\:-translate-y-0\.08:focus {
+  --transform-translate-y: -0.08rem;
 }
 
 .focus\:-translate-y-full:focus {
@@ -15068,7 +15257,16 @@ video {
 }
 
 .button:hover {
-  opacity: 0.75;
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  --transform-scale-x: 1.05;
+  --transform-scale-y: 1.05;
 }
 
 .button:focus {
@@ -15114,23 +15312,28 @@ video {
   right: 10px;
 }
 
+.clossButton:hover {
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  --transform-scale-x: 1.05;
+  --transform-scale-y: 1.05;
+}
+
 span.underline:hover {
-  color: #00c2ff;
+  --text-opacity: 1;
+  color: #18A0FB;
+  color: rgba(24, 160, 251, var(--text-opacity));
 }
 
 @media (min-width: 1301px) {
   .FormWrapper {
     width: 40%;
-  }
-
-  .loginFormWrapper__loginForm__notAMember {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .loginFormWrapper__loginForm__rememberForgetWeapper {
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -15138,31 +15341,11 @@ span.underline:hover {
   .FormWrapper {
     width: 50%;
   }
-
-  .loginFormWrapper__loginForm__notAMember {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .loginFormWrapper__loginForm__rememberForgetWeapper {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
 @media (min-width: 701px) and (max-width: 970px) {
   .FormWrapper {
     width: 70%;
-  }
-
-  .loginFormWrapper__loginForm__notAMember {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .loginFormWrapper__loginForm__rememberForgetWeapper {
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -15429,6 +15612,18 @@ span.underline:hover {
     margin-left: calc(1px * calc(1 - var(--space-x-reverse)));
   }
 
+  .xs\:space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(0.08rem * var(--space-y-reverse));
+  }
+
+  .xs\:space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(0.08rem * var(--space-x-reverse));
+    margin-left: calc(0.08rem * calc(1 - var(--space-x-reverse)));
+  }
+
   .xs\:-space-y-1 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(-0.25rem * calc(1 - var(--space-y-reverse)));
@@ -15643,6 +15838,18 @@ span.underline:hover {
     --space-x-reverse: 0;
     margin-right: calc(-1px * var(--space-x-reverse));
     margin-left: calc(-1px * calc(1 - var(--space-x-reverse)));
+  }
+
+  .xs\:-space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(-0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(-0.08rem * var(--space-y-reverse));
+  }
+
+  .xs\:-space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(-0.08rem * var(--space-x-reverse));
+    margin-left: calc(-0.08rem * calc(1 - var(--space-x-reverse)));
   }
 
   .xs\:space-y-reverse > :not(template) ~ :not(template) {
@@ -21487,6 +21694,10 @@ span.underline:hover {
     height: 1px;
   }
 
+  .xs\:h-0\.08 {
+    height: 0.08rem;
+  }
+
   .xs\:h-full {
     height: 100%;
   }
@@ -21691,6 +21902,10 @@ span.underline:hover {
     margin: 1px;
   }
 
+  .xs\:m-0\.08 {
+    margin: 0.08rem;
+  }
+
   .xs\:-m-1 {
     margin: -0.25rem;
   }
@@ -21761,6 +21976,10 @@ span.underline:hover {
 
   .xs\:-m-px {
     margin: -1px;
+  }
+
+  .xs\:-m-0\.08 {
+    margin: -0.08rem;
   }
 
   .xs\:my-0 {
@@ -21963,6 +22182,16 @@ span.underline:hover {
     margin-right: 1px;
   }
 
+  .xs\:my-0\.08 {
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+  }
+
+  .xs\:mx-0\.08 {
+    margin-left: 0.08rem;
+    margin-right: 0.08rem;
+  }
+
   .xs\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -22141,6 +22370,16 @@ span.underline:hover {
   .xs\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .xs\:-my-0\.08 {
+    margin-top: -0.08rem;
+    margin-bottom: -0.08rem;
+  }
+
+  .xs\:-mx-0\.08 {
+    margin-left: -0.08rem;
+    margin-right: -0.08rem;
   }
 
   .xs\:mt-0 {
@@ -22463,6 +22702,22 @@ span.underline:hover {
     margin-left: 1px;
   }
 
+  .xs\:mt-0\.08 {
+    margin-top: 0.08rem;
+  }
+
+  .xs\:mr-0\.08 {
+    margin-right: 0.08rem;
+  }
+
+  .xs\:mb-0\.08 {
+    margin-bottom: 0.08rem;
+  }
+
+  .xs\:ml-0\.08 {
+    margin-left: 0.08rem;
+  }
+
   .xs\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -22749,6 +23004,22 @@ span.underline:hover {
 
   .xs\:-ml-px {
     margin-left: -1px;
+  }
+
+  .xs\:-mt-0\.08 {
+    margin-top: -0.08rem;
+  }
+
+  .xs\:-mr-0\.08 {
+    margin-right: -0.08rem;
+  }
+
+  .xs\:-mb-0\.08 {
+    margin-bottom: -0.08rem;
+  }
+
+  .xs\:-ml-0\.08 {
+    margin-left: -0.08rem;
   }
 
   .xs\:max-h-full {
@@ -23083,6 +23354,10 @@ span.underline:hover {
     padding: 1px;
   }
 
+  .xs\:p-0\.08 {
+    padding: 0.08rem;
+  }
+
   .xs\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -23271,6 +23546,16 @@ span.underline:hover {
   .xs\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .xs\:py-0\.08 {
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+  }
+
+  .xs\:px-0\.08 {
+    padding-left: 0.08rem;
+    padding-right: 0.08rem;
   }
 
   .xs\:pt-0 {
@@ -23575,6 +23860,22 @@ span.underline:hover {
 
   .xs\:pl-px {
     padding-left: 1px;
+  }
+
+  .xs\:pt-0\.08 {
+    padding-top: 0.08rem;
+  }
+
+  .xs\:pr-0\.08 {
+    padding-right: 0.08rem;
+  }
+
+  .xs\:pb-0\.08 {
+    padding-bottom: 0.08rem;
+  }
+
+  .xs\:pl-0\.08 {
+    padding-left: 0.08rem;
   }
 
   .xs\:placeholder-transparent::placeholder {
@@ -27076,6 +27377,10 @@ span.underline:hover {
     width: 1px;
   }
 
+  .xs\:w-0\.08 {
+    width: 0.08rem;
+  }
+
   .xs\:w-1\/2 {
     width: 50%;
   }
@@ -27311,6 +27616,11 @@ span.underline:hover {
     gap: 1px;
   }
 
+  .xs\:gap-0\.08 {
+    grid-gap: 0.08rem;
+    gap: 0.08rem;
+  }
+
   .xs\:col-gap-0 {
     grid-column-gap: 0;
     column-gap: 0;
@@ -27406,6 +27716,11 @@ span.underline:hover {
     column-gap: 1px;
   }
 
+  .xs\:col-gap-0\.08 {
+    grid-column-gap: 0.08rem;
+    column-gap: 0.08rem;
+  }
+
   .xs\:row-gap-0 {
     grid-row-gap: 0;
     row-gap: 0;
@@ -27499,6 +27814,11 @@ span.underline:hover {
   .xs\:row-gap-px {
     grid-row-gap: 1px;
     row-gap: 1px;
+  }
+
+  .xs\:row-gap-0\.08 {
+    grid-row-gap: 0.08rem;
+    row-gap: 0.08rem;
   }
 
   .xs\:grid-flow-row {
@@ -28454,6 +28774,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .xs\:translate-x-0\.08 {
+    --transform-translate-x: 0.08rem;
+  }
+
   .xs\:-translate-x-1 {
     --transform-translate-x: -0.25rem;
   }
@@ -28524,6 +28848,10 @@ span.underline:hover {
 
   .xs\:-translate-x-px {
     --transform-translate-x: -1px;
+  }
+
+  .xs\:-translate-x-0\.08 {
+    --transform-translate-x: -0.08rem;
   }
 
   .xs\:-translate-x-full {
@@ -28618,6 +28946,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .xs\:translate-y-0\.08 {
+    --transform-translate-y: 0.08rem;
+  }
+
   .xs\:-translate-y-1 {
     --transform-translate-y: -0.25rem;
   }
@@ -28688,6 +29020,10 @@ span.underline:hover {
 
   .xs\:-translate-y-px {
     --transform-translate-y: -1px;
+  }
+
+  .xs\:-translate-y-0\.08 {
+    --transform-translate-y: -0.08rem;
   }
 
   .xs\:-translate-y-full {
@@ -28782,6 +29118,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .xs\:hover\:translate-x-0\.08:hover {
+    --transform-translate-x: 0.08rem;
+  }
+
   .xs\:hover\:-translate-x-1:hover {
     --transform-translate-x: -0.25rem;
   }
@@ -28852,6 +29192,10 @@ span.underline:hover {
 
   .xs\:hover\:-translate-x-px:hover {
     --transform-translate-x: -1px;
+  }
+
+  .xs\:hover\:-translate-x-0\.08:hover {
+    --transform-translate-x: -0.08rem;
   }
 
   .xs\:hover\:-translate-x-full:hover {
@@ -28946,6 +29290,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .xs\:hover\:translate-y-0\.08:hover {
+    --transform-translate-y: 0.08rem;
+  }
+
   .xs\:hover\:-translate-y-1:hover {
     --transform-translate-y: -0.25rem;
   }
@@ -29016,6 +29364,10 @@ span.underline:hover {
 
   .xs\:hover\:-translate-y-px:hover {
     --transform-translate-y: -1px;
+  }
+
+  .xs\:hover\:-translate-y-0\.08:hover {
+    --transform-translate-y: -0.08rem;
   }
 
   .xs\:hover\:-translate-y-full:hover {
@@ -29110,6 +29462,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .xs\:focus\:translate-x-0\.08:focus {
+    --transform-translate-x: 0.08rem;
+  }
+
   .xs\:focus\:-translate-x-1:focus {
     --transform-translate-x: -0.25rem;
   }
@@ -29180,6 +29536,10 @@ span.underline:hover {
 
   .xs\:focus\:-translate-x-px:focus {
     --transform-translate-x: -1px;
+  }
+
+  .xs\:focus\:-translate-x-0\.08:focus {
+    --transform-translate-x: -0.08rem;
   }
 
   .xs\:focus\:-translate-x-full:focus {
@@ -29274,6 +29634,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .xs\:focus\:translate-y-0\.08:focus {
+    --transform-translate-y: 0.08rem;
+  }
+
   .xs\:focus\:-translate-y-1:focus {
     --transform-translate-y: -0.25rem;
   }
@@ -29344,6 +29708,10 @@ span.underline:hover {
 
   .xs\:focus\:-translate-y-px:focus {
     --transform-translate-y: -1px;
+  }
+
+  .xs\:focus\:-translate-y-0\.08:focus {
+    --transform-translate-y: -0.08rem;
   }
 
   .xs\:focus\:-translate-y-full:focus {
@@ -29902,6 +30270,18 @@ span.underline:hover {
     margin-left: calc(1px * calc(1 - var(--space-x-reverse)));
   }
 
+  .sm\:space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(0.08rem * var(--space-y-reverse));
+  }
+
+  .sm\:space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(0.08rem * var(--space-x-reverse));
+    margin-left: calc(0.08rem * calc(1 - var(--space-x-reverse)));
+  }
+
   .sm\:-space-y-1 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(-0.25rem * calc(1 - var(--space-y-reverse)));
@@ -30116,6 +30496,18 @@ span.underline:hover {
     --space-x-reverse: 0;
     margin-right: calc(-1px * var(--space-x-reverse));
     margin-left: calc(-1px * calc(1 - var(--space-x-reverse)));
+  }
+
+  .sm\:-space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(-0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(-0.08rem * var(--space-y-reverse));
+  }
+
+  .sm\:-space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(-0.08rem * var(--space-x-reverse));
+    margin-left: calc(-0.08rem * calc(1 - var(--space-x-reverse)));
   }
 
   .sm\:space-y-reverse > :not(template) ~ :not(template) {
@@ -35960,6 +36352,10 @@ span.underline:hover {
     height: 1px;
   }
 
+  .sm\:h-0\.08 {
+    height: 0.08rem;
+  }
+
   .sm\:h-full {
     height: 100%;
   }
@@ -36164,6 +36560,10 @@ span.underline:hover {
     margin: 1px;
   }
 
+  .sm\:m-0\.08 {
+    margin: 0.08rem;
+  }
+
   .sm\:-m-1 {
     margin: -0.25rem;
   }
@@ -36234,6 +36634,10 @@ span.underline:hover {
 
   .sm\:-m-px {
     margin: -1px;
+  }
+
+  .sm\:-m-0\.08 {
+    margin: -0.08rem;
   }
 
   .sm\:my-0 {
@@ -36436,6 +36840,16 @@ span.underline:hover {
     margin-right: 1px;
   }
 
+  .sm\:my-0\.08 {
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+  }
+
+  .sm\:mx-0\.08 {
+    margin-left: 0.08rem;
+    margin-right: 0.08rem;
+  }
+
   .sm\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -36614,6 +37028,16 @@ span.underline:hover {
   .sm\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .sm\:-my-0\.08 {
+    margin-top: -0.08rem;
+    margin-bottom: -0.08rem;
+  }
+
+  .sm\:-mx-0\.08 {
+    margin-left: -0.08rem;
+    margin-right: -0.08rem;
   }
 
   .sm\:mt-0 {
@@ -36936,6 +37360,22 @@ span.underline:hover {
     margin-left: 1px;
   }
 
+  .sm\:mt-0\.08 {
+    margin-top: 0.08rem;
+  }
+
+  .sm\:mr-0\.08 {
+    margin-right: 0.08rem;
+  }
+
+  .sm\:mb-0\.08 {
+    margin-bottom: 0.08rem;
+  }
+
+  .sm\:ml-0\.08 {
+    margin-left: 0.08rem;
+  }
+
   .sm\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -37222,6 +37662,22 @@ span.underline:hover {
 
   .sm\:-ml-px {
     margin-left: -1px;
+  }
+
+  .sm\:-mt-0\.08 {
+    margin-top: -0.08rem;
+  }
+
+  .sm\:-mr-0\.08 {
+    margin-right: -0.08rem;
+  }
+
+  .sm\:-mb-0\.08 {
+    margin-bottom: -0.08rem;
+  }
+
+  .sm\:-ml-0\.08 {
+    margin-left: -0.08rem;
   }
 
   .sm\:max-h-full {
@@ -37556,6 +38012,10 @@ span.underline:hover {
     padding: 1px;
   }
 
+  .sm\:p-0\.08 {
+    padding: 0.08rem;
+  }
+
   .sm\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -37744,6 +38204,16 @@ span.underline:hover {
   .sm\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .sm\:py-0\.08 {
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+  }
+
+  .sm\:px-0\.08 {
+    padding-left: 0.08rem;
+    padding-right: 0.08rem;
   }
 
   .sm\:pt-0 {
@@ -38048,6 +38518,22 @@ span.underline:hover {
 
   .sm\:pl-px {
     padding-left: 1px;
+  }
+
+  .sm\:pt-0\.08 {
+    padding-top: 0.08rem;
+  }
+
+  .sm\:pr-0\.08 {
+    padding-right: 0.08rem;
+  }
+
+  .sm\:pb-0\.08 {
+    padding-bottom: 0.08rem;
+  }
+
+  .sm\:pl-0\.08 {
+    padding-left: 0.08rem;
   }
 
   .sm\:placeholder-transparent::placeholder {
@@ -41549,6 +42035,10 @@ span.underline:hover {
     width: 1px;
   }
 
+  .sm\:w-0\.08 {
+    width: 0.08rem;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -41784,6 +42274,11 @@ span.underline:hover {
     gap: 1px;
   }
 
+  .sm\:gap-0\.08 {
+    grid-gap: 0.08rem;
+    gap: 0.08rem;
+  }
+
   .sm\:col-gap-0 {
     grid-column-gap: 0;
     column-gap: 0;
@@ -41879,6 +42374,11 @@ span.underline:hover {
     column-gap: 1px;
   }
 
+  .sm\:col-gap-0\.08 {
+    grid-column-gap: 0.08rem;
+    column-gap: 0.08rem;
+  }
+
   .sm\:row-gap-0 {
     grid-row-gap: 0;
     row-gap: 0;
@@ -41972,6 +42472,11 @@ span.underline:hover {
   .sm\:row-gap-px {
     grid-row-gap: 1px;
     row-gap: 1px;
+  }
+
+  .sm\:row-gap-0\.08 {
+    grid-row-gap: 0.08rem;
+    row-gap: 0.08rem;
   }
 
   .sm\:grid-flow-row {
@@ -42927,6 +43432,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .sm\:translate-x-0\.08 {
+    --transform-translate-x: 0.08rem;
+  }
+
   .sm\:-translate-x-1 {
     --transform-translate-x: -0.25rem;
   }
@@ -42997,6 +43506,10 @@ span.underline:hover {
 
   .sm\:-translate-x-px {
     --transform-translate-x: -1px;
+  }
+
+  .sm\:-translate-x-0\.08 {
+    --transform-translate-x: -0.08rem;
   }
 
   .sm\:-translate-x-full {
@@ -43091,6 +43604,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .sm\:translate-y-0\.08 {
+    --transform-translate-y: 0.08rem;
+  }
+
   .sm\:-translate-y-1 {
     --transform-translate-y: -0.25rem;
   }
@@ -43161,6 +43678,10 @@ span.underline:hover {
 
   .sm\:-translate-y-px {
     --transform-translate-y: -1px;
+  }
+
+  .sm\:-translate-y-0\.08 {
+    --transform-translate-y: -0.08rem;
   }
 
   .sm\:-translate-y-full {
@@ -43255,6 +43776,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .sm\:hover\:translate-x-0\.08:hover {
+    --transform-translate-x: 0.08rem;
+  }
+
   .sm\:hover\:-translate-x-1:hover {
     --transform-translate-x: -0.25rem;
   }
@@ -43325,6 +43850,10 @@ span.underline:hover {
 
   .sm\:hover\:-translate-x-px:hover {
     --transform-translate-x: -1px;
+  }
+
+  .sm\:hover\:-translate-x-0\.08:hover {
+    --transform-translate-x: -0.08rem;
   }
 
   .sm\:hover\:-translate-x-full:hover {
@@ -43419,6 +43948,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .sm\:hover\:translate-y-0\.08:hover {
+    --transform-translate-y: 0.08rem;
+  }
+
   .sm\:hover\:-translate-y-1:hover {
     --transform-translate-y: -0.25rem;
   }
@@ -43489,6 +44022,10 @@ span.underline:hover {
 
   .sm\:hover\:-translate-y-px:hover {
     --transform-translate-y: -1px;
+  }
+
+  .sm\:hover\:-translate-y-0\.08:hover {
+    --transform-translate-y: -0.08rem;
   }
 
   .sm\:hover\:-translate-y-full:hover {
@@ -43583,6 +44120,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .sm\:focus\:translate-x-0\.08:focus {
+    --transform-translate-x: 0.08rem;
+  }
+
   .sm\:focus\:-translate-x-1:focus {
     --transform-translate-x: -0.25rem;
   }
@@ -43653,6 +44194,10 @@ span.underline:hover {
 
   .sm\:focus\:-translate-x-px:focus {
     --transform-translate-x: -1px;
+  }
+
+  .sm\:focus\:-translate-x-0\.08:focus {
+    --transform-translate-x: -0.08rem;
   }
 
   .sm\:focus\:-translate-x-full:focus {
@@ -43747,6 +44292,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .sm\:focus\:translate-y-0\.08:focus {
+    --transform-translate-y: 0.08rem;
+  }
+
   .sm\:focus\:-translate-y-1:focus {
     --transform-translate-y: -0.25rem;
   }
@@ -43817,6 +44366,10 @@ span.underline:hover {
 
   .sm\:focus\:-translate-y-px:focus {
     --transform-translate-y: -1px;
+  }
+
+  .sm\:focus\:-translate-y-0\.08:focus {
+    --transform-translate-y: -0.08rem;
   }
 
   .sm\:focus\:-translate-y-full:focus {
@@ -44375,6 +44928,18 @@ span.underline:hover {
     margin-left: calc(1px * calc(1 - var(--space-x-reverse)));
   }
 
+  .md\:space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(0.08rem * var(--space-y-reverse));
+  }
+
+  .md\:space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(0.08rem * var(--space-x-reverse));
+    margin-left: calc(0.08rem * calc(1 - var(--space-x-reverse)));
+  }
+
   .md\:-space-y-1 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(-0.25rem * calc(1 - var(--space-y-reverse)));
@@ -44589,6 +45154,18 @@ span.underline:hover {
     --space-x-reverse: 0;
     margin-right: calc(-1px * var(--space-x-reverse));
     margin-left: calc(-1px * calc(1 - var(--space-x-reverse)));
+  }
+
+  .md\:-space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(-0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(-0.08rem * var(--space-y-reverse));
+  }
+
+  .md\:-space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(-0.08rem * var(--space-x-reverse));
+    margin-left: calc(-0.08rem * calc(1 - var(--space-x-reverse)));
   }
 
   .md\:space-y-reverse > :not(template) ~ :not(template) {
@@ -50433,6 +51010,10 @@ span.underline:hover {
     height: 1px;
   }
 
+  .md\:h-0\.08 {
+    height: 0.08rem;
+  }
+
   .md\:h-full {
     height: 100%;
   }
@@ -50637,6 +51218,10 @@ span.underline:hover {
     margin: 1px;
   }
 
+  .md\:m-0\.08 {
+    margin: 0.08rem;
+  }
+
   .md\:-m-1 {
     margin: -0.25rem;
   }
@@ -50707,6 +51292,10 @@ span.underline:hover {
 
   .md\:-m-px {
     margin: -1px;
+  }
+
+  .md\:-m-0\.08 {
+    margin: -0.08rem;
   }
 
   .md\:my-0 {
@@ -50909,6 +51498,16 @@ span.underline:hover {
     margin-right: 1px;
   }
 
+  .md\:my-0\.08 {
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+  }
+
+  .md\:mx-0\.08 {
+    margin-left: 0.08rem;
+    margin-right: 0.08rem;
+  }
+
   .md\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -51087,6 +51686,16 @@ span.underline:hover {
   .md\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .md\:-my-0\.08 {
+    margin-top: -0.08rem;
+    margin-bottom: -0.08rem;
+  }
+
+  .md\:-mx-0\.08 {
+    margin-left: -0.08rem;
+    margin-right: -0.08rem;
   }
 
   .md\:mt-0 {
@@ -51409,6 +52018,22 @@ span.underline:hover {
     margin-left: 1px;
   }
 
+  .md\:mt-0\.08 {
+    margin-top: 0.08rem;
+  }
+
+  .md\:mr-0\.08 {
+    margin-right: 0.08rem;
+  }
+
+  .md\:mb-0\.08 {
+    margin-bottom: 0.08rem;
+  }
+
+  .md\:ml-0\.08 {
+    margin-left: 0.08rem;
+  }
+
   .md\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -51695,6 +52320,22 @@ span.underline:hover {
 
   .md\:-ml-px {
     margin-left: -1px;
+  }
+
+  .md\:-mt-0\.08 {
+    margin-top: -0.08rem;
+  }
+
+  .md\:-mr-0\.08 {
+    margin-right: -0.08rem;
+  }
+
+  .md\:-mb-0\.08 {
+    margin-bottom: -0.08rem;
+  }
+
+  .md\:-ml-0\.08 {
+    margin-left: -0.08rem;
   }
 
   .md\:max-h-full {
@@ -52029,6 +52670,10 @@ span.underline:hover {
     padding: 1px;
   }
 
+  .md\:p-0\.08 {
+    padding: 0.08rem;
+  }
+
   .md\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -52217,6 +52862,16 @@ span.underline:hover {
   .md\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .md\:py-0\.08 {
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+  }
+
+  .md\:px-0\.08 {
+    padding-left: 0.08rem;
+    padding-right: 0.08rem;
   }
 
   .md\:pt-0 {
@@ -52521,6 +53176,22 @@ span.underline:hover {
 
   .md\:pl-px {
     padding-left: 1px;
+  }
+
+  .md\:pt-0\.08 {
+    padding-top: 0.08rem;
+  }
+
+  .md\:pr-0\.08 {
+    padding-right: 0.08rem;
+  }
+
+  .md\:pb-0\.08 {
+    padding-bottom: 0.08rem;
+  }
+
+  .md\:pl-0\.08 {
+    padding-left: 0.08rem;
   }
 
   .md\:placeholder-transparent::placeholder {
@@ -56022,6 +56693,10 @@ span.underline:hover {
     width: 1px;
   }
 
+  .md\:w-0\.08 {
+    width: 0.08rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -56257,6 +56932,11 @@ span.underline:hover {
     gap: 1px;
   }
 
+  .md\:gap-0\.08 {
+    grid-gap: 0.08rem;
+    gap: 0.08rem;
+  }
+
   .md\:col-gap-0 {
     grid-column-gap: 0;
     column-gap: 0;
@@ -56352,6 +57032,11 @@ span.underline:hover {
     column-gap: 1px;
   }
 
+  .md\:col-gap-0\.08 {
+    grid-column-gap: 0.08rem;
+    column-gap: 0.08rem;
+  }
+
   .md\:row-gap-0 {
     grid-row-gap: 0;
     row-gap: 0;
@@ -56445,6 +57130,11 @@ span.underline:hover {
   .md\:row-gap-px {
     grid-row-gap: 1px;
     row-gap: 1px;
+  }
+
+  .md\:row-gap-0\.08 {
+    grid-row-gap: 0.08rem;
+    row-gap: 0.08rem;
   }
 
   .md\:grid-flow-row {
@@ -57400,6 +58090,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .md\:translate-x-0\.08 {
+    --transform-translate-x: 0.08rem;
+  }
+
   .md\:-translate-x-1 {
     --transform-translate-x: -0.25rem;
   }
@@ -57470,6 +58164,10 @@ span.underline:hover {
 
   .md\:-translate-x-px {
     --transform-translate-x: -1px;
+  }
+
+  .md\:-translate-x-0\.08 {
+    --transform-translate-x: -0.08rem;
   }
 
   .md\:-translate-x-full {
@@ -57564,6 +58262,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .md\:translate-y-0\.08 {
+    --transform-translate-y: 0.08rem;
+  }
+
   .md\:-translate-y-1 {
     --transform-translate-y: -0.25rem;
   }
@@ -57634,6 +58336,10 @@ span.underline:hover {
 
   .md\:-translate-y-px {
     --transform-translate-y: -1px;
+  }
+
+  .md\:-translate-y-0\.08 {
+    --transform-translate-y: -0.08rem;
   }
 
   .md\:-translate-y-full {
@@ -57728,6 +58434,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .md\:hover\:translate-x-0\.08:hover {
+    --transform-translate-x: 0.08rem;
+  }
+
   .md\:hover\:-translate-x-1:hover {
     --transform-translate-x: -0.25rem;
   }
@@ -57798,6 +58508,10 @@ span.underline:hover {
 
   .md\:hover\:-translate-x-px:hover {
     --transform-translate-x: -1px;
+  }
+
+  .md\:hover\:-translate-x-0\.08:hover {
+    --transform-translate-x: -0.08rem;
   }
 
   .md\:hover\:-translate-x-full:hover {
@@ -57892,6 +58606,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .md\:hover\:translate-y-0\.08:hover {
+    --transform-translate-y: 0.08rem;
+  }
+
   .md\:hover\:-translate-y-1:hover {
     --transform-translate-y: -0.25rem;
   }
@@ -57962,6 +58680,10 @@ span.underline:hover {
 
   .md\:hover\:-translate-y-px:hover {
     --transform-translate-y: -1px;
+  }
+
+  .md\:hover\:-translate-y-0\.08:hover {
+    --transform-translate-y: -0.08rem;
   }
 
   .md\:hover\:-translate-y-full:hover {
@@ -58056,6 +58778,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .md\:focus\:translate-x-0\.08:focus {
+    --transform-translate-x: 0.08rem;
+  }
+
   .md\:focus\:-translate-x-1:focus {
     --transform-translate-x: -0.25rem;
   }
@@ -58126,6 +58852,10 @@ span.underline:hover {
 
   .md\:focus\:-translate-x-px:focus {
     --transform-translate-x: -1px;
+  }
+
+  .md\:focus\:-translate-x-0\.08:focus {
+    --transform-translate-x: -0.08rem;
   }
 
   .md\:focus\:-translate-x-full:focus {
@@ -58220,6 +58950,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .md\:focus\:translate-y-0\.08:focus {
+    --transform-translate-y: 0.08rem;
+  }
+
   .md\:focus\:-translate-y-1:focus {
     --transform-translate-y: -0.25rem;
   }
@@ -58290,6 +59024,10 @@ span.underline:hover {
 
   .md\:focus\:-translate-y-px:focus {
     --transform-translate-y: -1px;
+  }
+
+  .md\:focus\:-translate-y-0\.08:focus {
+    --transform-translate-y: -0.08rem;
   }
 
   .md\:focus\:-translate-y-full:focus {
@@ -58848,6 +59586,18 @@ span.underline:hover {
     margin-left: calc(1px * calc(1 - var(--space-x-reverse)));
   }
 
+  .lg\:space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(0.08rem * var(--space-y-reverse));
+  }
+
+  .lg\:space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(0.08rem * var(--space-x-reverse));
+    margin-left: calc(0.08rem * calc(1 - var(--space-x-reverse)));
+  }
+
   .lg\:-space-y-1 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(-0.25rem * calc(1 - var(--space-y-reverse)));
@@ -59062,6 +59812,18 @@ span.underline:hover {
     --space-x-reverse: 0;
     margin-right: calc(-1px * var(--space-x-reverse));
     margin-left: calc(-1px * calc(1 - var(--space-x-reverse)));
+  }
+
+  .lg\:-space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(-0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(-0.08rem * var(--space-y-reverse));
+  }
+
+  .lg\:-space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(-0.08rem * var(--space-x-reverse));
+    margin-left: calc(-0.08rem * calc(1 - var(--space-x-reverse)));
   }
 
   .lg\:space-y-reverse > :not(template) ~ :not(template) {
@@ -64906,6 +65668,10 @@ span.underline:hover {
     height: 1px;
   }
 
+  .lg\:h-0\.08 {
+    height: 0.08rem;
+  }
+
   .lg\:h-full {
     height: 100%;
   }
@@ -65110,6 +65876,10 @@ span.underline:hover {
     margin: 1px;
   }
 
+  .lg\:m-0\.08 {
+    margin: 0.08rem;
+  }
+
   .lg\:-m-1 {
     margin: -0.25rem;
   }
@@ -65180,6 +65950,10 @@ span.underline:hover {
 
   .lg\:-m-px {
     margin: -1px;
+  }
+
+  .lg\:-m-0\.08 {
+    margin: -0.08rem;
   }
 
   .lg\:my-0 {
@@ -65382,6 +66156,16 @@ span.underline:hover {
     margin-right: 1px;
   }
 
+  .lg\:my-0\.08 {
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+  }
+
+  .lg\:mx-0\.08 {
+    margin-left: 0.08rem;
+    margin-right: 0.08rem;
+  }
+
   .lg\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -65560,6 +66344,16 @@ span.underline:hover {
   .lg\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .lg\:-my-0\.08 {
+    margin-top: -0.08rem;
+    margin-bottom: -0.08rem;
+  }
+
+  .lg\:-mx-0\.08 {
+    margin-left: -0.08rem;
+    margin-right: -0.08rem;
   }
 
   .lg\:mt-0 {
@@ -65882,6 +66676,22 @@ span.underline:hover {
     margin-left: 1px;
   }
 
+  .lg\:mt-0\.08 {
+    margin-top: 0.08rem;
+  }
+
+  .lg\:mr-0\.08 {
+    margin-right: 0.08rem;
+  }
+
+  .lg\:mb-0\.08 {
+    margin-bottom: 0.08rem;
+  }
+
+  .lg\:ml-0\.08 {
+    margin-left: 0.08rem;
+  }
+
   .lg\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -66168,6 +66978,22 @@ span.underline:hover {
 
   .lg\:-ml-px {
     margin-left: -1px;
+  }
+
+  .lg\:-mt-0\.08 {
+    margin-top: -0.08rem;
+  }
+
+  .lg\:-mr-0\.08 {
+    margin-right: -0.08rem;
+  }
+
+  .lg\:-mb-0\.08 {
+    margin-bottom: -0.08rem;
+  }
+
+  .lg\:-ml-0\.08 {
+    margin-left: -0.08rem;
   }
 
   .lg\:max-h-full {
@@ -66502,6 +67328,10 @@ span.underline:hover {
     padding: 1px;
   }
 
+  .lg\:p-0\.08 {
+    padding: 0.08rem;
+  }
+
   .lg\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -66690,6 +67520,16 @@ span.underline:hover {
   .lg\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .lg\:py-0\.08 {
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+  }
+
+  .lg\:px-0\.08 {
+    padding-left: 0.08rem;
+    padding-right: 0.08rem;
   }
 
   .lg\:pt-0 {
@@ -66994,6 +67834,22 @@ span.underline:hover {
 
   .lg\:pl-px {
     padding-left: 1px;
+  }
+
+  .lg\:pt-0\.08 {
+    padding-top: 0.08rem;
+  }
+
+  .lg\:pr-0\.08 {
+    padding-right: 0.08rem;
+  }
+
+  .lg\:pb-0\.08 {
+    padding-bottom: 0.08rem;
+  }
+
+  .lg\:pl-0\.08 {
+    padding-left: 0.08rem;
   }
 
   .lg\:placeholder-transparent::placeholder {
@@ -70495,6 +71351,10 @@ span.underline:hover {
     width: 1px;
   }
 
+  .lg\:w-0\.08 {
+    width: 0.08rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -70730,6 +71590,11 @@ span.underline:hover {
     gap: 1px;
   }
 
+  .lg\:gap-0\.08 {
+    grid-gap: 0.08rem;
+    gap: 0.08rem;
+  }
+
   .lg\:col-gap-0 {
     grid-column-gap: 0;
     column-gap: 0;
@@ -70825,6 +71690,11 @@ span.underline:hover {
     column-gap: 1px;
   }
 
+  .lg\:col-gap-0\.08 {
+    grid-column-gap: 0.08rem;
+    column-gap: 0.08rem;
+  }
+
   .lg\:row-gap-0 {
     grid-row-gap: 0;
     row-gap: 0;
@@ -70918,6 +71788,11 @@ span.underline:hover {
   .lg\:row-gap-px {
     grid-row-gap: 1px;
     row-gap: 1px;
+  }
+
+  .lg\:row-gap-0\.08 {
+    grid-row-gap: 0.08rem;
+    row-gap: 0.08rem;
   }
 
   .lg\:grid-flow-row {
@@ -71873,6 +72748,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .lg\:translate-x-0\.08 {
+    --transform-translate-x: 0.08rem;
+  }
+
   .lg\:-translate-x-1 {
     --transform-translate-x: -0.25rem;
   }
@@ -71943,6 +72822,10 @@ span.underline:hover {
 
   .lg\:-translate-x-px {
     --transform-translate-x: -1px;
+  }
+
+  .lg\:-translate-x-0\.08 {
+    --transform-translate-x: -0.08rem;
   }
 
   .lg\:-translate-x-full {
@@ -72037,6 +72920,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .lg\:translate-y-0\.08 {
+    --transform-translate-y: 0.08rem;
+  }
+
   .lg\:-translate-y-1 {
     --transform-translate-y: -0.25rem;
   }
@@ -72107,6 +72994,10 @@ span.underline:hover {
 
   .lg\:-translate-y-px {
     --transform-translate-y: -1px;
+  }
+
+  .lg\:-translate-y-0\.08 {
+    --transform-translate-y: -0.08rem;
   }
 
   .lg\:-translate-y-full {
@@ -72201,6 +73092,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .lg\:hover\:translate-x-0\.08:hover {
+    --transform-translate-x: 0.08rem;
+  }
+
   .lg\:hover\:-translate-x-1:hover {
     --transform-translate-x: -0.25rem;
   }
@@ -72271,6 +73166,10 @@ span.underline:hover {
 
   .lg\:hover\:-translate-x-px:hover {
     --transform-translate-x: -1px;
+  }
+
+  .lg\:hover\:-translate-x-0\.08:hover {
+    --transform-translate-x: -0.08rem;
   }
 
   .lg\:hover\:-translate-x-full:hover {
@@ -72365,6 +73264,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .lg\:hover\:translate-y-0\.08:hover {
+    --transform-translate-y: 0.08rem;
+  }
+
   .lg\:hover\:-translate-y-1:hover {
     --transform-translate-y: -0.25rem;
   }
@@ -72435,6 +73338,10 @@ span.underline:hover {
 
   .lg\:hover\:-translate-y-px:hover {
     --transform-translate-y: -1px;
+  }
+
+  .lg\:hover\:-translate-y-0\.08:hover {
+    --transform-translate-y: -0.08rem;
   }
 
   .lg\:hover\:-translate-y-full:hover {
@@ -72529,6 +73436,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .lg\:focus\:translate-x-0\.08:focus {
+    --transform-translate-x: 0.08rem;
+  }
+
   .lg\:focus\:-translate-x-1:focus {
     --transform-translate-x: -0.25rem;
   }
@@ -72599,6 +73510,10 @@ span.underline:hover {
 
   .lg\:focus\:-translate-x-px:focus {
     --transform-translate-x: -1px;
+  }
+
+  .lg\:focus\:-translate-x-0\.08:focus {
+    --transform-translate-x: -0.08rem;
   }
 
   .lg\:focus\:-translate-x-full:focus {
@@ -72693,6 +73608,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .lg\:focus\:translate-y-0\.08:focus {
+    --transform-translate-y: 0.08rem;
+  }
+
   .lg\:focus\:-translate-y-1:focus {
     --transform-translate-y: -0.25rem;
   }
@@ -72763,6 +73682,10 @@ span.underline:hover {
 
   .lg\:focus\:-translate-y-px:focus {
     --transform-translate-y: -1px;
+  }
+
+  .lg\:focus\:-translate-y-0\.08:focus {
+    --transform-translate-y: -0.08rem;
   }
 
   .lg\:focus\:-translate-y-full:focus {
@@ -73321,6 +74244,18 @@ span.underline:hover {
     margin-left: calc(1px * calc(1 - var(--space-x-reverse)));
   }
 
+  .xl\:space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(0.08rem * var(--space-y-reverse));
+  }
+
+  .xl\:space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(0.08rem * var(--space-x-reverse));
+    margin-left: calc(0.08rem * calc(1 - var(--space-x-reverse)));
+  }
+
   .xl\:-space-y-1 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(-0.25rem * calc(1 - var(--space-y-reverse)));
@@ -73535,6 +74470,18 @@ span.underline:hover {
     --space-x-reverse: 0;
     margin-right: calc(-1px * var(--space-x-reverse));
     margin-left: calc(-1px * calc(1 - var(--space-x-reverse)));
+  }
+
+  .xl\:-space-y-0\.08 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(-0.08rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(-0.08rem * var(--space-y-reverse));
+  }
+
+  .xl\:-space-x-0\.08 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(-0.08rem * var(--space-x-reverse));
+    margin-left: calc(-0.08rem * calc(1 - var(--space-x-reverse)));
   }
 
   .xl\:space-y-reverse > :not(template) ~ :not(template) {
@@ -79379,6 +80326,10 @@ span.underline:hover {
     height: 1px;
   }
 
+  .xl\:h-0\.08 {
+    height: 0.08rem;
+  }
+
   .xl\:h-full {
     height: 100%;
   }
@@ -79583,6 +80534,10 @@ span.underline:hover {
     margin: 1px;
   }
 
+  .xl\:m-0\.08 {
+    margin: 0.08rem;
+  }
+
   .xl\:-m-1 {
     margin: -0.25rem;
   }
@@ -79653,6 +80608,10 @@ span.underline:hover {
 
   .xl\:-m-px {
     margin: -1px;
+  }
+
+  .xl\:-m-0\.08 {
+    margin: -0.08rem;
   }
 
   .xl\:my-0 {
@@ -79855,6 +80814,16 @@ span.underline:hover {
     margin-right: 1px;
   }
 
+  .xl\:my-0\.08 {
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+  }
+
+  .xl\:mx-0\.08 {
+    margin-left: 0.08rem;
+    margin-right: 0.08rem;
+  }
+
   .xl\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -80033,6 +81002,16 @@ span.underline:hover {
   .xl\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .xl\:-my-0\.08 {
+    margin-top: -0.08rem;
+    margin-bottom: -0.08rem;
+  }
+
+  .xl\:-mx-0\.08 {
+    margin-left: -0.08rem;
+    margin-right: -0.08rem;
   }
 
   .xl\:mt-0 {
@@ -80355,6 +81334,22 @@ span.underline:hover {
     margin-left: 1px;
   }
 
+  .xl\:mt-0\.08 {
+    margin-top: 0.08rem;
+  }
+
+  .xl\:mr-0\.08 {
+    margin-right: 0.08rem;
+  }
+
+  .xl\:mb-0\.08 {
+    margin-bottom: 0.08rem;
+  }
+
+  .xl\:ml-0\.08 {
+    margin-left: 0.08rem;
+  }
+
   .xl\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -80641,6 +81636,22 @@ span.underline:hover {
 
   .xl\:-ml-px {
     margin-left: -1px;
+  }
+
+  .xl\:-mt-0\.08 {
+    margin-top: -0.08rem;
+  }
+
+  .xl\:-mr-0\.08 {
+    margin-right: -0.08rem;
+  }
+
+  .xl\:-mb-0\.08 {
+    margin-bottom: -0.08rem;
+  }
+
+  .xl\:-ml-0\.08 {
+    margin-left: -0.08rem;
   }
 
   .xl\:max-h-full {
@@ -80975,6 +81986,10 @@ span.underline:hover {
     padding: 1px;
   }
 
+  .xl\:p-0\.08 {
+    padding: 0.08rem;
+  }
+
   .xl\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -81163,6 +82178,16 @@ span.underline:hover {
   .xl\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .xl\:py-0\.08 {
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+  }
+
+  .xl\:px-0\.08 {
+    padding-left: 0.08rem;
+    padding-right: 0.08rem;
   }
 
   .xl\:pt-0 {
@@ -81467,6 +82492,22 @@ span.underline:hover {
 
   .xl\:pl-px {
     padding-left: 1px;
+  }
+
+  .xl\:pt-0\.08 {
+    padding-top: 0.08rem;
+  }
+
+  .xl\:pr-0\.08 {
+    padding-right: 0.08rem;
+  }
+
+  .xl\:pb-0\.08 {
+    padding-bottom: 0.08rem;
+  }
+
+  .xl\:pl-0\.08 {
+    padding-left: 0.08rem;
   }
 
   .xl\:placeholder-transparent::placeholder {
@@ -84968,6 +86009,10 @@ span.underline:hover {
     width: 1px;
   }
 
+  .xl\:w-0\.08 {
+    width: 0.08rem;
+  }
+
   .xl\:w-1\/2 {
     width: 50%;
   }
@@ -85203,6 +86248,11 @@ span.underline:hover {
     gap: 1px;
   }
 
+  .xl\:gap-0\.08 {
+    grid-gap: 0.08rem;
+    gap: 0.08rem;
+  }
+
   .xl\:col-gap-0 {
     grid-column-gap: 0;
     column-gap: 0;
@@ -85298,6 +86348,11 @@ span.underline:hover {
     column-gap: 1px;
   }
 
+  .xl\:col-gap-0\.08 {
+    grid-column-gap: 0.08rem;
+    column-gap: 0.08rem;
+  }
+
   .xl\:row-gap-0 {
     grid-row-gap: 0;
     row-gap: 0;
@@ -85391,6 +86446,11 @@ span.underline:hover {
   .xl\:row-gap-px {
     grid-row-gap: 1px;
     row-gap: 1px;
+  }
+
+  .xl\:row-gap-0\.08 {
+    grid-row-gap: 0.08rem;
+    row-gap: 0.08rem;
   }
 
   .xl\:grid-flow-row {
@@ -86346,6 +87406,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .xl\:translate-x-0\.08 {
+    --transform-translate-x: 0.08rem;
+  }
+
   .xl\:-translate-x-1 {
     --transform-translate-x: -0.25rem;
   }
@@ -86416,6 +87480,10 @@ span.underline:hover {
 
   .xl\:-translate-x-px {
     --transform-translate-x: -1px;
+  }
+
+  .xl\:-translate-x-0\.08 {
+    --transform-translate-x: -0.08rem;
   }
 
   .xl\:-translate-x-full {
@@ -86510,6 +87578,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .xl\:translate-y-0\.08 {
+    --transform-translate-y: 0.08rem;
+  }
+
   .xl\:-translate-y-1 {
     --transform-translate-y: -0.25rem;
   }
@@ -86580,6 +87652,10 @@ span.underline:hover {
 
   .xl\:-translate-y-px {
     --transform-translate-y: -1px;
+  }
+
+  .xl\:-translate-y-0\.08 {
+    --transform-translate-y: -0.08rem;
   }
 
   .xl\:-translate-y-full {
@@ -86674,6 +87750,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .xl\:hover\:translate-x-0\.08:hover {
+    --transform-translate-x: 0.08rem;
+  }
+
   .xl\:hover\:-translate-x-1:hover {
     --transform-translate-x: -0.25rem;
   }
@@ -86744,6 +87824,10 @@ span.underline:hover {
 
   .xl\:hover\:-translate-x-px:hover {
     --transform-translate-x: -1px;
+  }
+
+  .xl\:hover\:-translate-x-0\.08:hover {
+    --transform-translate-x: -0.08rem;
   }
 
   .xl\:hover\:-translate-x-full:hover {
@@ -86838,6 +87922,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .xl\:hover\:translate-y-0\.08:hover {
+    --transform-translate-y: 0.08rem;
+  }
+
   .xl\:hover\:-translate-y-1:hover {
     --transform-translate-y: -0.25rem;
   }
@@ -86908,6 +87996,10 @@ span.underline:hover {
 
   .xl\:hover\:-translate-y-px:hover {
     --transform-translate-y: -1px;
+  }
+
+  .xl\:hover\:-translate-y-0\.08:hover {
+    --transform-translate-y: -0.08rem;
   }
 
   .xl\:hover\:-translate-y-full:hover {
@@ -87002,6 +88094,10 @@ span.underline:hover {
     --transform-translate-x: 1px;
   }
 
+  .xl\:focus\:translate-x-0\.08:focus {
+    --transform-translate-x: 0.08rem;
+  }
+
   .xl\:focus\:-translate-x-1:focus {
     --transform-translate-x: -0.25rem;
   }
@@ -87072,6 +88168,10 @@ span.underline:hover {
 
   .xl\:focus\:-translate-x-px:focus {
     --transform-translate-x: -1px;
+  }
+
+  .xl\:focus\:-translate-x-0\.08:focus {
+    --transform-translate-x: -0.08rem;
   }
 
   .xl\:focus\:-translate-x-full:focus {
@@ -87166,6 +88266,10 @@ span.underline:hover {
     --transform-translate-y: 1px;
   }
 
+  .xl\:focus\:translate-y-0\.08:focus {
+    --transform-translate-y: 0.08rem;
+  }
+
   .xl\:focus\:-translate-y-1:focus {
     --transform-translate-y: -0.25rem;
   }
@@ -87236,6 +88340,10 @@ span.underline:hover {
 
   .xl\:focus\:-translate-y-px:focus {
     --transform-translate-y: -1px;
+  }
+
+  .xl\:focus\:-translate-y-0\.08:focus {
+    --transform-translate-y: -0.08rem;
   }
 
   .xl\:focus\:-translate-y-full:focus {

@@ -17,7 +17,8 @@
 }
 
 .button:hover {
-  @apply opacity-75;
+  @apply transform;
+  @apply scale-105;
 }
 
 .button:focus {
@@ -54,20 +55,18 @@
   right: 10px;
 }
 
+.clossButton:hover {
+  @apply transform;
+  @apply scale-105;
+}
+
 span.underline:hover {
-  color: #00c2ff;
+  @apply text-lightblue;
 }
 
 @screen xl {
   .FormWrapper {
     width: 40%;
-  }
-  .loginFormWrapper__loginForm__notAMember {
-    @apply flex-row;
-    @apply justify-start;
-  }
-  .loginFormWrapper__loginForm__rememberForgetWeapper {
-    @apply flex-row justify-between;
   }
 }
 
@@ -75,24 +74,10 @@ span.underline:hover {
   .FormWrapper {
     width: 50%;
   }
-  .loginFormWrapper__loginForm__notAMember {
-    @apply flex-row;
-    @apply justify-start;
-  }
-  .loginFormWrapper__loginForm__rememberForgetWeapper {
-    @apply flex-row justify-between;
-  }
 }
 
 @screen md {
   .FormWrapper {
     width: 70%;
-  }
-  .loginFormWrapper__loginForm__notAMember {
-    @apply flex-row;
-    @apply justify-start;
-  }
-  .loginFormWrapper__loginForm__rememberForgetWeapper {
-    @apply flex-row justify-between;
   }
 }

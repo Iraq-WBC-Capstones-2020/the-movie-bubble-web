@@ -6,6 +6,9 @@ module.exports = {
         lightblue: '#18A0FB', // an example of extending tailwind
         darkgray: '#1D2530',
       },
+      spacing: {
+        '0.08': '0.08rem',
+      },
     },
     screens: {
       xs: { min: '200px', max: '320px' },
@@ -16,5 +19,14 @@ module.exports = {
     },
   },
   variants: { backgroundColor: ['responsive', 'hover', 'focus', 'active'] },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      const linearColor = {
+        '.main-gradient': {
+          background: 'linear-gradient(270deg, #ffb421 11.7%, #ff7521 90.81%)',
+        },
+      };
+      addComponents(linearColor);
+    },
+  ],
 };
