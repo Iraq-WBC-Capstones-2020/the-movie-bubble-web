@@ -10,15 +10,13 @@
     "framer-motion": "^2.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-icon": "^1.0.0",
     "react-icons": "^3.10.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-test-renderer": "^16.13.1"
   },
   "scripts": {
     "build:css": "postcss src/tailwind.css -o src/index.css",
     "watch:css": "postcss src/tailwind.css -o src/index.css --watch",
-    "env:dev": "cross-env NODE_ENV=development",
-    "env:prod": "cross-env NODE_ENV=production",
     "react-scripts:start": "sleep 5 && react-scripts start",
     "react-scripts:build": "react-scripts build",
     "start": "cross-env NODE_ENV=development run-p watch:css react-scripts:start",
