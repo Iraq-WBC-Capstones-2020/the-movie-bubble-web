@@ -82,6 +82,7 @@ span.underline:hover {
     width: 70%;
   }
 }
+
 .bubble-button path {
   animation: bubblebutton 12s linear infinite;
 }
