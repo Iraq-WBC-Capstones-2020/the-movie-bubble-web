@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RegisterForm from './../RegisterForm/RegisterForm';
+import RegisterForm from './../RegisterForm';
 import '@testing-library/jest-dom/extend-expect';
 
 it('render without crashing', () => {
