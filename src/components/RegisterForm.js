@@ -11,10 +11,10 @@ export default function RegisterForm() {
       <form className="FormWrapper__Form">
         <div className="flex w-2/3 sm:flex-col sm:justify-start xs:flex-col xs:justify-start ">
           <div className="firstnameWapper  w-2/3 sm:w-full xs:w-full ">
-            <Input type="text" placeholder="Firstname" id="firstname"></Input>
+            <Input type="text" placeholder="First Name" id="first Name"></Input>
           </div>
           <div className="lastnameWrapper  w-2/3 sm:w-full xs:w-full ml-12 sm:ml-0 xs:ml-0">
-            <Input type="text" placeholder="Lastname" id="lastname"></Input>
+            <Input type="text" placeholder="Last Name" id="last Name"></Input>
           </div>
         </div>
         <div className=" w-2/3 ">
