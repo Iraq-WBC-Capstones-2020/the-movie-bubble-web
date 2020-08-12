@@ -1,63 +1,76 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import First from './posters/1.jpg';
-import Second from './posters/2.jpg';
-import Third from './posters/3.jpg';
-import Fourth from './posters/4.jpg';
-import './Sliders.css';
+import First from '../../assets/posters/1.jpg';
+import Second from '../../assets/posters/2.jpg';
+import Third from '../../assets/posters/3.jpg';
+import Fourth from '../../assets/posters/4.jpg';
 const Sliders = () => {
   return (
     <>
-      <div className="slider__container hidden lg:flex flex-row ">
+      <div className="slider__container hidden lg:flex flex-row absolute w-1/2 h-full">
         <motion.div
-          animate={{
-            x: 79,
-            y: 16,
+           animate={{
+            x: 79
           }}
-          transition={{ duration: 1 }}
-          className="   first z-40"
+          initial={{
+            x: 0
+          }}
+          transition={{ duration: 1, ease:"easeInOut", delay: 1}}
+          className="   first z-40 mt-4"
         >
-          <div className="shadow bg-gray-400">
-            <img src={First} alt="poster-1" className="poster opacity-75"></img>
+          <div className="shadow shadow-ps rounded-mm bg-gray-400">
+            <img src={First} alt="poster-1" className="poster rounded-mm opacity-75"></img>
           </div>
         </motion.div>
         <motion.div
-          animate={{
+           animate={{
             x: 79,
             y: 16,
             rotate: 6,
           }}
-          transition={{ duration: 1 }}
-          className="second z-30"
+          initial={{
+            x: -150,
+            y:14
+          }}
+          transition={{ duration: 1, ease:"easeInOut",  delay: 1}}
+          className="second z-30 ml-s"
         >
-          <div className="shadow">
-            <img src={Second} alt="poster-2" className="poster"></img>
+          <div className="shadow shadow-ps rounded-mm">
+            <img src={Second} alt="poster-2" className="poster rounded-mm"></img>
           </div>
         </motion.div>
         <motion.div
-          animate={{
+           animate={{
             x: 79,
             y: 38,
             rotate: 16,
           }}
-          transition={{ duration: 1 }}
-          className="third z-20"
+          initial={{
+            x: -270,
+            y:15
+          }}
+          transition={{ duration: 1, ease:"easeInOut", delay: 1}}
+          className="third z-20 ml-t"
         >
-          <div className="shadow">
-            <img src={Third} alt="poster-3" className="poster"></img>
+          <div className="shadow shadow-ps rounded-mm">
+            <img src={Third} alt="poster-3" className="poster rounded-mm "></img>
           </div>
         </motion.div>
         <motion.div
-          animate={{
+           animate={{
             x: 79,
             y: 68,
             rotate: 26,
           }}
-          transition={{ duration: 1 }}
-          className="fourth z-10"
+          initial={{
+            x: -320,
+            y:15
+          }}
+          transition={{ duration: 1,ease:"easeInOut",  delay: 1 }}
+          className="fourth z-10 ml-f"
         >
-          <div className="shadow">
-            <img src={Fourth} alt="poster-4" className="poster"></img>
+          <div className="shadow shadow-ps rounded-mm">
+            <img src={Fourth} alt="poster-4" className="poster rounded-mm"></img>
           </div>
         </motion.div>
       </div>
