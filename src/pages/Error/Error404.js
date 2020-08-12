@@ -3,23 +3,26 @@ import './Error404.css';
 import Minion from './minion.png';
 export default function Error404() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden min-h-screen bg-darkgrey">
       <div className="flex justify-around flex-wrap items-center max-h-screen relative">
         <div>
-          <h1 className=" error-text text-white text-center">
+          <h1 className=" text-15r max-910p:text-10r   text-white text-center">
             4<sppan className="text-orange-gradient">0</sppan>4
           </h1>
           <h2 className="text-6xl text-white text-center">Not Found</h2>
         </div>
-        <img src={Minion} className=" absolute minion z-10" alt="minion img" />
-        <div className="error-bubble-holder">
+        <img
+          src={Minion}
+          className="absolute max-910p:right-auto right-10% max-910p:top-60vh top-auto  w-300p max-910p:w-40% z-10"
+          alt="minion img"
+        />
+        <div className="max-910p:mr-0 -mr-20r max-910p:w-60r w-auto mt-auto max-910p:-mt-10r ">
           <svg
-            className="error-bubble-svg"
+            className="transform rotate-0 mr-10 max-910p:rotate-90 "
             width="50rem"
             height="70rem"
             viewBox="0 0 100% 100%"
             xmlns="http://www.w3.org/2000/svg"
-            // style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
           >
             <defs>
               <linearGradient id="linear-orange-gradient" x1="1" x2="0">

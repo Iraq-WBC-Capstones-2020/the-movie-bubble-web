@@ -1,47 +1,5 @@
-body {
-  min-height: 100vh;
-  background: #1d2530;
-}
-
-.error-text {
-  font-size: 15rem;
-}
-.text-orange-gradient {
-  background: -webkit-linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.error-bubble-holder {
-  margin-right: -20rem;
-}
-.minion {
-  right: 10%;
-  width: 300px;
-}
-
-.error-bubble {
+.error-bubble-path {
   animation: big-bubble-animate 10s linear infinite;
-}
-
-@media only screen and (max-width: 870px) {
-  .error-text {
-    font-size: 10rem;
-    color: white;
-  }
-  .minion {
-    right: auto;
-    width: 40%;
-    top: 60vh;
-  }
-  .error-bubble-svg {
-    transform: rotate(90deg);
-  }
-  .error-bubble-holder {
-    margin-right: 0;
-    width: 60rem;
-    margin-top: -10rem;
-  }
 }
 
 @keyframes big-bubble-animate {
