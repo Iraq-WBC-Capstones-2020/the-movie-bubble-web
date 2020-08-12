@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: false,
   theme: {
     extend: {
       backgroundColor: (theme) => ({
@@ -22,6 +22,19 @@ module.exports = {
       xl: { min: '1301px' },
     },
   },
-  variants: { backgroundColor: ['responsive', 'hover', 'focus', 'active'] },
-  plugins: [],
+
+  variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    scale: ['hover'],
+  },
+  plugins: [
+    function ({ addComponents }) {
+      const buttons = {
+        '.main-gradient': {
+          background: 'linear-gradient(270deg, #ffb421 11.7%, #ff7521 90.81%)',
+        },
+      };
+      addComponents(buttons);
+    },
+  ],
 };
