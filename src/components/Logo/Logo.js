@@ -22,7 +22,7 @@ export default function Logo() {
           </svg>
         </div>
         <img src={camerLogo} alt="Logo" className="w-8 absolute z-10 m-6" />
-        <div className="flex items-center text-2xl  font-bold">
+        <div className="flex items-center text-2xl sm:text-xl font-bold">
           {' '}
           <span style={{ color: '#ED6F18' }}> The&nbsp;</span>{' '}
           <span style={{ color: '#F4A564' }}>Movie&nbsp;</span>{' '}
