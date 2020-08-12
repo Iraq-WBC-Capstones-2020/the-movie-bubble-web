@@ -6,3 +6,15 @@
 /* Override utils here*/
 
 @tailwind utilities;
+
+.gradient-orange {
+  background: linear-gradient(#ff7521, #ffb421);
+}
+.movie-card:hover .movie-card__poster {
+  position: absolute;
+  opacity: 100%;
+}
+
+.movie-card:hover .title-display {
+  display: block;
+}

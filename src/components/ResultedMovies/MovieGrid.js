@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieCard from '../../components/ResultedMovies/MovieCard';
+import PropTypes from 'prop-types';
 export default function MovieGrid() {
   const movieData = [
     {
@@ -47,16 +48,25 @@ export default function MovieGrid() {
   ];
   return (
     <div className="grid justify-center">
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
-        {movieData.map((movieItem, index) => (
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+        {movieData.map((movieItem) => (
           <div
-            key={index}
-            className="flex items-center justify-center gradient-orange w-1/5 h-3/12 borderRadius-10  mb-4 rounded-sm"
+            key={movieItem.id}
+            className="flex items-center justify-center gradient-orange wh  rounded-md"
           >
-            <MovieCard singleMovie={movieItem} />
+            <MovieCard movie={movieItem} />
           </div>
         ))}
       </div>
     </div>
   );
 }
+MovieGrid.propTypes = {
+  movieData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      Title: PropTypes.string,
+      poster_path: PropTypes.string,
+    })
+  ),
+};
