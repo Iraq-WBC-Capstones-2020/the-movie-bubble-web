@@ -1,20 +1,20 @@
-.projector__container{
-    background-image: linear-gradient(90deg, #FFB421, #FF7521  );
-    border-radius: 23%;
-    height: 80vh;
+.projector__container {
+  background-image: linear-gradient(90deg, #ffb421, #ff7521);
+  border-radius: 23%;
+  height: 80vh;
 }
-.camera__light{
-    width: 20vw;
-    height: 60vh;
-    clip-path: polygon(0 50%, 100% 100%, 100% 0);
-    background-color: white
+.camera__light {
+  width: 20vw;
+  height: 60vh;
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  background-color: white;
 }
-.logo{
-    height:100px;
-    width: 100px;
-    margin-top: 85%
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-top: 85%;
 }
-.circle{
-    width: 200px;
-    height: 200px;
+.circle {
+  width: 200px;
+  height: 200px;
 }

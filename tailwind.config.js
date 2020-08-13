@@ -9,7 +9,14 @@ module.exports = {
       spacing: {
         '0.08': '0.08rem',
       },
+      scale: {
+        '300': '3',
+      },
+      height: {
+        '20r': '20rem',
+      },
     },
+
     screens: {
       xs: { min: '200px', max: '320px' },
       sm: { min: '320px', max: '700px' },
@@ -18,7 +25,7 @@ module.exports = {
       xl: { min: '1301px' },
     },
   },
-  variants: { scale: ['hover'] },
+  variants: { scale: ['hover', 'responsive'] },
   plugins: [
     function ({ addComponents }) {
       const buttons = {
