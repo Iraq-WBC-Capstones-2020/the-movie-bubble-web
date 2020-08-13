@@ -34,6 +34,7 @@ module.exports = {
       '60vh': '60vh',
     },
   },
+
   variants: { scale: ['hover'] },
   plugins: [
     function ({ addComponents }) {
@@ -42,6 +43,7 @@ module.exports = {
           background: 'linear-gradient(270deg, #ffb421 11.7%, #ff7521 90.81%)',
         },
       };
+
       addComponents(buttons);
     },
   ],

@@ -1,4 +1,5 @@
 /* purgecss start ignore */
+
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
@@ -6,6 +7,81 @@
 /* Override utils here*/
 
 @tailwind utilities;
+
+.button {
+  @apply rounded-full;
+  @apply px-8;
+  @apply py-2;
+  @apply text-white;
+  @apply shadow-xl;
+  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
+}
+
+.button:hover {
+  @apply transform;
+  @apply scale-105;
+}
+
+.button:focus {
+  @apply shadow-xs;
+  @apply outline-none;
+  @apply transform;
+  @apply translate-y-1;
+}
+
+.FormWrapper {
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply justify-center;
+  @apply w-screen;
+  @apply h-screen;
+  @apply relative;
+  @apply bg-darkgray;
+}
+
+.FormWrapper__Form {
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply justify-center;
+  @apply w-full;
+}
+
+.clossButton {
+  @apply absolute;
+  @apply w-5;
+  @apply h-5;
+  top: 10px;
+  right: 10px;
+}
+
+.clossButton:hover {
+  @apply transform;
+  @apply scale-105;
+}
+
+span.underline:hover {
+  @apply text-lightblue;
+}
+
+@screen xl {
+  .FormWrapper {
+    width: 40%;
+  }
+}
+
+@screen lg {
+  .FormWrapper {
+    width: 50%;
+  }
+}
+
+@screen md {
+  .FormWrapper {
+    width: 70%;
+  }
+}
 
 .bubble-button path {
   animation: bubblebutton 12s linear infinite;
