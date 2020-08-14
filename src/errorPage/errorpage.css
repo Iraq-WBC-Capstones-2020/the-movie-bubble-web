@@ -1,0 +1,53 @@
+.errorPage {
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  top: 20%;
+  transform: translate(-6%, -20%);
+  font-size: 1.5rem;
+  width: 100%;
+  color: #000;
+}
+
+.title > p {
+  margin-right: -5%;
+}
+.errorPage-trouble {
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+.title > ul {
+  list-style: decimal;
+}
+.title > ul,
+.errorPage-trouble {
+  margin-left: 17%;
+  font-size: 1.5rem;
+}
+.title > p span {
+  color: darkorange;
+  font-size: 43px;
+}
+
+.bubble-home-text {
+  left: 33%;
+  margin-top: 3%;
+}
+.bubble-home-text > p > a {
+  color: darkorange;
+}
+
+/* @media screen and (min-width: 601px) {
+    .title {
+      font-size: 20px;
+    }
+  } */
+
+/* @media screen and (max-width: 600px) {
+    .title {
+      font-size: 10px;
+    } */
