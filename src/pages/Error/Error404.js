@@ -6,10 +6,33 @@ export default function Error404() {
     <div className="overflow-hidden min-h-screen bg-darkgrey">
       <div className="flex justify-around flex-wrap items-center max-h-screen relative">
         <div>
-          <h1 className=" text-15r max-910p:text-10r   text-white text-center">
-            4<sppan className="text-orange-gradient">0</sppan>4
-          </h1>
-          <h2 className="text-6xl text-white text-center">Not Found</h2>
+          <div className="w-full text-2xl text-black absolute">
+            <p className="error-p1 text-center  font-sans font-bold lg:text-3xl md:text-xl sm:text-xs overflow-auto">
+              Error<span className="text-orange-600 text-3xl"> 404</span> Page
+              Not Found
+              <br></br> “Oops! Something is broken.”
+            </p>
+
+            <p className="py-2 -mx-48 lg:text-xl md:text-xl sm:text-xs overflow-hidden lg:max-w-3xl md:max-w-2xl sm:max-w-xs">
+              Troubleshooting <br></br>
+              Here are a few things to try:
+            </p>
+            <ul className="-mx-48 list-decimal lg:text-xl md:text-xl sm:text-xs  lg:max-w-3xl md:max-w-xs sm:max-w-xs ">
+              <li>Reload page or even restart your browser</li>
+              <li>Test your net connection (No internet connection)</li>
+              <li>
+                Make sure your security software isn't blocking Movie bubble
+                website
+              </li>
+            </ul>
+
+            <p className="text-2xl my-12 font-sans font-bold">
+              Go back to
+              <a className="text-orange-600" href="#">
+                Home Page
+              </a>
+            </p>
+          </div>
         </div>
         <img
           src={Minion}
