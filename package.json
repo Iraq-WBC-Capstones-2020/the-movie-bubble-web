@@ -8,6 +8,7 @@
     "@testing-library/react": "^10.4.7",
     "@testing-library/user-event": "^7.1.2",
     "framer-motion": "^2.3.0",
+    "aos": "^3.0.0-beta.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
@@ -18,7 +19,9 @@
   "scripts": {
     "build:css": "postcss src/tailwind.css -o src/index.css",
     "watch:css": "postcss src/tailwind.css -o src/index.css --watch",
-    "react-scripts:start": "sleep 5 && react-scripts start",
+    "env:dev": "cross-env NODE_ENV=development",
+    "env:prod": "cross-env NODE_ENV=production",
+    "react-scripts:start": "react-scripts start",
     "react-scripts:build": "react-scripts build",
     "start": "cross-env NODE_ENV=development run-p watch:css react-scripts:start",
     "build": "cross-env NODE_ENV=production run-s build:css react-scripts:build",
