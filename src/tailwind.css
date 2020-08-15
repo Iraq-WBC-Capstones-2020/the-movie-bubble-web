@@ -1,4 +1,5 @@
 /* purgecss start ignore */
+
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
@@ -6,3 +7,117 @@
 /* Override utils here*/
 
 @tailwind utilities;
+
+.gradient-orange {
+  background: linear-gradient(#ff7521, #ffb421);
+}
+.movie-card:hover .movie-card__poster {
+  position: absolute;
+  opacity: 100%;
+}
+
+.movie-card:hover .title-display {
+  display: block;
+}
+
+.button {
+  @apply rounded-full;
+  @apply px-8;
+  @apply py-2;
+  @apply text-white;
+  @apply shadow-xl;
+  background: linear-gradient(270deg, #ff7521 11.7%, #ffb421 90.81%);
+}
+
+.button:hover {
+  @apply transform;
+  @apply scale-105;
+}
+
+.button:focus {
+  @apply shadow-xs;
+  @apply outline-none;
+  @apply transform;
+  @apply translate-y-1;
+}
+
+.FormWrapper {
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply justify-center;
+  @apply w-screen;
+  @apply h-screen;
+  @apply relative;
+  @apply bg-darkgray;
+}
+
+.FormWrapper__Form {
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply justify-center;
+  @apply w-full;
+}
+
+.clossButton {
+  @apply absolute;
+  @apply w-5;
+  @apply h-5;
+  top: 10px;
+  right: 10px;
+}
+
+.clossButton:hover {
+  @apply transform;
+  @apply scale-105;
+}
+
+span.underline:hover {
+  @apply text-lightblue;
+}
+
+@screen xl {
+  .FormWrapper {
+    width: 40%;
+  }
+}
+
+@screen lg {
+  .FormWrapper {
+    width: 50%;
+  }
+}
+
+@screen md {
+  .FormWrapper {
+    width: 70%;
+  }
+}
+
+.bubble-button path {
+  animation: bubblebutton 12s linear infinite;
+}
+@keyframes bubblebutton {
+  0% {
+    d: path(
+      'M55.7,-42.5C68.5,-28.4,72.6,-5.5,67,13.9C61.5,33.2,46.3,48.9,28.6,56.3C10.9,63.6,-9.4,62.6,-30.6,55.5C-51.9,48.4,-74.2,35.2,-80.5,15.9C-86.9,-3.4,-77.3,-28.7,-61.3,-43.5C-45.2,-58.4,-22.6,-62.7,-0.6,-62.2C21.5,-61.8,42.9,-56.6,55.7,-42.5Z'
+    );
+  }
+
+  50% {
+    d: path(
+      'M52.9,-40.2C67.5,-23.9,77.5,-2,74,18.3C70.5,38.7,53.6,57.3,34,64.5C14.3,71.6,-7.9,67.1,-26.8,57.4C-45.7,47.6,-61.1,32.6,-63.5,16.2C-65.8,-0.1,-55.1,-17.7,-42.3,-33.5C-29.5,-49.4,-14.8,-63.4,2.2,-65.2C19.2,-66.9,38.3,-56.4,52.9,-40.2Z'
+    );
+  }
+  75% {
+    d: path(
+      'M55.8,-44.9C67.5,-29.9,68.8,-6.9,63.1,13C57.5,33,44.9,50,27,60.1C9.2,70.2,-13.9,73.4,-29.5,64.6C-45.1,55.8,-53.3,34.9,-56.8,14.4C-60.3,-6.1,-59.1,-26.1,-48.9,-40.9C-38.6,-55.6,-19.3,-65.1,1.4,-66.2C22.1,-67.3,44.1,-60,55.8,-44.9Z'
+    );
+  }
+  100% {
+    d: path(
+      'M55.7,-42.5C68.5,-28.4,72.6,-5.5,67,13.9C61.5,33.2,46.3,48.9,28.6,56.3C10.9,63.6,-9.4,62.6,-30.6,55.5C-51.9,48.4,-74.2,35.2,-80.5,15.9C-86.9,-3.4,-77.3,-28.7,-61.3,-43.5C-45.2,-58.4,-22.6,-62.7,-0.6,-62.2C21.5,-61.8,42.9,-56.6,55.7,-42.5Z'
+    );
+  }
+}
