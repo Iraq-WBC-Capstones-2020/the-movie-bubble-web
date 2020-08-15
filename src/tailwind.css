@@ -18,6 +18,8 @@
 
 .movie-card:hover .title-display {
   display: block;
+}
+
 .button {
   @apply rounded-full;
   @apply px-8;
