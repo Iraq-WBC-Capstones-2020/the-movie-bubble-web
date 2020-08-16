@@ -25,5 +25,9 @@ function Questions() {
     </div>
   );
 }
+Questions.prototype = {
+  questionindex: PropTypes.object.isRequired,
+  result: PropTypes.func.isRequired,
+};
 
 export default Questions;
