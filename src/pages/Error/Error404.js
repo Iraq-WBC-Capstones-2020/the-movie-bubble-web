@@ -4,36 +4,35 @@ import Minion from './minion.png';
 export default function Error404() {
   return (
     <div className="overflow-hidden min-h-screen bg-darkgrey">
-      <div className="flex justify-around flex-wrap items-center max-h-screen relative">
-        <div>
-          <div className="w-full text-2xl text-black absolute">
-            <p className="error-p1 text-center  font-sans font-bold lg:text-3xl md:text-xl sm:text-xs overflow-auto">
-              Error<span className="text-orange-600 text-3xl"> 404</span> Page
-              Not Found
-              <br></br> “Oops! Something is broken.”
-            </p>
+      <div className="flex flex-around flex-warp items-center max-h-screen relative">
+      <div >
+      <p className="text-center font-sans font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl  sm:mr-24 md:mb-32 lg:ml-40 xl:mx-48">
+        Error<span className="text-orange-600 text-3xl"> 404</span> Page
+        Not Found
+        <br></br>“Oops! Something is broken.”
+      </p>
+      <div className="mr-8 sm:mr-24 md:mb-32 lg:ml-32 xl:mx-32 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+      <p className="py-2 text-2xl ">
+        Troubleshooting <br></br>
+        Here are a few things to try:
+      </p>
 
-            <p className="py-2 -mx-48 lg:text-xl md:text-xl sm:text-xs overflow-hidden lg:max-w-3xl md:max-w-2xl sm:max-w-xs">
-              Troubleshooting <br></br>
-              Here are a few things to try:
-            </p>
-            <ul className="-mx-48 list-decimal lg:text-xl md:text-xl sm:text-xs  lg:max-w-3xl md:max-w-xs sm:max-w-xs ">
-              <li>Reload page or even restart your browser</li>
-              <li>Test your net connection (No internet connection)</li>
-              <li>
-                Make sure your security software isn't blocking Movie bubble
-                website
-              </li>
-            </ul>
+      <ul className=" list-decimal text-xl overflow-visible">
+        <li>Reload page or even restart your browser</li>
+        <li>Test your net connection (No internet connection)</li>
+        <li>
+          Make sure your security software isn't blocking Movie bubble
+          website
+        </li>
+      </ul>
 
-            <p className="text-2xl my-12 font-sans font-bold">
-              Go back to
-              <a className="text-orange-600" href="#">
-                Home Page
-              </a>
-            </p>
-          </div>
-        </div>
+      <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl py-3 xl:mx-1 font-sans font-bold">
+        Go back to <a className="text-orange-600" href="#"> Home Page
+        </a>
+      </p>
+      </div>
+    </div>
+
         <img
           src={Minion}
           className="absolute max-910p:right-auto right-10% max-910p:top-60vh top-auto  w-300p max-910p:w-40% z-10"

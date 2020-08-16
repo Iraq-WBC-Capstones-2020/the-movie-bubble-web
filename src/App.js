@@ -18,7 +18,6 @@ function App() {
           <Route component={Error404} />
         </Switch>
       </BrowserRouter>
-      <Error404 />
     </>
   );
 }

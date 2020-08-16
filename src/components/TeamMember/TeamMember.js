@@ -7,7 +7,7 @@ export default function TeamMember({ isRight, name, role, image }) {
     return (
       <div className="teammember w-full flex overflow-hidden mt-10">
         <div className="member-img h-full" data-aos="fade-right">
-          <img className="w-full lg:w-6/12 sm:w-full" alt="" src={image}></img>
+          <img className="w-full lg:w-6/12 sm:w-full" alt="team member" src={image}></img>
         </div>
         <div
           className="member-caption flex flex-col justify-center items-center"
