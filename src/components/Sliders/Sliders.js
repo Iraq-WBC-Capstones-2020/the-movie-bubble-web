@@ -18,8 +18,8 @@ const Sliders = () => {
           transition={{ duration: 1, ease:"easeInOut", delay: 1}}
           className="   first z-40 mt-4"
         >
-          <div className="shadow shadow-ps rounded-mm bg-gray-400">
-            <img src={First} alt="poster-1" className="poster rounded-mm opacity-75"></img>
+          <div className="shadow shadow-3xl rounded-20 bg-gray-400">
+            <img src={First} alt="poster-1" className="poster rounded-20 opacity-75"></img>
           </div>
         </motion.div>
         <motion.div
@@ -33,10 +33,10 @@ const Sliders = () => {
             y:14
           }}
           transition={{ duration: 1, ease:"easeInOut",  delay: 1}}
-          className="second z-30 ml-s"
+          className="second z-30 -ml-48"
         >
-          <div className="shadow shadow-ps rounded-mm">
-            <img src={Second} alt="poster-2" className="poster rounded-mm"></img>
+          <div className="shadow shadow-3xl rounded-20">
+            <img src={Second} alt="poster-2" className="poster rounded-20"></img>
           </div>
         </motion.div>
         <motion.div
@@ -50,10 +50,10 @@ const Sliders = () => {
             y:15
           }}
           transition={{ duration: 1, ease:"easeInOut", delay: 1}}
-          className="third z-20 ml-t"
+          className="third z-20 -ml-56"
         >
-          <div className="shadow shadow-ps rounded-mm">
-            <img src={Third} alt="poster-3" className="poster rounded-mm "></img>
+          <div className="shadow shadow-3xl rounded-20">
+            <img src={Third} alt="poster-3" className="poster rounded-20 "></img>
           </div>
         </motion.div>
         <motion.div
@@ -67,10 +67,10 @@ const Sliders = () => {
             y:15
           }}
           transition={{ duration: 1,ease:"easeInOut",  delay: 1 }}
-          className="fourth z-10 ml-f"
+          className="fourth z-10 -ml-64"
         >
-          <div className="shadow shadow-ps rounded-mm">
-            <img src={Fourth} alt="poster-4" className="poster rounded-mm"></img>
+          <div className="shadow shadow-3xl rounded-20">
+            <img src={Fourth} alt="poster-4" className="poster rounded-20"></img>
           </div>
         </motion.div>
       </div>
