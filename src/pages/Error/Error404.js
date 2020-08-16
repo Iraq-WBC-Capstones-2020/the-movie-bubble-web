@@ -7,7 +7,7 @@ export default function Error404() {
       <div className="flex justify-around flex-wrap items-center max-h-screen relative">
         <div>
           <h1 className=" text-15r max-910p:text-10r   text-white text-center">
-            4<sppan className="text-orange-gradient">0</sppan>4
+            4<span className="text-orange-gradient">0</span>4
           </h1>
           <h2 className="text-6xl text-white text-center">Not Found</h2>
         </div>

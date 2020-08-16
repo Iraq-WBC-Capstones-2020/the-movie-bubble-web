@@ -2,10 +2,6 @@ module.exports = {
   purge: false,
   theme: {
     extend: {
-      backgroundColor: (theme) => ({
-        ' linearorange':
-          'linear-gradient(270deg, #FF7521 11.7%, #FFB421 90.81%)',
-      }),
       colors: {
         lightblue: '#18A0FB', // an example of extending tailwind
         darkgray: '#1D2530',
@@ -23,6 +19,12 @@ module.exports = {
         '300p': '300px',
         '40%': '40%',
         '60r': '60rem',
+      },
+      minHeight: {
+        '10': '2.5rem',
+      },
+      minWidth: {
+        '20': '7rem',
       },
     },
     screens: {

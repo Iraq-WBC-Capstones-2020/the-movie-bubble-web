@@ -1,68 +1,82 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Answers from './Answers';
 import PropTypes from 'prop-types';
-function Questions({ question }) {
+function Questions({ question, result }) {
+  const [index, setIndex] = useState(1);
+  console.log(question[index].question);
   return (
     <div className="flex flex-col bg-darkgray w-full justify-center items-center">
-      <div className="imgWrapper flex ">
-        <img src={question.image} alt="question" className="flex" />
+      <div className="imgWrapper flex w-64 h-64">
+        <img src={question[index].image} alt="question" className="flex" />
       </div>
       <div className="flex content-center text-white p-5">
         <span className="sm:text-2xl md:text-2xl text-3xl md:px-24 xs:text-xl lg:px-32 xl:px-48 text-center">
-          {question.question}
+          {question[index].question}
         </span>
       </div>
-      <div className="w-full flex justify-center flex-wrap xl:flex-col xl:items-center">
-        {question.includeImage && (
+      <div className="flex justify-center w-full">
+        <div className="grid md:grid-cols-2 md:col-gap-32 lg:grid-cols-2 lg:col-gap-56 xl:grid-cols-2 xl:col-gap-64 w-5/6  row-gap-10">
+          {question[index].answers.map((element) => (
+            <Answers
+              answer={element.ans}
+              image={question[index].includeImage}
+              index={index}
+              questionVal={element.val}
+              result={result}
+            />
+          ))}
+        </div>
+
+        {/* {!question[index].includeImage && (
           <>
-            <div className="w-2/3 xl:w-1/2 flex flex-col  items-center md:justify-between md:flex-row lg:justify-between lg:flex-row xl:justify-between xl:flex-row mt-5">
-              <Answers
-                answer={question.answer[0].ans}
-                image={true}
-                className=" h-56 md:mr-5"
+            <div className="grid md:grid-cols-2 md:col-gap-32 lg:grid-cols-2 lg:col-gap-56 xl:grid-cols-2 xl:col-gap-64 w-5/6  row-gap-10">
+              {question[index].answers.map((element) => (
+                <Answers
+                  answer={element.ans}
+                  image={false}
+                  className=""
+                  index={index}
+                  questionVal={element.val}
+                />
+              ))} */}
+        {/* <Answers
+                answer={question[index].answers[0].ans}
+                image={false}
+                className=""
+                index={index}
+                questionVal={question[index].answers[0].val}
               />
               <Answers
-                answer={question.answer[1].ans}
-                image={true}
-                className="  h-56 xs:mt-5 sm:mt-5 md:ml-5"
+                answer={question[index].answers[0].ans}
+                image={false}
+                className=""
+                index={index}
+                questionVal={question[index].answers[0].val}
               />
-            </div>
+              <Answers
+                answer={question[index].answers[0].ans}
+                image={false}
+                className=""
+                index={index}
+                questionVal={question[index].answers[0].val}
+              />
+              <Answers
+                answer={question[index].answers[0].ans}
+                image={false}
+                className=""
+                index={index}
+                questionVal={question[index].answers[0].val}
+              /> */}
+        {/* </div>
           </>
-        )}
+        )} */}
       </div>
-      {!question.includeImage && (
-        <>
-          <div className="w-2/3 xl:w-1/2 flex flex-col  items-center md:justify-between md:flex-row lg:justify-between lg:flex-row xl:justify-between xl:flex-row mt-5">
-            <Answers
-              answer={question.answer[0].ans}
-              image={false}
-              className="md:mr-5"
-            />
-            <Answers
-              answer={question.answer[1].ans}
-              image={false}
-              className="xs:mt-5 sm:mt-5 md:ml-5"
-            />
-          </div>
-          <div className="w-2/3 xl:w-1/2 flex flex-col  items-center md:justify-between md:flex-row lg:justify-between lg:flex-row xl:justify-between xl:flex-row mt-5">
-            <Answers
-              answer={question.answer[2].ans}
-              image={false}
-              className="md:mr-5"
-            />
-            <Answers
-              answer={question.answer[3].ans}
-              image={false}
-              className="xs:mt-5 md:ml-5 sm:mt-5"
-            />
-          </div>
-        </>
-      )}
     </div>
   );
 }
 Questions.prototype = {
-  question1: PropTypes.object.isRequired,
+  questionindex: PropTypes.object.isRequired,
+  result: PropTypes.func.isRequired,
 };
 
 export default Questions;
