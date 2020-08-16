@@ -6415,6 +6415,10 @@ video {
   height: 100vh;
 }
 
+.h-20r {
+  height: 20rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
 }
@@ -13227,6 +13231,11 @@ video {
   --transform-scale-y: 1.5;
 }
 
+.scale-300 {
+  --transform-scale-x: 3;
+  --transform-scale-y: 3;
+}
+
 .scale-x-0 {
   --transform-scale-x: 0;
 }
@@ -13267,6 +13276,10 @@ video {
   --transform-scale-x: 1.5;
 }
 
+.scale-x-300 {
+  --transform-scale-x: 3;
+}
+
 .scale-y-0 {
   --transform-scale-y: 0;
 }
@@ -13305,6 +13318,10 @@ video {
 
 .scale-y-150 {
   --transform-scale-y: 1.5;
+}
+
+.scale-y-300 {
+  --transform-scale-y: 3;
 }
 
 .hover\:scale-0:hover {
@@ -13357,6 +13374,11 @@ video {
   --transform-scale-y: 1.5;
 }
 
+.hover\:scale-300:hover {
+  --transform-scale-x: 3;
+  --transform-scale-y: 3;
+}
+
 .hover\:scale-x-0:hover {
   --transform-scale-x: 0;
 }
@@ -13397,6 +13419,10 @@ video {
   --transform-scale-x: 1.5;
 }
 
+.hover\:scale-x-300:hover {
+  --transform-scale-x: 3;
+}
+
 .hover\:scale-y-0:hover {
   --transform-scale-y: 0;
 }
@@ -13435,6 +13461,10 @@ video {
 
 .hover\:scale-y-150:hover {
   --transform-scale-y: 1.5;
+}
+
+.hover\:scale-y-300:hover {
+  --transform-scale-y: 3;
 }
 
 .rotate-0 {
@@ -14963,6 +14993,19 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+.gradient-orange {
+  background: linear-gradient(#ff7521, #ffb421);
+}
+
+.movie-card:hover .movie-card__poster {
+  position: absolute;
+  opacity: 100%;
+}
+
+.movie-card:hover .title-display {
+  display: block;
 }
 
 .button {
@@ -20928,6 +20971,10 @@ span.underline:hover {
 
   .xs\:h-screen {
     height: 100vh;
+  }
+
+  .xs\:h-20r {
+    height: 20rem;
   }
 
   .xs\:text-xs {
@@ -27690,6 +27737,292 @@ span.underline:hover {
 
   .xs\:origin-top-left {
     transform-origin: top left;
+  }
+
+  .xs\:scale-0 {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .xs\:scale-50 {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .xs\:scale-75 {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .xs\:scale-90 {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .xs\:scale-95 {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .xs\:scale-100 {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .xs\:scale-105 {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .xs\:scale-110 {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .xs\:scale-125 {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .xs\:scale-150 {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .xs\:scale-300 {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .xs\:scale-x-0 {
+    --transform-scale-x: 0;
+  }
+
+  .xs\:scale-x-50 {
+    --transform-scale-x: .5;
+  }
+
+  .xs\:scale-x-75 {
+    --transform-scale-x: .75;
+  }
+
+  .xs\:scale-x-90 {
+    --transform-scale-x: .9;
+  }
+
+  .xs\:scale-x-95 {
+    --transform-scale-x: .95;
+  }
+
+  .xs\:scale-x-100 {
+    --transform-scale-x: 1;
+  }
+
+  .xs\:scale-x-105 {
+    --transform-scale-x: 1.05;
+  }
+
+  .xs\:scale-x-110 {
+    --transform-scale-x: 1.1;
+  }
+
+  .xs\:scale-x-125 {
+    --transform-scale-x: 1.25;
+  }
+
+  .xs\:scale-x-150 {
+    --transform-scale-x: 1.5;
+  }
+
+  .xs\:scale-x-300 {
+    --transform-scale-x: 3;
+  }
+
+  .xs\:scale-y-0 {
+    --transform-scale-y: 0;
+  }
+
+  .xs\:scale-y-50 {
+    --transform-scale-y: .5;
+  }
+
+  .xs\:scale-y-75 {
+    --transform-scale-y: .75;
+  }
+
+  .xs\:scale-y-90 {
+    --transform-scale-y: .9;
+  }
+
+  .xs\:scale-y-95 {
+    --transform-scale-y: .95;
+  }
+
+  .xs\:scale-y-100 {
+    --transform-scale-y: 1;
+  }
+
+  .xs\:scale-y-105 {
+    --transform-scale-y: 1.05;
+  }
+
+  .xs\:scale-y-110 {
+    --transform-scale-y: 1.1;
+  }
+
+  .xs\:scale-y-125 {
+    --transform-scale-y: 1.25;
+  }
+
+  .xs\:scale-y-150 {
+    --transform-scale-y: 1.5;
+  }
+
+  .xs\:scale-y-300 {
+    --transform-scale-y: 3;
+  }
+
+  .xs\:hover\:scale-0:hover {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .xs\:hover\:scale-50:hover {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .xs\:hover\:scale-75:hover {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .xs\:hover\:scale-90:hover {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .xs\:hover\:scale-95:hover {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .xs\:hover\:scale-100:hover {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .xs\:hover\:scale-105:hover {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .xs\:hover\:scale-110:hover {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .xs\:hover\:scale-125:hover {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .xs\:hover\:scale-150:hover {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .xs\:hover\:scale-300:hover {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .xs\:hover\:scale-x-0:hover {
+    --transform-scale-x: 0;
+  }
+
+  .xs\:hover\:scale-x-50:hover {
+    --transform-scale-x: .5;
+  }
+
+  .xs\:hover\:scale-x-75:hover {
+    --transform-scale-x: .75;
+  }
+
+  .xs\:hover\:scale-x-90:hover {
+    --transform-scale-x: .9;
+  }
+
+  .xs\:hover\:scale-x-95:hover {
+    --transform-scale-x: .95;
+  }
+
+  .xs\:hover\:scale-x-100:hover {
+    --transform-scale-x: 1;
+  }
+
+  .xs\:hover\:scale-x-105:hover {
+    --transform-scale-x: 1.05;
+  }
+
+  .xs\:hover\:scale-x-110:hover {
+    --transform-scale-x: 1.1;
+  }
+
+  .xs\:hover\:scale-x-125:hover {
+    --transform-scale-x: 1.25;
+  }
+
+  .xs\:hover\:scale-x-150:hover {
+    --transform-scale-x: 1.5;
+  }
+
+  .xs\:hover\:scale-x-300:hover {
+    --transform-scale-x: 3;
+  }
+
+  .xs\:hover\:scale-y-0:hover {
+    --transform-scale-y: 0;
+  }
+
+  .xs\:hover\:scale-y-50:hover {
+    --transform-scale-y: .5;
+  }
+
+  .xs\:hover\:scale-y-75:hover {
+    --transform-scale-y: .75;
+  }
+
+  .xs\:hover\:scale-y-90:hover {
+    --transform-scale-y: .9;
+  }
+
+  .xs\:hover\:scale-y-95:hover {
+    --transform-scale-y: .95;
+  }
+
+  .xs\:hover\:scale-y-100:hover {
+    --transform-scale-y: 1;
+  }
+
+  .xs\:hover\:scale-y-105:hover {
+    --transform-scale-y: 1.05;
+  }
+
+  .xs\:hover\:scale-y-110:hover {
+    --transform-scale-y: 1.1;
+  }
+
+  .xs\:hover\:scale-y-125:hover {
+    --transform-scale-y: 1.25;
+  }
+
+  .xs\:hover\:scale-y-150:hover {
+    --transform-scale-y: 1.5;
+  }
+
+  .xs\:hover\:scale-y-300:hover {
+    --transform-scale-y: 3;
   }
 
   .xs\:rotate-0 {
@@ -35006,6 +35339,10 @@ span.underline:hover {
     height: 100vh;
   }
 
+  .sm\:h-20r {
+    height: 20rem;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
   }
@@ -41766,6 +42103,292 @@ span.underline:hover {
 
   .sm\:origin-top-left {
     transform-origin: top left;
+  }
+
+  .sm\:scale-0 {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .sm\:scale-50 {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .sm\:scale-75 {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .sm\:scale-90 {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .sm\:scale-95 {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .sm\:scale-100 {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .sm\:scale-105 {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .sm\:scale-110 {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .sm\:scale-125 {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .sm\:scale-150 {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .sm\:scale-300 {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .sm\:scale-x-0 {
+    --transform-scale-x: 0;
+  }
+
+  .sm\:scale-x-50 {
+    --transform-scale-x: .5;
+  }
+
+  .sm\:scale-x-75 {
+    --transform-scale-x: .75;
+  }
+
+  .sm\:scale-x-90 {
+    --transform-scale-x: .9;
+  }
+
+  .sm\:scale-x-95 {
+    --transform-scale-x: .95;
+  }
+
+  .sm\:scale-x-100 {
+    --transform-scale-x: 1;
+  }
+
+  .sm\:scale-x-105 {
+    --transform-scale-x: 1.05;
+  }
+
+  .sm\:scale-x-110 {
+    --transform-scale-x: 1.1;
+  }
+
+  .sm\:scale-x-125 {
+    --transform-scale-x: 1.25;
+  }
+
+  .sm\:scale-x-150 {
+    --transform-scale-x: 1.5;
+  }
+
+  .sm\:scale-x-300 {
+    --transform-scale-x: 3;
+  }
+
+  .sm\:scale-y-0 {
+    --transform-scale-y: 0;
+  }
+
+  .sm\:scale-y-50 {
+    --transform-scale-y: .5;
+  }
+
+  .sm\:scale-y-75 {
+    --transform-scale-y: .75;
+  }
+
+  .sm\:scale-y-90 {
+    --transform-scale-y: .9;
+  }
+
+  .sm\:scale-y-95 {
+    --transform-scale-y: .95;
+  }
+
+  .sm\:scale-y-100 {
+    --transform-scale-y: 1;
+  }
+
+  .sm\:scale-y-105 {
+    --transform-scale-y: 1.05;
+  }
+
+  .sm\:scale-y-110 {
+    --transform-scale-y: 1.1;
+  }
+
+  .sm\:scale-y-125 {
+    --transform-scale-y: 1.25;
+  }
+
+  .sm\:scale-y-150 {
+    --transform-scale-y: 1.5;
+  }
+
+  .sm\:scale-y-300 {
+    --transform-scale-y: 3;
+  }
+
+  .sm\:hover\:scale-0:hover {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .sm\:hover\:scale-50:hover {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .sm\:hover\:scale-75:hover {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .sm\:hover\:scale-90:hover {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .sm\:hover\:scale-95:hover {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .sm\:hover\:scale-100:hover {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .sm\:hover\:scale-105:hover {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .sm\:hover\:scale-110:hover {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .sm\:hover\:scale-125:hover {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .sm\:hover\:scale-150:hover {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .sm\:hover\:scale-300:hover {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .sm\:hover\:scale-x-0:hover {
+    --transform-scale-x: 0;
+  }
+
+  .sm\:hover\:scale-x-50:hover {
+    --transform-scale-x: .5;
+  }
+
+  .sm\:hover\:scale-x-75:hover {
+    --transform-scale-x: .75;
+  }
+
+  .sm\:hover\:scale-x-90:hover {
+    --transform-scale-x: .9;
+  }
+
+  .sm\:hover\:scale-x-95:hover {
+    --transform-scale-x: .95;
+  }
+
+  .sm\:hover\:scale-x-100:hover {
+    --transform-scale-x: 1;
+  }
+
+  .sm\:hover\:scale-x-105:hover {
+    --transform-scale-x: 1.05;
+  }
+
+  .sm\:hover\:scale-x-110:hover {
+    --transform-scale-x: 1.1;
+  }
+
+  .sm\:hover\:scale-x-125:hover {
+    --transform-scale-x: 1.25;
+  }
+
+  .sm\:hover\:scale-x-150:hover {
+    --transform-scale-x: 1.5;
+  }
+
+  .sm\:hover\:scale-x-300:hover {
+    --transform-scale-x: 3;
+  }
+
+  .sm\:hover\:scale-y-0:hover {
+    --transform-scale-y: 0;
+  }
+
+  .sm\:hover\:scale-y-50:hover {
+    --transform-scale-y: .5;
+  }
+
+  .sm\:hover\:scale-y-75:hover {
+    --transform-scale-y: .75;
+  }
+
+  .sm\:hover\:scale-y-90:hover {
+    --transform-scale-y: .9;
+  }
+
+  .sm\:hover\:scale-y-95:hover {
+    --transform-scale-y: .95;
+  }
+
+  .sm\:hover\:scale-y-100:hover {
+    --transform-scale-y: 1;
+  }
+
+  .sm\:hover\:scale-y-105:hover {
+    --transform-scale-y: 1.05;
+  }
+
+  .sm\:hover\:scale-y-110:hover {
+    --transform-scale-y: 1.1;
+  }
+
+  .sm\:hover\:scale-y-125:hover {
+    --transform-scale-y: 1.25;
+  }
+
+  .sm\:hover\:scale-y-150:hover {
+    --transform-scale-y: 1.5;
+  }
+
+  .sm\:hover\:scale-y-300:hover {
+    --transform-scale-y: 3;
   }
 
   .sm\:rotate-0 {
@@ -49082,6 +49705,10 @@ span.underline:hover {
     height: 100vh;
   }
 
+  .md\:h-20r {
+    height: 20rem;
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
   }
@@ -55842,6 +56469,292 @@ span.underline:hover {
 
   .md\:origin-top-left {
     transform-origin: top left;
+  }
+
+  .md\:scale-0 {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .md\:scale-50 {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .md\:scale-75 {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .md\:scale-90 {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .md\:scale-95 {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .md\:scale-100 {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .md\:scale-105 {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .md\:scale-110 {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .md\:scale-125 {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .md\:scale-150 {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .md\:scale-300 {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .md\:scale-x-0 {
+    --transform-scale-x: 0;
+  }
+
+  .md\:scale-x-50 {
+    --transform-scale-x: .5;
+  }
+
+  .md\:scale-x-75 {
+    --transform-scale-x: .75;
+  }
+
+  .md\:scale-x-90 {
+    --transform-scale-x: .9;
+  }
+
+  .md\:scale-x-95 {
+    --transform-scale-x: .95;
+  }
+
+  .md\:scale-x-100 {
+    --transform-scale-x: 1;
+  }
+
+  .md\:scale-x-105 {
+    --transform-scale-x: 1.05;
+  }
+
+  .md\:scale-x-110 {
+    --transform-scale-x: 1.1;
+  }
+
+  .md\:scale-x-125 {
+    --transform-scale-x: 1.25;
+  }
+
+  .md\:scale-x-150 {
+    --transform-scale-x: 1.5;
+  }
+
+  .md\:scale-x-300 {
+    --transform-scale-x: 3;
+  }
+
+  .md\:scale-y-0 {
+    --transform-scale-y: 0;
+  }
+
+  .md\:scale-y-50 {
+    --transform-scale-y: .5;
+  }
+
+  .md\:scale-y-75 {
+    --transform-scale-y: .75;
+  }
+
+  .md\:scale-y-90 {
+    --transform-scale-y: .9;
+  }
+
+  .md\:scale-y-95 {
+    --transform-scale-y: .95;
+  }
+
+  .md\:scale-y-100 {
+    --transform-scale-y: 1;
+  }
+
+  .md\:scale-y-105 {
+    --transform-scale-y: 1.05;
+  }
+
+  .md\:scale-y-110 {
+    --transform-scale-y: 1.1;
+  }
+
+  .md\:scale-y-125 {
+    --transform-scale-y: 1.25;
+  }
+
+  .md\:scale-y-150 {
+    --transform-scale-y: 1.5;
+  }
+
+  .md\:scale-y-300 {
+    --transform-scale-y: 3;
+  }
+
+  .md\:hover\:scale-0:hover {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .md\:hover\:scale-50:hover {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .md\:hover\:scale-75:hover {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .md\:hover\:scale-90:hover {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .md\:hover\:scale-95:hover {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .md\:hover\:scale-100:hover {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .md\:hover\:scale-105:hover {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .md\:hover\:scale-110:hover {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .md\:hover\:scale-125:hover {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .md\:hover\:scale-150:hover {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .md\:hover\:scale-300:hover {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .md\:hover\:scale-x-0:hover {
+    --transform-scale-x: 0;
+  }
+
+  .md\:hover\:scale-x-50:hover {
+    --transform-scale-x: .5;
+  }
+
+  .md\:hover\:scale-x-75:hover {
+    --transform-scale-x: .75;
+  }
+
+  .md\:hover\:scale-x-90:hover {
+    --transform-scale-x: .9;
+  }
+
+  .md\:hover\:scale-x-95:hover {
+    --transform-scale-x: .95;
+  }
+
+  .md\:hover\:scale-x-100:hover {
+    --transform-scale-x: 1;
+  }
+
+  .md\:hover\:scale-x-105:hover {
+    --transform-scale-x: 1.05;
+  }
+
+  .md\:hover\:scale-x-110:hover {
+    --transform-scale-x: 1.1;
+  }
+
+  .md\:hover\:scale-x-125:hover {
+    --transform-scale-x: 1.25;
+  }
+
+  .md\:hover\:scale-x-150:hover {
+    --transform-scale-x: 1.5;
+  }
+
+  .md\:hover\:scale-x-300:hover {
+    --transform-scale-x: 3;
+  }
+
+  .md\:hover\:scale-y-0:hover {
+    --transform-scale-y: 0;
+  }
+
+  .md\:hover\:scale-y-50:hover {
+    --transform-scale-y: .5;
+  }
+
+  .md\:hover\:scale-y-75:hover {
+    --transform-scale-y: .75;
+  }
+
+  .md\:hover\:scale-y-90:hover {
+    --transform-scale-y: .9;
+  }
+
+  .md\:hover\:scale-y-95:hover {
+    --transform-scale-y: .95;
+  }
+
+  .md\:hover\:scale-y-100:hover {
+    --transform-scale-y: 1;
+  }
+
+  .md\:hover\:scale-y-105:hover {
+    --transform-scale-y: 1.05;
+  }
+
+  .md\:hover\:scale-y-110:hover {
+    --transform-scale-y: 1.1;
+  }
+
+  .md\:hover\:scale-y-125:hover {
+    --transform-scale-y: 1.25;
+  }
+
+  .md\:hover\:scale-y-150:hover {
+    --transform-scale-y: 1.5;
+  }
+
+  .md\:hover\:scale-y-300:hover {
+    --transform-scale-y: 3;
   }
 
   .md\:rotate-0 {
@@ -63158,6 +64071,10 @@ span.underline:hover {
     height: 100vh;
   }
 
+  .lg\:h-20r {
+    height: 20rem;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
   }
@@ -69918,6 +70835,292 @@ span.underline:hover {
 
   .lg\:origin-top-left {
     transform-origin: top left;
+  }
+
+  .lg\:scale-0 {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .lg\:scale-50 {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .lg\:scale-75 {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .lg\:scale-90 {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .lg\:scale-95 {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .lg\:scale-100 {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .lg\:scale-105 {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .lg\:scale-110 {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .lg\:scale-125 {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .lg\:scale-150 {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .lg\:scale-300 {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .lg\:scale-x-0 {
+    --transform-scale-x: 0;
+  }
+
+  .lg\:scale-x-50 {
+    --transform-scale-x: .5;
+  }
+
+  .lg\:scale-x-75 {
+    --transform-scale-x: .75;
+  }
+
+  .lg\:scale-x-90 {
+    --transform-scale-x: .9;
+  }
+
+  .lg\:scale-x-95 {
+    --transform-scale-x: .95;
+  }
+
+  .lg\:scale-x-100 {
+    --transform-scale-x: 1;
+  }
+
+  .lg\:scale-x-105 {
+    --transform-scale-x: 1.05;
+  }
+
+  .lg\:scale-x-110 {
+    --transform-scale-x: 1.1;
+  }
+
+  .lg\:scale-x-125 {
+    --transform-scale-x: 1.25;
+  }
+
+  .lg\:scale-x-150 {
+    --transform-scale-x: 1.5;
+  }
+
+  .lg\:scale-x-300 {
+    --transform-scale-x: 3;
+  }
+
+  .lg\:scale-y-0 {
+    --transform-scale-y: 0;
+  }
+
+  .lg\:scale-y-50 {
+    --transform-scale-y: .5;
+  }
+
+  .lg\:scale-y-75 {
+    --transform-scale-y: .75;
+  }
+
+  .lg\:scale-y-90 {
+    --transform-scale-y: .9;
+  }
+
+  .lg\:scale-y-95 {
+    --transform-scale-y: .95;
+  }
+
+  .lg\:scale-y-100 {
+    --transform-scale-y: 1;
+  }
+
+  .lg\:scale-y-105 {
+    --transform-scale-y: 1.05;
+  }
+
+  .lg\:scale-y-110 {
+    --transform-scale-y: 1.1;
+  }
+
+  .lg\:scale-y-125 {
+    --transform-scale-y: 1.25;
+  }
+
+  .lg\:scale-y-150 {
+    --transform-scale-y: 1.5;
+  }
+
+  .lg\:scale-y-300 {
+    --transform-scale-y: 3;
+  }
+
+  .lg\:hover\:scale-0:hover {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .lg\:hover\:scale-50:hover {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .lg\:hover\:scale-75:hover {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .lg\:hover\:scale-90:hover {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .lg\:hover\:scale-95:hover {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .lg\:hover\:scale-100:hover {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .lg\:hover\:scale-105:hover {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .lg\:hover\:scale-110:hover {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .lg\:hover\:scale-125:hover {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .lg\:hover\:scale-150:hover {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .lg\:hover\:scale-300:hover {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .lg\:hover\:scale-x-0:hover {
+    --transform-scale-x: 0;
+  }
+
+  .lg\:hover\:scale-x-50:hover {
+    --transform-scale-x: .5;
+  }
+
+  .lg\:hover\:scale-x-75:hover {
+    --transform-scale-x: .75;
+  }
+
+  .lg\:hover\:scale-x-90:hover {
+    --transform-scale-x: .9;
+  }
+
+  .lg\:hover\:scale-x-95:hover {
+    --transform-scale-x: .95;
+  }
+
+  .lg\:hover\:scale-x-100:hover {
+    --transform-scale-x: 1;
+  }
+
+  .lg\:hover\:scale-x-105:hover {
+    --transform-scale-x: 1.05;
+  }
+
+  .lg\:hover\:scale-x-110:hover {
+    --transform-scale-x: 1.1;
+  }
+
+  .lg\:hover\:scale-x-125:hover {
+    --transform-scale-x: 1.25;
+  }
+
+  .lg\:hover\:scale-x-150:hover {
+    --transform-scale-x: 1.5;
+  }
+
+  .lg\:hover\:scale-x-300:hover {
+    --transform-scale-x: 3;
+  }
+
+  .lg\:hover\:scale-y-0:hover {
+    --transform-scale-y: 0;
+  }
+
+  .lg\:hover\:scale-y-50:hover {
+    --transform-scale-y: .5;
+  }
+
+  .lg\:hover\:scale-y-75:hover {
+    --transform-scale-y: .75;
+  }
+
+  .lg\:hover\:scale-y-90:hover {
+    --transform-scale-y: .9;
+  }
+
+  .lg\:hover\:scale-y-95:hover {
+    --transform-scale-y: .95;
+  }
+
+  .lg\:hover\:scale-y-100:hover {
+    --transform-scale-y: 1;
+  }
+
+  .lg\:hover\:scale-y-105:hover {
+    --transform-scale-y: 1.05;
+  }
+
+  .lg\:hover\:scale-y-110:hover {
+    --transform-scale-y: 1.1;
+  }
+
+  .lg\:hover\:scale-y-125:hover {
+    --transform-scale-y: 1.25;
+  }
+
+  .lg\:hover\:scale-y-150:hover {
+    --transform-scale-y: 1.5;
+  }
+
+  .lg\:hover\:scale-y-300:hover {
+    --transform-scale-y: 3;
   }
 
   .lg\:rotate-0 {
@@ -77234,6 +78437,10 @@ span.underline:hover {
     height: 100vh;
   }
 
+  .xl\:h-20r {
+    height: 20rem;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
   }
@@ -83994,6 +85201,292 @@ span.underline:hover {
 
   .xl\:origin-top-left {
     transform-origin: top left;
+  }
+
+  .xl\:scale-0 {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .xl\:scale-50 {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .xl\:scale-75 {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .xl\:scale-90 {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .xl\:scale-95 {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .xl\:scale-100 {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .xl\:scale-105 {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .xl\:scale-110 {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .xl\:scale-125 {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .xl\:scale-150 {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .xl\:scale-300 {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .xl\:scale-x-0 {
+    --transform-scale-x: 0;
+  }
+
+  .xl\:scale-x-50 {
+    --transform-scale-x: .5;
+  }
+
+  .xl\:scale-x-75 {
+    --transform-scale-x: .75;
+  }
+
+  .xl\:scale-x-90 {
+    --transform-scale-x: .9;
+  }
+
+  .xl\:scale-x-95 {
+    --transform-scale-x: .95;
+  }
+
+  .xl\:scale-x-100 {
+    --transform-scale-x: 1;
+  }
+
+  .xl\:scale-x-105 {
+    --transform-scale-x: 1.05;
+  }
+
+  .xl\:scale-x-110 {
+    --transform-scale-x: 1.1;
+  }
+
+  .xl\:scale-x-125 {
+    --transform-scale-x: 1.25;
+  }
+
+  .xl\:scale-x-150 {
+    --transform-scale-x: 1.5;
+  }
+
+  .xl\:scale-x-300 {
+    --transform-scale-x: 3;
+  }
+
+  .xl\:scale-y-0 {
+    --transform-scale-y: 0;
+  }
+
+  .xl\:scale-y-50 {
+    --transform-scale-y: .5;
+  }
+
+  .xl\:scale-y-75 {
+    --transform-scale-y: .75;
+  }
+
+  .xl\:scale-y-90 {
+    --transform-scale-y: .9;
+  }
+
+  .xl\:scale-y-95 {
+    --transform-scale-y: .95;
+  }
+
+  .xl\:scale-y-100 {
+    --transform-scale-y: 1;
+  }
+
+  .xl\:scale-y-105 {
+    --transform-scale-y: 1.05;
+  }
+
+  .xl\:scale-y-110 {
+    --transform-scale-y: 1.1;
+  }
+
+  .xl\:scale-y-125 {
+    --transform-scale-y: 1.25;
+  }
+
+  .xl\:scale-y-150 {
+    --transform-scale-y: 1.5;
+  }
+
+  .xl\:scale-y-300 {
+    --transform-scale-y: 3;
+  }
+
+  .xl\:hover\:scale-0:hover {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .xl\:hover\:scale-50:hover {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .xl\:hover\:scale-75:hover {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .xl\:hover\:scale-90:hover {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .xl\:hover\:scale-95:hover {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .xl\:hover\:scale-100:hover {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .xl\:hover\:scale-105:hover {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .xl\:hover\:scale-110:hover {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .xl\:hover\:scale-125:hover {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .xl\:hover\:scale-150:hover {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .xl\:hover\:scale-300:hover {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .xl\:hover\:scale-x-0:hover {
+    --transform-scale-x: 0;
+  }
+
+  .xl\:hover\:scale-x-50:hover {
+    --transform-scale-x: .5;
+  }
+
+  .xl\:hover\:scale-x-75:hover {
+    --transform-scale-x: .75;
+  }
+
+  .xl\:hover\:scale-x-90:hover {
+    --transform-scale-x: .9;
+  }
+
+  .xl\:hover\:scale-x-95:hover {
+    --transform-scale-x: .95;
+  }
+
+  .xl\:hover\:scale-x-100:hover {
+    --transform-scale-x: 1;
+  }
+
+  .xl\:hover\:scale-x-105:hover {
+    --transform-scale-x: 1.05;
+  }
+
+  .xl\:hover\:scale-x-110:hover {
+    --transform-scale-x: 1.1;
+  }
+
+  .xl\:hover\:scale-x-125:hover {
+    --transform-scale-x: 1.25;
+  }
+
+  .xl\:hover\:scale-x-150:hover {
+    --transform-scale-x: 1.5;
+  }
+
+  .xl\:hover\:scale-x-300:hover {
+    --transform-scale-x: 3;
+  }
+
+  .xl\:hover\:scale-y-0:hover {
+    --transform-scale-y: 0;
+  }
+
+  .xl\:hover\:scale-y-50:hover {
+    --transform-scale-y: .5;
+  }
+
+  .xl\:hover\:scale-y-75:hover {
+    --transform-scale-y: .75;
+  }
+
+  .xl\:hover\:scale-y-90:hover {
+    --transform-scale-y: .9;
+  }
+
+  .xl\:hover\:scale-y-95:hover {
+    --transform-scale-y: .95;
+  }
+
+  .xl\:hover\:scale-y-100:hover {
+    --transform-scale-y: 1;
+  }
+
+  .xl\:hover\:scale-y-105:hover {
+    --transform-scale-y: 1.05;
+  }
+
+  .xl\:hover\:scale-y-110:hover {
+    --transform-scale-y: 1.1;
+  }
+
+  .xl\:hover\:scale-y-125:hover {
+    --transform-scale-y: 1.25;
+  }
+
+  .xl\:hover\:scale-y-150:hover {
+    --transform-scale-y: 1.5;
+  }
+
+  .xl\:hover\:scale-y-300:hover {
+    --transform-scale-y: 3;
   }
 
   .xl\:rotate-0 {
@@ -91310,6 +92803,10 @@ span.underline:hover {
     height: 100vh;
   }
 
+  .max-910p\:h-20r {
+    height: 20rem;
+  }
+
   .max-910p\:text-xs {
     font-size: 0.75rem;
   }
@@ -98070,6 +99567,292 @@ span.underline:hover {
 
   .max-910p\:origin-top-left {
     transform-origin: top left;
+  }
+
+  .max-910p\:scale-0 {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .max-910p\:scale-50 {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .max-910p\:scale-75 {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .max-910p\:scale-90 {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .max-910p\:scale-95 {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .max-910p\:scale-100 {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .max-910p\:scale-105 {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .max-910p\:scale-110 {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .max-910p\:scale-125 {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .max-910p\:scale-150 {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .max-910p\:scale-300 {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .max-910p\:scale-x-0 {
+    --transform-scale-x: 0;
+  }
+
+  .max-910p\:scale-x-50 {
+    --transform-scale-x: .5;
+  }
+
+  .max-910p\:scale-x-75 {
+    --transform-scale-x: .75;
+  }
+
+  .max-910p\:scale-x-90 {
+    --transform-scale-x: .9;
+  }
+
+  .max-910p\:scale-x-95 {
+    --transform-scale-x: .95;
+  }
+
+  .max-910p\:scale-x-100 {
+    --transform-scale-x: 1;
+  }
+
+  .max-910p\:scale-x-105 {
+    --transform-scale-x: 1.05;
+  }
+
+  .max-910p\:scale-x-110 {
+    --transform-scale-x: 1.1;
+  }
+
+  .max-910p\:scale-x-125 {
+    --transform-scale-x: 1.25;
+  }
+
+  .max-910p\:scale-x-150 {
+    --transform-scale-x: 1.5;
+  }
+
+  .max-910p\:scale-x-300 {
+    --transform-scale-x: 3;
+  }
+
+  .max-910p\:scale-y-0 {
+    --transform-scale-y: 0;
+  }
+
+  .max-910p\:scale-y-50 {
+    --transform-scale-y: .5;
+  }
+
+  .max-910p\:scale-y-75 {
+    --transform-scale-y: .75;
+  }
+
+  .max-910p\:scale-y-90 {
+    --transform-scale-y: .9;
+  }
+
+  .max-910p\:scale-y-95 {
+    --transform-scale-y: .95;
+  }
+
+  .max-910p\:scale-y-100 {
+    --transform-scale-y: 1;
+  }
+
+  .max-910p\:scale-y-105 {
+    --transform-scale-y: 1.05;
+  }
+
+  .max-910p\:scale-y-110 {
+    --transform-scale-y: 1.1;
+  }
+
+  .max-910p\:scale-y-125 {
+    --transform-scale-y: 1.25;
+  }
+
+  .max-910p\:scale-y-150 {
+    --transform-scale-y: 1.5;
+  }
+
+  .max-910p\:scale-y-300 {
+    --transform-scale-y: 3;
+  }
+
+  .max-910p\:hover\:scale-0:hover {
+    --transform-scale-x: 0;
+    --transform-scale-y: 0;
+  }
+
+  .max-910p\:hover\:scale-50:hover {
+    --transform-scale-x: .5;
+    --transform-scale-y: .5;
+  }
+
+  .max-910p\:hover\:scale-75:hover {
+    --transform-scale-x: .75;
+    --transform-scale-y: .75;
+  }
+
+  .max-910p\:hover\:scale-90:hover {
+    --transform-scale-x: .9;
+    --transform-scale-y: .9;
+  }
+
+  .max-910p\:hover\:scale-95:hover {
+    --transform-scale-x: .95;
+    --transform-scale-y: .95;
+  }
+
+  .max-910p\:hover\:scale-100:hover {
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+  }
+
+  .max-910p\:hover\:scale-105:hover {
+    --transform-scale-x: 1.05;
+    --transform-scale-y: 1.05;
+  }
+
+  .max-910p\:hover\:scale-110:hover {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+  }
+
+  .max-910p\:hover\:scale-125:hover {
+    --transform-scale-x: 1.25;
+    --transform-scale-y: 1.25;
+  }
+
+  .max-910p\:hover\:scale-150:hover {
+    --transform-scale-x: 1.5;
+    --transform-scale-y: 1.5;
+  }
+
+  .max-910p\:hover\:scale-300:hover {
+    --transform-scale-x: 3;
+    --transform-scale-y: 3;
+  }
+
+  .max-910p\:hover\:scale-x-0:hover {
+    --transform-scale-x: 0;
+  }
+
+  .max-910p\:hover\:scale-x-50:hover {
+    --transform-scale-x: .5;
+  }
+
+  .max-910p\:hover\:scale-x-75:hover {
+    --transform-scale-x: .75;
+  }
+
+  .max-910p\:hover\:scale-x-90:hover {
+    --transform-scale-x: .9;
+  }
+
+  .max-910p\:hover\:scale-x-95:hover {
+    --transform-scale-x: .95;
+  }
+
+  .max-910p\:hover\:scale-x-100:hover {
+    --transform-scale-x: 1;
+  }
+
+  .max-910p\:hover\:scale-x-105:hover {
+    --transform-scale-x: 1.05;
+  }
+
+  .max-910p\:hover\:scale-x-110:hover {
+    --transform-scale-x: 1.1;
+  }
+
+  .max-910p\:hover\:scale-x-125:hover {
+    --transform-scale-x: 1.25;
+  }
+
+  .max-910p\:hover\:scale-x-150:hover {
+    --transform-scale-x: 1.5;
+  }
+
+  .max-910p\:hover\:scale-x-300:hover {
+    --transform-scale-x: 3;
+  }
+
+  .max-910p\:hover\:scale-y-0:hover {
+    --transform-scale-y: 0;
+  }
+
+  .max-910p\:hover\:scale-y-50:hover {
+    --transform-scale-y: .5;
+  }
+
+  .max-910p\:hover\:scale-y-75:hover {
+    --transform-scale-y: .75;
+  }
+
+  .max-910p\:hover\:scale-y-90:hover {
+    --transform-scale-y: .9;
+  }
+
+  .max-910p\:hover\:scale-y-95:hover {
+    --transform-scale-y: .95;
+  }
+
+  .max-910p\:hover\:scale-y-100:hover {
+    --transform-scale-y: 1;
+  }
+
+  .max-910p\:hover\:scale-y-105:hover {
+    --transform-scale-y: 1.05;
+  }
+
+  .max-910p\:hover\:scale-y-110:hover {
+    --transform-scale-y: 1.1;
+  }
+
+  .max-910p\:hover\:scale-y-125:hover {
+    --transform-scale-y: 1.25;
+  }
+
+  .max-910p\:hover\:scale-y-150:hover {
+    --transform-scale-y: 1.5;
+  }
+
+  .max-910p\:hover\:scale-y-300:hover {
+    --transform-scale-y: 3;
   }
 
   .max-910p\:rotate-0 {
