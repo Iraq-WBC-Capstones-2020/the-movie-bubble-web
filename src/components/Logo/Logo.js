@@ -1,5 +1,5 @@
 import React from 'react';
-import camerLogo from './camerLogo.svg';
+import cameraLogo from './cameraLogo.svg';
 import './Logo.css';
 export default function Logo() {
   return (
@@ -21,9 +21,8 @@ export default function Logo() {
             />
           </svg>
         </div>
-        <img src={camerLogo} alt="Logo" className="w-8 absolute z-10 m-6" />
+        <img src={cameraLogo} alt="Logo" className="w-8 absolute z-10 m-6" />
         <div className="flex items-center text-2xl sm:text-xl font-bold">
-          {' '}
           <span style={{ color: '#ED6F18' }}> The&nbsp;</span>{' '}
           <span style={{ color: '#F4A564' }}>Movie&nbsp;</span>{' '}
           <span style={{ color: '#FDEDE0' }}>Bubble </span>
