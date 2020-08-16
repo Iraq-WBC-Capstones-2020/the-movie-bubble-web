@@ -25,6 +25,7 @@ module.exports = {
       xl: { min: '1301px' },
     },
   },
+
   variants: { scale: ['hover', 'responsive'] },
   plugins: [
     function ({ addComponents }) {

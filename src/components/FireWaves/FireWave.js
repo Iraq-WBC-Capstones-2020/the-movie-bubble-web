@@ -2,7 +2,7 @@ import React from 'react';
 import './FireWave.css';
 export default function FireWave() {
   return (
-    <div className="mh-screen">
+    <div>
       <div className="absolute d-flex justify-center align-center bottom-0 w-full">
         <svg
           className="absolute  bottom-0 w-full sm:h-20r"
