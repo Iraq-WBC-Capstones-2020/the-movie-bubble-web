@@ -20,7 +20,14 @@ module.exports = {
         '40%': '40%',
         '60r': '60rem',
       },
+      scale: {
+        '300': '3',
+      },
+      height: {
+        '20r': '20rem',
+      },
     },
+
     screens: {
       xs: { min: '200px', max: '320px' },
       sm: { min: '320px', max: '700px' },
@@ -34,8 +41,7 @@ module.exports = {
       '60vh': '60vh',
     },
   },
-
-  variants: { scale: ['hover'] },
+  variants: { scale: ['hover', 'responsive'] },
   plugins: [
     function ({ addComponents }) {
       const buttons = {
