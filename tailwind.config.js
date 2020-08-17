@@ -6,6 +6,12 @@ module.exports = {
         lightblue: '#18A0FB', // an example of extending tailwind
         darkgray: '#1D2530',
       },
+      borderRadius: {
+        20: '20px',
+      },
+      boxShadow: {
+        '3xl': '28px 2px 18px 10px #101010',
+      },
       fontSize: {
         '15r': '15rem',
         '10r': '10rem',
