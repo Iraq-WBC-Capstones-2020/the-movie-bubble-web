@@ -26,50 +26,6 @@ function Questions({ question, result }) {
             />
           ))}
         </div>
-
-        {/* {!question[index].includeImage && (
-          <>
-            <div className="grid md:grid-cols-2 md:col-gap-32 lg:grid-cols-2 lg:col-gap-56 xl:grid-cols-2 xl:col-gap-64 w-5/6  row-gap-10">
-              {question[index].answers.map((element) => (
-                <Answers
-                  answer={element.ans}
-                  image={false}
-                  className=""
-                  index={index}
-                  questionVal={element.val}
-                />
-              ))} */}
-        {/* <Answers
-                answer={question[index].answers[0].ans}
-                image={false}
-                className=""
-                index={index}
-                questionVal={question[index].answers[0].val}
-              />
-              <Answers
-                answer={question[index].answers[0].ans}
-                image={false}
-                className=""
-                index={index}
-                questionVal={question[index].answers[0].val}
-              />
-              <Answers
-                answer={question[index].answers[0].ans}
-                image={false}
-                className=""
-                index={index}
-                questionVal={question[index].answers[0].val}
-              />
-              <Answers
-                answer={question[index].answers[0].ans}
-                image={false}
-                className=""
-                index={index}
-                questionVal={question[index].answers[0].val}
-              /> */}
-        {/* </div>
-          </>
-        )} */}
       </div>
     </div>
   );
@@ -80,4 +36,3 @@ Questions.prototype = {
 };
 
 export default Questions;
-//cause we don't have content for the props it will fail durint the test this is why I comment out every thing

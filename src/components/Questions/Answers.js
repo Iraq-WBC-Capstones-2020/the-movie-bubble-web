@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function Answers({ answer, image, questionVal, result }) {
   return (
     <button
-      className="transform main-gradient hover:scale-105 rounded-lg p-0.08 focus:outline-none flex justify-center min-h-10 items-center mx-10"
+      className="transform main-gradient hover:scale-105 rounded-lg p-0.08 flex justify-center min-h-10 items-center mx-10"
       onClick={() => {
         result((pr) => [...pr, questionVal]);
         console.log(questionVal);
@@ -21,19 +21,6 @@ function Answers({ answer, image, questionVal, result }) {
       </div>
     </button>
   );
-  // return (
-  //   <button
-  //     className={`transform main-gradient hover:scale-105 rounded-lg p-0.08 focus:outline-none flex justify-center min-h-10 items-center mx-10
-  //      ${className}`}
-  //     onClick={() => {
-  //       console.log(questionVal);
-  //     }}
-  //   >
-  //     <div className="p-2 h-full w-full bg-darkgray rounded-lg flex items-center justify-center">
-  //       <span className="text-white">{answer}</span>
-  //     </div>
-  //   </button>
-  // );
 }
 Answers.propTypes = {
   answer: PropTypes.string.isRequired,
