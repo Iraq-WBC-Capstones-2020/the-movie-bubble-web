@@ -5,8 +5,10 @@ import LiquidFillGauge from 'react-liquid-gauge';
 
 ProgressBar.propTypes = {
   progress: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
 };
-export default function ProgressBar({ progress }) {
+export default function ProgressBar({ progress, width, height }) {
   const gradientStops = [
     {
       key: '0%',
@@ -23,30 +25,27 @@ export default function ProgressBar({ progress }) {
   ];
 
   return (
-    <div>
-      <LiquidFillGauge
-        style={{ margin: '0 auto' }}
-        width={200}
-        height={200}
-        value={progress}
-        percent="%"
-        textSize={1}
-        riseAnimation
-        waveAnimation
-        waveFrequency={2}
-        waveAmplitude={2}
-        gradient
-        gradientStops={gradientStops}
-        textStyle={{
-          fill: color('white').toString(),
-        }}
-        waveTextStyle={{
-          fill: color('#1D2530').toString(),
-        }}
-        circleStyle={{
-          fill: color('transparent').toString(),
-        }}
-      />
-    </div>
+    <LiquidFillGauge
+      width={width}
+      height={height}
+      value={progress}
+      percent="%"
+      textSize={1}
+      riseAnimation
+      waveAnimation
+      waveFrequency={2}
+      waveAmplitude={2}
+      gradient
+      gradientStops={gradientStops}
+      textStyle={{
+        fill: color('white').toString(),
+      }}
+      waveTextStyle={{
+        fill: color('#1D2530').toString(),
+      }}
+      circleStyle={{
+        fill: color('transparent').toString(),
+      }}
+    />
   );
 }
