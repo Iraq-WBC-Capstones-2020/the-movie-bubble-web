@@ -32,8 +32,11 @@ module.exports = {
       height: {
         '20r': '20rem',
       },
+      inset: {
+        '10%': '10%',
+        '60vh': '60vh',
+      },
     },
-
     screens: {
       xs: { min: '200px', max: '320px' },
       sm: { min: '320px', max: '700px' },
@@ -41,10 +44,6 @@ module.exports = {
       lg: { min: '971px', max: '1300px' },
       xl: { min: '1301px' },
       'max-910p': { max: '910px' },
-    },
-    inset: {
-      '10%': '10%',
-      '60vh': '60vh',
     },
   },
   variants: { scale: ['hover', 'responsive'] },
