@@ -6,6 +6,12 @@ module.exports = {
         lightblue: '#18A0FB', // an example of extending tailwind
         darkgray: '#1D2530',
       },
+      borderRadius: {
+        20: '20px',
+      },
+      boxShadow: {
+        '3xl': '28px 2px 18px 10px #101010',
+      },
       fontSize: {
         '15r': '15rem',
         '10r': '10rem',
@@ -26,8 +32,11 @@ module.exports = {
       height: {
         '20r': '20rem',
       },
+      inset: {
+        '10%': '10%',
+        '60vh': '60vh',
+      },
     },
-
     screens: {
       xs: { min: '200px', max: '320px' },
       sm: { min: '320px', max: '700px' },
@@ -35,10 +44,6 @@ module.exports = {
       lg: { min: '971px', max: '1300px' },
       xl: { min: '1301px' },
       'max-910p': { max: '910px' },
-    },
-    inset: {
-      '10%': '10%',
-      '60vh': '60vh',
     },
   },
   variants: { scale: ['hover', 'responsive'] },
