@@ -26,11 +26,11 @@ module.exports = {
         '40%': '40%',
         '60r': '60rem',
       },
-      scale: {
-        '300': '3',
+      minHeight: {
+        '10': '2.5rem',
       },
-      height: {
-        '20r': '20rem',
+      minWidth: {
+        '20': '7rem',
       },
       inset: {
         '10%': '10%',
@@ -46,7 +46,12 @@ module.exports = {
       'max-910p': { max: '910px' },
     },
   },
-  variants: { scale: ['hover', 'responsive'] },
+
+  variants: {
+    scale: ['hover'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+  },
+
   plugins: [
     function ({ addComponents }) {
       const buttons = {
