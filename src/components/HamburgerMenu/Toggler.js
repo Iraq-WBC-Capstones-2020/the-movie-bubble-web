@@ -2,23 +2,29 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 
-const Path = (props) => (
-  <motion.path
-    fill="transparent"
-    strokeWidth="3"
-    stroke="hsl(0, 0%, 18%)"
-    strokeLinecap="round"
-    {...props}
-  />
-);
+const Path = ({ variants, transition, d }) => {
+  let merged = { variants, transition, d };
+  console.log(merged);
+  return (
+    <motion.path
+      fill="transparent"
+      strokeWidth="3"
+      stroke="hsl(0, 0%, 18%)"
+      strokeLinecap="round"
+      {...merged}
+    />
+  );
+};
 
-const Toggler = (props) => {
-  Toggler.propTypes = {
-    toggle: PropTypes.func.isRequired,
-  };
+Path.propTypes = {
+  variants: PropTypes.object.isRequired,
+  transition: PropTypes.object.isRequired,
+  d: PropTypes.string.isRequired,
+};
+const Toggler = ({ toggle }) => {
   return (
     <button
-      onClick={props.toggle}
+      onClick={toggle}
       className="absolute mt-5 mr-2	focus:outline-none top-0 right-0 w-12 h-12 bottom-0 "
     >
       <svg width="35" height="35" viewBox="0 0 23 23" fill="white" stroke="red">
@@ -47,5 +53,8 @@ const Toggler = (props) => {
       </svg>
     </button>
   );
+};
+Toggler.propTypes = {
+  toggle: PropTypes.func.isRequired,
 };
 export default Toggler;

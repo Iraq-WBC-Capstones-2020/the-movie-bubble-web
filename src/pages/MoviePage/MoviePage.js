@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import './MoviePage.css';
 import poster from './images/1.jpg';
 import greenButton from './images/green-button.png';
-import ActorsList from '../../components/MovieActor/ActorList'
+import ActorsList from '../../components/MovieActor/ActorList';
 const posterUrl = {
   backgroundImage: `
     linear-gradient(
