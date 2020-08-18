@@ -1,0 +1,10 @@
+.actor-card {
+  filter: grayscale(100%);
+}
+.actor-card:hover {
+  filter: grayscale(0);
+  transform: scale(1.1) skewX(-20deg);
+}
+.actor-card:hover .actor-card__name {
+  display: block;
+}
