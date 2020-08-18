@@ -1,5 +1,5 @@
 import React from 'react';
-import cameraLogo from './cameraLogo.svg';
+import cameraLogo from '../../assets/icons/camera-icon.png';
 import './Logo.css';
 export default function Logo() {
   return (
