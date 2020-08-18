@@ -38,12 +38,12 @@ export default function Error404() {
 
         <img
           src={Minion}
-          className="absolute max-910p:right-auto right-10% max-910p:top-60vh top-auto  w-300p max-910p:w-40% z-10"
+          className="absolute x910:right-auto right-10% x910:top-60vh top-auto  w-300p x910:w-40% z-10"
           alt="minion img"
         />
-        <div className="max-910p:mr-0 -mr-20r max-910p:w-60r w-auto mt-auto max-910p:-mt-10r ">
+        <div className="x910:mr-0 -mr-20r x910:w-60r w-auto mt-auto x910:-mt-10r ">
           <svg
-            className="transform rotate-0 mr-10 max-910p:rotate-90 "
+            className="transform rotate-0 mr-10 x910:rotate-90 "
             width="50rem"
             height="70rem"
             viewBox="0 0 100% 100%"

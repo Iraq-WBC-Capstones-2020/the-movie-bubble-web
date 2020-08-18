@@ -36,14 +36,12 @@ module.exports = {
         '10%': '10%',
         '60vh': '60vh',
       },
-    },
-    screens: {
-      xs: { min: '200px', max: '320px' },
-      sm: { min: '320px', max: '700px' },
-      md: { min: '701px', max: '970px' },
-      lg: { min: '971px', max: '1300px' },
-      xl: { min: '1301px' },
-      'max-910p': { max: '910px' },
+      screens: {
+        x910: { max: '910px' },
+      },
+      skew: {
+        '-20': '-20deg',
+      },
     },
   },
 
