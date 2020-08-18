@@ -16,6 +16,7 @@
     "react-liquid-gauge": "^1.2.4",
     "react-liquidchart": "^0.3.0",
     "react-router-dom": "^5.2.0",
+    "react-multi-carousel": "^2.5.5",
     "react-scripts": "3.4.1",
     "react-test-renderer": "^16.13.1"
   },
