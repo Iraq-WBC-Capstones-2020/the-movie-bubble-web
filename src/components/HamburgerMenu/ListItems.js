@@ -11,9 +11,12 @@ export default function ListItems({ toggler }) {
         whileTap={{ scale: 0.95 }}
       >
         <Link to="/">
-          <button onClick={toggler} className="w-full py-2 focus:outline-none text-white">
+          <button
+            onClick={toggler}
+            className="w-full py-2 focus:outline-none text-white"
+          >
             Home
-        </button>
+          </button>
         </Link>
       </motion.li>
       <motion.li
@@ -22,9 +25,12 @@ export default function ListItems({ toggler }) {
         whileTap={{ scale: 0.95 }}
       >
         <Link to="/quiz">
-          <button onClick={toggler} className="w-full py-2 focus:outline-none text-white">
+          <button
+            onClick={toggler}
+            className="w-full py-2 focus:outline-none text-white"
+          >
             Take a quiz
-        </button>
+          </button>
         </Link>
       </motion.li>
       <motion.li
@@ -33,9 +39,12 @@ export default function ListItems({ toggler }) {
         whileTap={{ scale: 0.95 }}
       >
         <Link to="/about">
-          <button onClick={toggler} className="w-full py-2 focus:outline-none text-white">
+          <button
+            onClick={toggler}
+            className="w-full py-2 focus:outline-none text-white"
+          >
             About us
-        </button>
+          </button>
         </Link>
       </motion.li>
     </>
