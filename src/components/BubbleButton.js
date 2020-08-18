@@ -4,7 +4,7 @@ export default function BubbleButton() {
   return (
     <div>
       <a href="#">
-        <svg viewBox="0 0 500 500" className="bubble-button">
+        <svg  className="bubble-button">
           <defs>
             <linearGradient id="bubble-button-gradient">
               <stop offset="0%" stopColor="#FF7521" />
@@ -22,7 +22,7 @@ export default function BubbleButton() {
               <feBlend in="SourceGraphic" in2="blurOut" />
             </filter>
           </defs>
-          <g transform="translate(50,40) scale(0.5)">
+          <g transform="translate(100,70) " >
             <path
               fill="url(#bubble-button-gradient)"
               filter="url(#bubble-button-shadow)"

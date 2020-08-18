@@ -47,7 +47,7 @@
   @apply items-center;
   @apply justify-center;
   @apply w-screen;
-  @apply h-screen;
+ 
   @apply relative;
   @apply bg-darkgray;
 }
@@ -79,19 +79,19 @@ span.underline:hover {
 
 @screen xl {
   .FormWrapper {
-    width: 40%;
+    width: 100%;
   }
 }
 
 @screen lg {
   .FormWrapper {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @screen md {
   .FormWrapper {
-    width: 70%;
+    width: 100%;
   }
 }
 

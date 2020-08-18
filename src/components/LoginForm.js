@@ -1,10 +1,15 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Input from './Input';
 import clossButton from './../assets/icons/icon-close-orange.png';
+import authorizationButtons from './AuthorizationButton'
 export default function LoginForm() {
-  return (
-    <div className="FormWrapper">
-      <button className="clossButton focus:outline-none">
+  const [login, setLogin] = useState();
+  return ( 
+    <>    
+  {/* onClick={() => login ? "none" :"block"}  */}
+ 
+    <div className="FormWrapper"  style={{display:login}}>
+      <button className="clossButton focus:outline-none" onClick={() => setLogin("none")}>
         <img src={clossButton} alt="clossButton" />
       </button>
       <form className="FormWrapper__Form">
@@ -51,5 +56,10 @@ export default function LoginForm() {
         </div>
       </form>
     </div>
+   
+    
+  
+  
+    </>
   );
 }

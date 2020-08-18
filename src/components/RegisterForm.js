@@ -1,13 +1,15 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Input from './Input';
 import clossButton from './../assets/icons/icon-close-orange.png';
 
 export default function RegisterForm() {
+  const [register, setRegister] = useState();
+
   return (
-    <div className="FormWrapper ">
-      <div className="clossButton">
+    <div className="FormWrapper " style={{display:register}} >
+       <button className="clossButton focus:outline-none" onClick={() => setRegister("none")}>
         <img src={clossButton} alt="clossButton" />
-      </div>
+      </button>
       <form className="FormWrapper__Form">
         <div className="flex w-2/3 sm:flex-col sm:justify-start xs:flex-col xs:justify-start ">
           <div className="firstnameWapper  w-2/3 sm:w-full xs:w-full ">

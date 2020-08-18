@@ -7,7 +7,7 @@ import Fourth from '../../assets/posters/4.jpg';
 const Sliders = () => {
   return (
     <>
-      <div className="slider__container hidden lg:flex flex-row absolute w-1/2 h-full">
+      <div className="slider__container hidden lg:flex flex-row  w-3/4 h-full">
         <motion.div
            animate={{
             x: 79
