@@ -7,11 +7,14 @@ import { BrowserRouter,NavLink } from 'react-router-dom';
 export default function ListItems({ toggler }) {
   return (
     <>
+   
+   <BrowserRouter>
       <motion.li
         className="bg-gray-900 w-32 text-center mt-48  my-5 cursor-pointer rounded"
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 0.95 }}
       >
+        
         <NavLink to="/">
           <button
             onClick={toggler}
@@ -49,6 +52,7 @@ export default function ListItems({ toggler }) {
           </button>
         </NavLink>
       </motion.li>
+      </BrowserRouter>
     </>
   );
 }
