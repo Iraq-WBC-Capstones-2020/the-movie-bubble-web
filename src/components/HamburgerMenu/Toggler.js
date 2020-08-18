@@ -19,7 +19,7 @@ const Path = ({ variants, transition, d }) => {
 Path.propTypes = {
   variants: PropTypes.object.isRequired,
   transition: PropTypes.object.isRequired,
-  d: PropTypes.string.isRequired,
+  d: PropTypes.string,
 };
 const Toggler = ({ toggle }) => {
   return (
