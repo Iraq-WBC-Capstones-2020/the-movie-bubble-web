@@ -4,7 +4,7 @@ import Logo from './Logo/Logo';
 export default function Navbar() {
   return (
     <div>
-      <Menu></Menu>
+      <Menu />
       <Logo />
     </div>
   );

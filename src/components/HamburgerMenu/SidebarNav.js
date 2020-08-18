@@ -42,7 +42,7 @@ export default function SidebarNav() {
           className="absolute	 top-0 right-0 w-64 bottom-0 "
           variants={sidebar}
         />
-        <NavList />
+        <NavList toggle={() => toggleOpen()} />
 
         <Toggler toggle={() => toggleOpen()} />
       </motion.nav>

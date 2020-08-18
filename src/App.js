@@ -6,11 +6,13 @@ import Quiz from './pages/Quiz';
 import Profile from './pages/Profile';
 import Error404 from './pages/Error/Error404';
 import Movie from './pages/MoviePage/MoviePage';
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />

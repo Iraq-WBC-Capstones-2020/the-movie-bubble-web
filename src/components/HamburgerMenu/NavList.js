@@ -21,14 +21,14 @@ const variants = {
   },
 };
 
-export default function NavList() {
+export default function NavList(props) {
   return (
     <>
       <motion.ul
         className="p-2 absolute  w-full flex flex-col items-center h-full "
         variants={variants}
       >
-        <ListItem />
+        <ListItem toggler={props.toggle} />
 
         <h1 className="absolute bottom-0 mb-10 ">All Rights Reserved.</h1>
       </motion.ul>
