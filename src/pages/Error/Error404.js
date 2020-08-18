@@ -5,17 +5,17 @@ export default function Error404() {
   return (
     <div className="overflow-hidden min-h-screen bg-darkgrey">
       <div className="flex flex-around flex-warp items-center max-h-screen relative">
-        <div >
+        <div>
           <p className="text-center font-sans font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl  sm:mr-24 md:mb-32 lg:ml-40 xl:mx-48">
-            Error<span className="text-orange-600 text-3xl"> 404</span> Page
-        Not Found
-        <br></br>“Oops! Something is broken.”
-      </p>
+            Error<span className="text-orange-600 text-3xl"> 404</span> Page Not
+            Found
+            <br></br>“Oops! Something is broken.”
+          </p>
           <div className="mr-8 sm:mr-24 md:mb-32 lg:ml-32 xl:mx-32 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             <p className="py-2 text-2xl ">
               Troubleshooting <br></br>
-        Here are a few things to try:
-      </p>
+              Here are a few things to try:
+            </p>
 
             <ul className=" list-decimal text-xl overflow-visible">
               <li>Reload page or even restart your browser</li>
@@ -23,12 +23,15 @@ export default function Error404() {
               <li>
                 Make sure your security software isn't blocking Movie bubble
                 website
-        </li>
+              </li>
             </ul>
 
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl py-3 xl:mx-1 font-sans font-bold">
-              Go back to <a className="text-orange-600" href="/"> Home Page
-        </a>
+              Go back to{' '}
+              <a className="text-orange-600" href="/">
+                {' '}
+                Home Page
+              </a>
             </p>
           </div>
         </div>
