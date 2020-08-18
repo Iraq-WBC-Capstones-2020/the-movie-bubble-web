@@ -11,15 +11,17 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <>
-      <Switch>
-        <Navbar />
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/quiz" component={Quiz} />
-        <Route path="/movie/:id" component={Movie} />
-        <Route component={Error404} />
-      </Switch>
+      <BrowserRouter>
+        <Switch>
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/quiz" component={Quiz} />
+          <Route path="/movie/:id" component={Movie} />
+          <Route component={Error404} />
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }

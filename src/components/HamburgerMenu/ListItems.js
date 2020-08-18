@@ -2,57 +2,51 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { BrowserRouter,NavLink } from 'react-router-dom';
-
 export default function ListItems({ toggler }) {
   return (
     <>
-   
-   <BrowserRouter>
       <motion.li
         className="bg-gray-900 w-32 text-center mt-48  my-5 cursor-pointer rounded"
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 0.95 }}
       >
-        
-        <NavLink to="/">
+        <Link to="/">
           <button
             onClick={toggler}
             className="w-full py-2 focus:outline-none text-white"
           >
             Home
           </button>
-        </NavLink>
+        </Link>
       </motion.li>
       <motion.li
         className="bg-gray-900 w-32 text-center  my-5 cursor-pointer rounded"
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 0.95 }}
       >
-        <NavLink to="/quiz">
+        <Link to="/quiz">
           <button
             onClick={toggler}
             className="w-full py-2 focus:outline-none text-white"
           >
             Take a quiz
           </button>
-        </NavLink>
+        </Link>
       </motion.li>
       <motion.li
         className="bg-gray-900 w-32 text-center  my-5 cursor-pointer rounded"
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 0.95 }}
       >
-        <NavLink to="/about">
+        <Link to="/about">
           <button
             onClick={toggler}
             className="w-full py-2 focus:outline-none text-white"
           >
             About us
           </button>
-        </NavLink>
+        </Link>
       </motion.li>
-      </BrowserRouter>
     </>
   );
 }

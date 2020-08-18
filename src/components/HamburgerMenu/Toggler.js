@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 const Path = ({ variants, transition, d }) => {
   let merged = { variants, transition, d };
-  console.log(merged);
   return (
     <motion.path
       fill="transparent"
