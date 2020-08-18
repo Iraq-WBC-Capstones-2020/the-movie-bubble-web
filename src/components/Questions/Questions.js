@@ -3,7 +3,6 @@ import Answers from './Answers';
 import PropTypes from 'prop-types';
 function Questions({ question, result }) {
   const [index, setIndex] = useState(1);
-  console.log(question[index].question);
   return (
     <div className="flex flex-col bg-darkgray w-full justify-center items-center">
       <div className="imgWrapper flex w-64 h-64">
