@@ -4,6 +4,6 @@ import { render } from '@testing-library/react';
 
 test('Humburger menu gets rendered', () => {
   const { container } = render(<SidebarNav />);
-  const toggle = container.querySelector('button svg');
+  const toggle = container.querySelector('nav');
   expect(toggle).toBeInTheDocument();
 });
