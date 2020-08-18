@@ -38,7 +38,7 @@ module.exports = {
       },
 
       screens: {
-        'max-910p': { max: '910px' },
+        x910: { max: '910px' },
       },
     },
   },
