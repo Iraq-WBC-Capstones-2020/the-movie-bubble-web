@@ -1,13 +1,17 @@
 import React from 'react';
 import Input from './Input';
 import clossButton from './../assets/icons/icon-close-orange.png';
-export default function LoginForm() {
+import PropTypes from 'prop-types';
+export default function LoginForm({ login }) {
   return (
-    <div className="FormWrapper">
-      <button className="clossButton focus:outline-none">
+    <div className="FormWrapper" style={{ display: login }}>
+      <button
+        className="clossButton focus:outline-none"
+        onClick={() => login(false)}
+      >
         <img src={clossButton} alt="clossButton" />
       </button>
-      <form className="FormWrapper__Form">
+      <form className="FormWrapper__Form lg:w-full">
         <div className=" w-2/3 ">
           <Input
             type="text"
@@ -37,8 +41,8 @@ export default function LoginForm() {
             </span>
           </div>
 
-          <div className="w-2/3">
-            <button className="button text-white my-5 " type="submit">
+          <div className=" w-2/3">
+            <button className="button text-white my-5 w-32" type="submit">
               Sign in
             </button>
           </div>
@@ -53,3 +57,6 @@ export default function LoginForm() {
     </div>
   );
 }
+LoginForm.propTypes = {
+  login: PropTypes.bool,
+};

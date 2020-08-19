@@ -42,14 +42,14 @@
 }
 
 .FormWrapper {
-  @apply flex;
   @apply flex-col;
   @apply items-center;
   @apply justify-center;
-  @apply w-screen;
-  @apply h-screen;
+  @apply w-64;
   @apply relative;
   @apply bg-darkgray;
+  @apply h-screen;
+  @apply z-50;
 }
 
 .FormWrapper__Form {
@@ -57,7 +57,6 @@
   @apply flex-col;
   @apply items-center;
   @apply justify-center;
-  @apply w-full;
 }
 
 .clossButton {
@@ -79,13 +78,13 @@ span.underline:hover {
 
 @screen md {
   .FormWrapper {
-    width: 50%;
+    width: 60%;
   }
 }
 
 @screen xl {
   .FormWrapper {
-    width: 40%;
+    width: 60%;
   }
 }
 

@@ -1,13 +1,16 @@
 import React from 'react';
 import Input from './Input';
 import clossButton from './../assets/icons/icon-close-orange.png';
-
-export default function RegisterForm() {
+import PropTypes from 'prop-types';
+export default function RegisterForm({ register }) {
   return (
-    <div className="FormWrapper ">
-      <div className="clossButton">
+    <div className="FormWrapper " style={{ display: register }}>
+      <button
+        className="clossButton focus:outline-none"
+        onClick={() => register(false)}
+      >
         <img src={clossButton} alt="clossButton" />
-      </div>
+      </button>
       <form className="FormWrapper__Form">
         <div className="flex w-2/3 flex-col md:flex-row">
           <div className="md:w-2/3 w-full">
@@ -53,3 +56,6 @@ export default function RegisterForm() {
     </div>
   );
 }
+RegisterForm.propTypes = {
+  register: PropTypes.bool,
+};
