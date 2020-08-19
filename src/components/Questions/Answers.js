@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function Answers({ answer, image, questionVal, result }) {
   return (
     <button
-      className="transform main-gradient hover:scale-105 rounded-lg p-0.08 flex justify-center min-h-10 items-center mx-10"
+      className="transform main-gradient hover:scale-105 rounded-lg p-0.08 flex justify-center min-h-10 items-center mx-10 h-1/3"
       onClick={() => {
         result((pr) => [...pr, questionVal]);
         console.log(questionVal);

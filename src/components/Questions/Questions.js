@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Answers from './Answers';
 import PropTypes from 'prop-types';
-function Questions({ question, result }) {
-  const [index, setIndex] = useState(1);
+import { QuestionContext } from '../../QuestionContext/QuestionContext';
+function Questions({question}) {
+  const [index, setIndex] = useState(1)
+  const [result, setResult] = useState([])
+  console.log(question[1]);
   return (
     <div className="flex flex-col bg-darkgray w-full justify-center items-center">
       <div className="imgWrapper flex w-64 h-64">
@@ -13,15 +16,15 @@ function Questions({ question, result }) {
           {question[index].question}
         </span>
       </div>
-      <div className="flex justify-center w-full">
-        <div className="grid md:grid-cols-2 md:col-gap-32 lg:grid-cols-2 lg:col-gap-56 xl:grid-cols-2 xl:col-gap-64 w-5/6  row-gap-10">
+      <div className="flex justify-center w-full h-1/2 border">
+        <div className="grid md:grid-cols-2 md:col-gap-32 lg:grid-cols-2 lg:col-gap-56 xl:grid-cols-2 xl:col-gap-64 w-5/6  row-gap-10  h-full">
           {question[index].answers.map((element) => (
             <Answers
               answer={element.ans}
               image={question[index].includeImage}
               index={index}
               questionVal={element.val}
-              result={result}
+              result={setResult}
             />
           ))}
         </div>

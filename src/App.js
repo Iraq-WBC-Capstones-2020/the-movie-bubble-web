@@ -7,7 +7,7 @@ import Profile from './pages/Profile';
 import Error404 from './pages/Error/Error404';
 import Movie from './pages/MoviePage/MoviePage';
 import Navbar from './components/Navbar';
-
+import {QuestionProvider} from './QuestionContext/QuestionContext';
 function App() {
   return (
     <>
@@ -17,7 +17,9 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/profile" component={Profile} />
+          <QuestionProvider>
           <Route path="/quiz" component={Quiz} />
+          </QuestionProvider>
           <Route path="/movie/:id" component={Movie} />
           <Route component={Error404} />
         </Switch>
