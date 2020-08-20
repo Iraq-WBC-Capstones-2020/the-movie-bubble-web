@@ -13,7 +13,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" lg:w-1/2 w-10/12 ">
+        <div className=" lg:w-1/2 w-10/12 flex justify-center">
           <AuthorizationButton />
         </div>
       </div>{' '}
