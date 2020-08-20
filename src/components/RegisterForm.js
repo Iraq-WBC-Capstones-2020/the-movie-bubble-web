@@ -8,14 +8,14 @@ export default function RegisterForm({ authentication, register }) {
     authentication(true);
   };
   return (
-    <div className="FormWrapper " style={{ display: register }}>
+    <div className="FormWrapper mt-20" style={{ display: register }}>
       <button
         className="clossButton focus:outline-none"
         onClick={() => visibeAuthentication()}
       >
         <img src={clossButton} alt="clossButton" />
       </button>
-      <form className="FormWrapper__Form">
+      <form className="FormWrapper__Form ">
         <div className="flex w-2/3 flex-col md:flex-row">
           <div className="md:w-2/3 w-full">
             <Input type="text" placeholder="First Name" id="first Name"></Input>

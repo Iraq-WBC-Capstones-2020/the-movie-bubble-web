@@ -4,8 +4,9 @@ import AuthorizationButton from '../components/AuthorizationButton';
 import SlideCards from '../components/Sliders/Sliders';
 import LoginForm from '../components/LoginForm';
 import RegisterForm from '../components/RegisterForm';
+import PropTypes from 'prop-types';
 export default function Home() {
-  const [authen, setAuthen] = useState(true);
+  const [authorization, setAuthorization] = useState(true);
   const [login, setLogin] = useState(false);
   const [register, setRegister] = useState(false);
   return (
@@ -19,9 +20,29 @@ export default function Home() {
         </div>
 
         <div className=" lg:w-1/2 w-10/12 flex justify-center">
-          <AuthorizationButton />
+          {authorization && (
+            <AuthorizationButton
+              register={setRegister}
+              login={setLogin}
+              authentication={setAuthorization}
+            />
+          )}
+          {login && (
+            <LoginForm login={setLogin} authentication={setAuthorization} />
+          )}
+          {register && (
+            <RegisterForm
+              register={setRegister}
+              authentication={setAuthorization}
+            />
+          )}
         </div>
       </div>{' '}
     </div>
   );
 }
+LoginForm.propTypes = {
+  login: PropTypes.bool,
+  register: PropTypes.bool,
+  authentication: PropTypes.bool,
+};

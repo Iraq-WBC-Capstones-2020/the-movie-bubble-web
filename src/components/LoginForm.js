@@ -9,7 +9,7 @@ export default function LoginForm({ authentication, login }) {
   };
 
   return (
-    <div className="FormWrapper" style={{ display: login }}>
+    <div className="FormWrapper mt-20" style={{ display: login }}>
       <button
         className="clossButton focus:outline-none"
         onClick={() => visibleAuthentication()}
