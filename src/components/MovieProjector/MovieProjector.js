@@ -1,29 +1,16 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 import cam from './cam.svg';
 import circle from './circle.svg';
+import {Link} from 'react-router-dom';
 import './MovieProjector.css';
-const MovieProjector = () => {
-  useEffect(() => {
-  getPosters()  
-  },[]);
-  const [poster, setPoster] = useState([]);
-  const [isShown, setIsShown] = useState(false);
-  const getPosters = async () => {
-    const url = "https://api.themoviedb.org/3/discover/movie"
-    const api_key = "?api_key=f8178ac917f687379b47ab8562bbd9b8"
-    const info = await fetch(url + api_key)
-    const result = await info.json()
-    setPoster(result.results)
-    console.log(result.results)
-  }
-  if (poster.length > 0)
-  {
+const MovieProjector = (props) => {
+        const [isShown, setIsShown] = useState(false);
   return (
     <>
       <div className="flex items-center mx-4">
         <motion.div
-          className="circle lg:-mr-48 z-10 w-48 h-48 -mt-6 md:hidden sm:hidden"
+          className="circle sm:hidden md:hidden  lg:-mr-48 z-10 w-48 h-48 -mt-6 "
           initial={{ rotate: -90 }}
           animate={{ rotate: 0 }}
           transition={{ duration: 1,
@@ -57,11 +44,13 @@ const MovieProjector = () => {
             }}
           >
             <div className="projector__poster bg-cover w-full h-1/2 text-center relative">
-              <img src={"https://image.tmdb.org/t/p/original" + poster[1].backdrop_path} 
+              <Link to={"movie/"+props.data[0].id}>
+           <img src={"https://image.tmdb.org/t/p/original" + props.data[0].backdrop_path} 
               alt="poster"
-              /> {/*props*/}
+              />
+              </Link>
               {isShown &&
-        <motion.div className= "text-white text-xl flex w-full bg-black bg-opacity-50 -mt-8 absolute"
+        <motion.div className= "text-white text-lg flex w-full bg-black bg-opacity-50 -mt-8 absolute"
         initial=
         {{ 
           opacity: 0,
@@ -75,25 +64,18 @@ const MovieProjector = () => {
         transition={{
           duration: 1}}
           >
-            <h1 className="ml-4">{poster[2].original_title}</h1>
+            <h1 className="ml-4">{props.data[0].original_title}</h1>
         </motion.div>
         }
             </div>
             <div className="movie__description text-gray-200 mt-1 text-lg text-center">
-          <h3 className="description p-4">{poster[2].overview}</h3> {/*props*/}
+          <h3 className="description p-4">{props.data[0].overview}</h3>
             </div>
           </motion.div>
         </div>
       </div>
     </>
   );
-          }
-  else{
-    return(
-      <>
-      <h1>hi</h1>
-      </>
-    )
-  }
+
           }
 export default MovieProjector;
