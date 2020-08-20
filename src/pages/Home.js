@@ -18,20 +18,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="lg:w-2/5  flex  justify-center">
-          {authen && (
-            <AuthorizationButton
-              authentication={setAuthen}
-              login={setLogin}
-              register={setRegister}
-            />
-          )}
-          <div className="lg:mt-20">
-            {login && <LoginForm login={setLogin} authentication={setAuthen} />}
-            {register && (
-              <RegisterForm register={setRegister} authentication={setAuthen} />
-            )}
-          </div>
+        <div className=" lg:w-1/2 w-10/12 flex justify-center">
+          <AuthorizationButton />
         </div>
       </div>{' '}
     </div>
