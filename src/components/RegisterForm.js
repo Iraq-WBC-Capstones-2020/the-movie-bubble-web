@@ -8,7 +8,7 @@ export default function RegisterForm({ authentication, register }) {
     authentication(true);
   };
   return (
-    <div className="FormWrapper mt-20" style={{ display: register }}>
+    <div className="FormWrapper md:mt-20" style={{ display: register }}>
       <button
         className="clossButton focus:outline-none"
         onClick={() => visibeAuthentication()}
