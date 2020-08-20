@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import ListItem from './ListItems';
+import PropTypes from 'prop-types';
 const variants = {
   open: {
     y: 0,
@@ -21,17 +22,20 @@ const variants = {
   },
 };
 
-export default function NavList() {
+export default function NavList({ toggle }) {
   return (
     <>
       <motion.ul
-        className="p-2 absolute  w-full flex flex-col items-center h-full "
+        className="p-2 absolute  w-full flex flex-col items-center h-screen "
         variants={variants}
       >
-        <ListItem />
+        <ListItem toggler={toggle} />
 
         <h1 className="absolute bottom-0 mb-10 ">All Rights Reserved.</h1>
       </motion.ul>
     </>
   );
 }
+NavList.propTypes = {
+  toggle: PropTypes.func.isRequired,
+};

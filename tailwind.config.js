@@ -6,6 +6,12 @@ module.exports = {
         lightblue: '#18A0FB', // an example of extending tailwind
         darkgray: '#1D2530',
       },
+      borderRadius: {
+        20: '20px',
+      },
+      boxShadow: {
+        '3xl': '28px 2px 18px 10px #101010',
+      },
       fontSize: {
         '15r': '15rem',
         '10r': '10rem',
@@ -20,28 +26,30 @@ module.exports = {
         '40%': '40%',
         '60r': '60rem',
       },
-      scale: {
-        '300': '3',
+      minHeight: {
+        '10': '2.5rem',
       },
-      height: {
-        '20r': '20rem',
+      minWidth: {
+        '20': '7rem',
       },
-    },
-
-    screens: {
-      xs: { min: '200px', max: '320px' },
-      sm: { min: '320px', max: '700px' },
-      md: { min: '701px', max: '970px' },
-      lg: { min: '971px', max: '1300px' },
-      xl: { min: '1301px' },
-      'max-910p': { max: '910px' },
-    },
-    inset: {
-      '10%': '10%',
-      '60vh': '60vh',
+      inset: {
+        '10%': '10%',
+        '60vh': '60vh',
+      },
+      screens: {
+        x910: { max: '910px' },
+      },
+      skew: {
+        '-20': '-20deg',
+      },
     },
   },
-  variants: { scale: ['hover', 'responsive'] },
+
+  variants: {
+    scale: ['hover'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+  },
+
   plugins: [
     function ({ addComponents }) {
       const buttons = {

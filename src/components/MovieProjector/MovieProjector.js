@@ -10,7 +10,7 @@ const MovieProjector = (props) => {
     <>
       <div className="flex items-center mx-4">
         <motion.div
-          className="circle sm:hidden md:hidden  lg:-mr-48 z-10 w-48 h-48 -mt-6 "
+          className="circle hidden lg:block -mr-48 z-10 w-48 h-48 -mt-6 "
           initial={{ rotate: -90 }}
           animate={{ rotate: 0 }}
           transition={{ duration: 1,
@@ -18,11 +18,11 @@ const MovieProjector = (props) => {
         >
           <img src={circle} alt="cirlce" />
         </motion.div>
-        <div className="cam lg:ml-12 md:hidden sm:hidden">
+        <div className="cam hidden lg:block ml-12">
           <img src={cam} alt="logo" className="logo w-24 h-24" />
         </div>
         <motion.div
-          className="camera__light lg:w-64 h-64 -ml-4 -mt-6 bg-white z-50 md:hidden sm:hidden"
+          className="camera__light hidden lg:block w-64 h-64 -ml-4 -mt-6 bg-white z-50"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.1 }}
           transition={{
@@ -31,7 +31,7 @@ const MovieProjector = (props) => {
             yoyo: Infinity
           }}
         ></motion.div>
-        <div className="projector__container flex flex-col items-center overflow-hidden sm:ml-0 md:ml-0 w-full lg:w-1/2 -ml-16 mt-6 mb-4"
+        <div className="projector__container flex flex-col items-center overflow-hidden w-full lg:w-1/2 mt-6 mb-4"
          onMouseEnter={() => setIsShown(true)}
          onMouseLeave={() => setIsShown(false)}>
           <motion.div
@@ -69,7 +69,7 @@ const MovieProjector = (props) => {
         }
             </div>
             <div className="movie__description text-gray-200 mt-1 text-lg text-center">
-          <h3 className="description p-4">{props.data[0].overview}</h3>
+          <h3 className="description p-6">{props.data[0].overview}</h3>
             </div>
           </motion.div>
         </div>

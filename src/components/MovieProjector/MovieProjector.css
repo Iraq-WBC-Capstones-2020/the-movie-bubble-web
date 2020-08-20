@@ -5,7 +5,7 @@
 12px 0px 20px 5px#000000
 }
 .camera__light {
-  width: 20vw;
+  width: 15vw;
   height: 50vh;
   border-radius: 5rem;
   clip-path: polygon(0 50%, 100% 100%, 100% 0);

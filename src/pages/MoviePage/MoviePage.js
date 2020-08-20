@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import './MoviePage.css';
 import poster from './images/1.jpg';
 import greenButton from './images/green-button.png';
+import ActorsList from '../../components/MovieActor/ActorList';
 const posterUrl = {
   backgroundImage: `
     linear-gradient(
@@ -118,7 +119,7 @@ const MoviePage = () => {
                   duration: 6,
                 }}
               >
-                <h1 className="text-3xl font-light text-yellow-500">69%</h1>
+                <h1 className="text-3xl font-light text-yellow-500">65%</h1>
               </motion.div>
               <div className="rating__lable px-4 py-1 text-lg font-semibold  text-gray-900 w-20 rounded-full ">
                 IMDB
@@ -126,6 +127,7 @@ const MoviePage = () => {
             </div>
           </div>
         </div>
+        <ActorsList />
       </div>
     </>
   );
