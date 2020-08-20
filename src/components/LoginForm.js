@@ -2,12 +2,17 @@ import React from 'react';
 import Input from './Input';
 import clossButton from './../assets/icons/icon-close-orange.png';
 import PropTypes from 'prop-types';
-export default function LoginForm({ login }) {
+export default function LoginForm({ authentication, login }) {
+  const visibleAuthentication = () => {
+    login(false);
+    authentication(true);
+  };
+
   return (
     <div className="FormWrapper" style={{ display: login }}>
       <button
         className="clossButton focus:outline-none"
-        onClick={() => login(false)}
+        onClick={() => visibleAuthentication()}
       >
         <img src={clossButton} alt="clossButton" />
       </button>
@@ -59,4 +64,5 @@ export default function LoginForm({ login }) {
 }
 LoginForm.propTypes = {
   login: PropTypes.bool,
+  authentication: PropTypes.bool,
 };

@@ -78,13 +78,13 @@ span.underline:hover {
 
 @screen md {
   .FormWrapper {
-    width: 60%;
+    width: 350px;
   }
 }
 
 @screen xl {
   .FormWrapper {
-    width: 60%;
+    width: 350px;
   }
 }
 

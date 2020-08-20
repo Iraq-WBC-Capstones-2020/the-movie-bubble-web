@@ -1,21 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaFacebookF } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
-import LoginForm from './LoginForm';
-import RegisterForm from './RegisterForm';
-export default function AuthorizationButton() {
-  const [login, setLogin] = useState(false);
-  const [register, setRegister] = useState(false);
-
+import PropTypes from 'prop-types';
+export default function AuthorizationButton({
+  authentication,
+  login,
+  register,
+}) {
   const visibeLogin = () => {
-    setLogin(!login);
+    login(true);
+    authentication(false);
   };
   const visibeRegister = () => {
-    setRegister(!register);
+    register(true);
+    authentication(false);
   };
   return (
     <>
-      <div className="absolute lg:mr-10  lg:mt-64 mt-20 sm:ml-10 flex flex-col bg-darkgray ">
+      <div
+        className="absolute lg:mr-10  lg:mt-64 mt-20 sm:ml-10 flex flex-col  bg-darkgray "
+        style={{ display: authentication }}
+      >
         <div className="flex">
           <button
             onClick={() => visibeLogin()}
@@ -58,10 +63,11 @@ export default function AuthorizationButton() {
           </button>
         </div>
       </div>
-      <div className="lg:mt-32  mt-10">
-        {login && <LoginForm login={setLogin} />}
-        {register && <RegisterForm register={setRegister} />}
-      </div>
     </>
   );
 }
+AuthorizationButton.propTypes = {
+  login: PropTypes.bool,
+  register: PropTypes.bool,
+  authentication: PropTypes.bool,
+};
