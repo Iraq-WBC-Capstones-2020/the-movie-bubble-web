@@ -19,7 +19,6 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/profile" component={Profile} />
           <Route path="/quiz" component={Quiz} />
-          <Route Path="/result" component={Result} />
           <Route path="/movie/:id" component={Movie} />
           <Route Path="/result" component={Result} />
           <Route component={Error404} />
