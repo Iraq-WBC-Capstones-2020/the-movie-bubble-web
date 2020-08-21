@@ -1,14 +1,21 @@
 import React from 'react';
 import Input from './Input';
 import clossButton from './../assets/icons/icon-close-orange.png';
-
-export default function RegisterForm() {
+import PropTypes from 'prop-types';
+export default function RegisterForm({ authentication, register }) {
+  const visibeAuthentication = () => {
+    register(false);
+    authentication(true);
+  };
   return (
-    <div className="FormWrapper ">
-      <div className="clossButton">
+    <div className="FormWrapper md:mt-20" style={{ display: register }}>
+      <button
+        className="clossButton focus:outline-none"
+        onClick={() => visibeAuthentication()}
+      >
         <img src={clossButton} alt="clossButton" />
-      </div>
-      <form className="FormWrapper__Form">
+      </button>
+      <form className="FormWrapper__Form ">
         <div className="flex w-2/3 flex-col md:flex-row">
           <div className="md:w-2/3 w-full">
             <Input type="text" placeholder="First Name" id="first Name"></Input>
@@ -53,3 +60,7 @@ export default function RegisterForm() {
     </div>
   );
 }
+RegisterForm.propTypes = {
+  register: PropTypes.func.isRequired,
+  authentication: PropTypes.func.isRequired,
+};
