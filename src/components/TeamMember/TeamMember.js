@@ -1,7 +1,7 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 import '../TeamMember/TeamMember.css';
-
+import PropTypes from 'prop-types';
 export default function TeamMember({ isRight, name, role, image }) {
   if (isRight)
     return (
@@ -37,3 +37,9 @@ export default function TeamMember({ isRight, name, role, image }) {
     </div>
   );
 }
+TeamMember.propTypes = {
+  isRight: PropTypes.bool,
+  name: PropTypes.string,
+  role: PropTypes.string,
+  image: PropTypes.string.isRequired,
+};

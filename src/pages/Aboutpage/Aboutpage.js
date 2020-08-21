@@ -23,10 +23,15 @@ const Aboutpage = () => {
       >
         <div className="text-3xl flex flex-col justify-center items-center h-full">
           <p className="font-bold text-center">
-            Don't get lost in the internet looking for a movie to watch, with us
-            you can find it in a minute.
+            Don&apos;t get lost in the internet looking for a movie to watch,
+            with us you can find it in a minute.
           </p>
-          <p className="text-xl opacity-75 pt-5">Built with love ❤️</p>
+          <p className="text-xl opacity-75 pt-5">
+            Built with love{' '}
+            <span aria-label="heart emoji" role="img">
+              ❤️
+            </span>
+          </p>
         </div>
       </div>
 
