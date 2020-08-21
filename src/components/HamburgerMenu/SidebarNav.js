@@ -21,6 +21,14 @@ const sidebar = {
     },
   },
 };
+const variants = {
+  open: {
+    width: '16rem',
+  },
+  closed: {
+    width: '5rem',
+  },
+};
 
 export default function SidebarNav() {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -29,6 +37,7 @@ export default function SidebarNav() {
   return (
     <>
       <motion.nav
+        variants={variants}
         className="absolute z-10 h-screen	 top-0 right-0 w-64 bottom-0 overflow-hidden"
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
