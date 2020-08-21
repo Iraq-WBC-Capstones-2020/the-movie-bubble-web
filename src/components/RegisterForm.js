@@ -61,6 +61,6 @@ export default function RegisterForm({ authentication, register }) {
   );
 }
 RegisterForm.propTypes = {
-  register: PropTypes.bool,
-  authentication: PropTypes.bool,
+  register: PropTypes.func.isRequired,
+  authentication: PropTypes.func.isRequired,
 };

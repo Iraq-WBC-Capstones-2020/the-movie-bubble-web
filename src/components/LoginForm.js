@@ -63,6 +63,6 @@ export default function LoginForm({ authentication, login }) {
   );
 }
 LoginForm.propTypes = {
-  login: PropTypes.bool,
-  authentication: PropTypes.bool,
+  login: PropTypes.func.isRequired,
+  authentication: PropTypes.func.isRequired,
 };

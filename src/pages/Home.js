@@ -4,7 +4,6 @@ import AuthorizationButton from '../components/AuthorizationButton';
 import SlideCards from '../components/Sliders/Sliders';
 import LoginForm from '../components/LoginForm';
 import RegisterForm from '../components/RegisterForm';
-import PropTypes from 'prop-types';
 export default function Home() {
   const [authorization, setAuthorization] = useState(true);
   const [login, setLogin] = useState(false);
@@ -38,11 +37,9 @@ export default function Home() {
           )}
         </div>
       </div>{' '}
+      <div>
+        <h1 className="text-2xl bg-lightblue">The Movie Bubble</h1>
+      </div>
     </div>
   );
 }
-LoginForm.propTypes = {
-  login: PropTypes.bool,
-  register: PropTypes.bool,
-  authentication: PropTypes.bool,
-};
