@@ -3,9 +3,10 @@ import FireWave from '../components/FireWaves/FireWave';
 import Questions from './../components/Questions/Questions';
 import ProgressBar from './../components/ProgressBar';
 import PropTypes from 'prop-types';
-export default function Quiz({ result, index }) {
+export default function Quiz({ result, index, prog }) {
   const [questions, setQuestions] = useState([]);
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = prog;
+
   // useEffect(async () => {
   //   try {
   //     const response = await fetch('questiondata/question.json');
@@ -20,11 +21,14 @@ export default function Quiz({ result, index }) {
     fetch('questiondata/question.json')
       .then((response) => response.json())
       .then((allQuestions) => {
-        setQuestions(allQuestions[0].questions);
-        console.log(allQuestions[0].questions);
+        setQuestions(
+          allQuestions[Math.round(Math.random() * (allQuestions.length - 1))]
+            .questions
+        );
       })
       .catch();
   }, []);
+
   return (
     <div className=" relative bg-darkgray h-auto">
       <div className="flex justify-end absolute right-0">
@@ -35,7 +39,7 @@ export default function Quiz({ result, index }) {
       <div className="max-h-screen">
         {questions.length != 0 && (
           <Questions
-            question={questions}
+            question={questions[index[0]]}
             progress={setProgress}
             result={result}
             index={index}

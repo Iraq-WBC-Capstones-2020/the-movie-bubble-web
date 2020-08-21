@@ -1,9 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useHistory } from 'react-router-dom';
-function Answers({ answer, image, questionVal, result, index, progress }) {
-  let history = useHistory();
-  console.log(history);
+function Answers({
+  answer,
+  image,
+  questionVal,
+  result,
+  index,
+  progress,
+  key1,
+}) {
+  console.log(key1);
   return (
     <button
       className={`transform main-gradient hover:scale-105 rounded-lg p-1 flex justify-center min-h-16 items-center ${
@@ -12,7 +18,7 @@ function Answers({ answer, image, questionVal, result, index, progress }) {
       onClick={() => {
         progress((pr) => pr + 20);
         index((pr) => pr + 1);
-        result((pr) => [...pr, questionVal]);
+        result((pr) => [...pr, { [key1]: questionVal }]);
         console.log(questionVal);
       }}
     >
@@ -36,5 +42,6 @@ Answers.propTypes = {
   result: PropTypes.arrayOf(PropTypes.string).isRequired,
   index: PropTypes.func.isRequired,
   progress: PropTypes.func.isRequired,
+  key1: PropTypes.string.isRequired,
 };
 export default Answers;

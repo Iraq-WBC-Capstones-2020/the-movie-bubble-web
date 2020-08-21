@@ -22,7 +22,7 @@ const sidebar = {
   },
 };
 
-export default function SidebarNav() {
+export default function SidebarNav({ reset }) {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
@@ -42,7 +42,7 @@ export default function SidebarNav() {
           className="absolute	 top-0 right-0 w-64 bottom-0 "
           variants={sidebar}
         />
-        <NavList toggle={() => toggleOpen()} />
+        <NavList toggle={() => toggleOpen()} reset={reset} />
 
         <Toggler toggle={() => toggleOpen()} />
       </motion.nav>

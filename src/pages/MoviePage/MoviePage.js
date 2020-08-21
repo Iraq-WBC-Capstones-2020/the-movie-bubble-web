@@ -26,7 +26,7 @@ const MoviePage = () => {
           }}
           className="green__button h-40 w-40 mt-10 "
         >
-          <img src={greenButton} alt="" />
+          <img src={greenButton} alt="poster" />
         </motion.div>
         <div className="movie__name text-gray-300 self-start text-3xl ml-4">
           EVIL DEAD(1981){' '}

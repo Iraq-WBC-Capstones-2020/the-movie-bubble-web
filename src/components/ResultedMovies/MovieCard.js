@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 export default function MovieCard({ movie }) {
   return (
     <div className="movie-card cursor-pointer overflow-hidden">

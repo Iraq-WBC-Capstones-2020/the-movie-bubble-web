@@ -7,28 +7,39 @@ import Profile from './pages/Profile';
 import Error404 from './pages/Error/Error404';
 import Movie from './pages/MoviePage/MoviePage';
 import Navbar from './components/Navbar';
+import Result from './pages/ResultPage/ResultPage';
+
 function App() {
   const [result, setResult] = useState([]);
   const [index, setIndex] = useState(0);
+  const [progress, setProgress] = useState(() => 50);
   console.log(result);
+  const reset = () => {
+    setIndex(0);
+    setResult([]);
+    setProgress(0);
+  };
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Link to="/">Link</Link>
+        <Navbar reset={reset} />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/profile" component={Profile} />
-          <Route path="/result" component={About} />
           <Route
             path="/quiz"
             component={() => (
-              <Quiz result={setResult} index={[index, setIndex]} />
+              <Quiz
+                result={setResult}
+                index={[index, setIndex]}
+                prog={[progress, setProgress]}
+              />
             )}
           />
 
           <Route path="/movie/:id" component={Movie} />
+          <Route Path="/result" component={Result} />
           <Route component={Error404} />
         </Switch>
       </BrowserRouter>

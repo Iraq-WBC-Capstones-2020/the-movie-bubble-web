@@ -26,7 +26,7 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://image.flaticon.com/icons/png/512/138/138301.png",
         "includeImage": true,
         "question": "which one was better",
         "key": "isAnimation",
@@ -37,13 +37,13 @@
           },
           {
             "ans": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/846a9086-8a40-43e0-aa10-2fc7d6d73730/dangppm-10fc2867-3ec8-4f2c-9f6b-0f4fa4e4af97.png/v1/fill/w_1024,h_1141,q_75,strp/beauty_and_the_beast_2017_belle_and_beast_png_by_mintmovi3-dangppm.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi84NDZhOTA4Ni04YTQwLTQzZTAtYWExMC0yZmM3ZDZkNzM3MzAvZGFuZ3BwbS0xMGZjMjg2Ny0zZWM4LTRmMmMtOWY2Yi0wZjRmYTRlNGFmOTcucG5nIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTExNDEifV1dfQ.SOJDGfIxaBGuLvS0570r7xIO7_O6QY0ypElzxmTcFbg",
-            "val": "real"
+            "val": false
           }
         ]
       },
       {
         "image": "ans",
-        "includeImage": false,
+        "includeImage": true,
         "question": "q13",
         "key": "isClassic",
         "answers": [
@@ -54,14 +54,6 @@
           {
             "ans": "ans132",
             "val": "val132"
-          },
-          {
-            "ans": "ans133",
-            "val": "val133"
-          },
-          {
-            "ans": "ans134",
-            "val": "val134"
           }
         ]
       },

@@ -1,10 +1,10 @@
 import React from 'react';
 import Menu from './HamburgerMenu/SidebarNav';
 import Logo from './Logo/Logo';
-export default function Navbar() {
+export default function Navbar({ reset }) {
   return (
     <div className="bg-darkgray top-0 sticky z-10">
-      <Menu />
+      <Menu reset={reset} />
       <Logo />
     </div>
   );
