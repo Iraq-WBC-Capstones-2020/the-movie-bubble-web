@@ -29,7 +29,7 @@ export default function SidebarNav() {
   return (
     <>
       <motion.nav
-        className="absolute	 top-0 right-0 w-64 bottom-0 overflow-hidden"
+        className="absolute z-10 h-screen	 top-0 right-0 w-64 bottom-0 overflow-hidden"
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         custom={height}

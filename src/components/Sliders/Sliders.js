@@ -18,7 +18,7 @@ const Sliders = () => {
           transition={{ duration: 1, ease: 'easeInOut', delay: 1 }}
           className="   first z-40 mt-4"
         >
-          <div className="shadow shadow-3xl rounded-20 bg-gray-400">
+          <div className="shadow-3xl rounded-20 bg-gray-400">
             <img
               src={First}
               alt="poster-1"
@@ -39,7 +39,7 @@ const Sliders = () => {
           transition={{ duration: 1, ease: 'easeInOut', delay: 1 }}
           className="second z-30 -ml-48"
         >
-          <div className="shadow shadow-3xl rounded-20">
+          <div className="shadow-3xl rounded-20">
             <img
               src={Second}
               alt="poster-2"
@@ -60,7 +60,7 @@ const Sliders = () => {
           transition={{ duration: 1, ease: 'easeInOut', delay: 1 }}
           className="third z-20 -ml-56"
         >
-          <div className="shadow shadow-3xl rounded-20">
+          <div className="shadow-3xl rounded-20">
             <img
               src={Third}
               alt="poster-3"
@@ -81,7 +81,7 @@ const Sliders = () => {
           transition={{ duration: 1, ease: 'easeInOut', delay: 1 }}
           className="fourth z-10 -ml-64"
         >
-          <div className="shadow shadow-3xl rounded-20">
+          <div className="shadow-3xl rounded-20">
             <img
               src={Fourth}
               alt="poster-4"
