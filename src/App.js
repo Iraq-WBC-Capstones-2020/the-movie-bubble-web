@@ -13,7 +13,6 @@ function App() {
   const [result, setResult] = useState([]);
   const [index, setIndex] = useState(0);
   const [progress, setProgress] = useState(() => 0);
-  console.log(result);
   const reset = () => {
     setIndex(0);
     setResult([]);
