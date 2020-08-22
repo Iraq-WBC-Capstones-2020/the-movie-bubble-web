@@ -20,7 +20,7 @@ function App() {
           <Route path="/profile" component={Profile} />
           <Route path="/quiz" component={Quiz} />
           <Route path="/movie/:id" component={Movie} />
-          <Route Path="/result" component={Result} />
+          <Route path="/result" component={Result} />
           <Route component={Error404} />
         </Switch>
       </BrowserRouter>
