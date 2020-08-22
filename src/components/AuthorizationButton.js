@@ -67,7 +67,7 @@ export default function AuthorizationButton({
   );
 }
 AuthorizationButton.propTypes = {
-  login: PropTypes.func.isRequired,
-  register: PropTypes.func.isRequired,
-  authentication: PropTypes.func.isRequired,
+  login: PropTypes.func,
+  register: PropTypes.func,
+  authentication: PropTypes.func,
 };

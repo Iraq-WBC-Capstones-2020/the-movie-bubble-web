@@ -4,7 +4,9 @@ import cam from './cam.svg';
 import circle from './circle.svg';
 import { Link } from 'react-router-dom';
 import './MovieProjector.css';
-const MovieProjector = (props) => {
+import PropTypes from 'prop-types';
+
+const MovieProjector = ({ data }) => {
   const [isShown, setIsShown] = useState(false);
   return (
     <>
@@ -48,11 +50,11 @@ const MovieProjector = (props) => {
             }}
           >
             <div className="projector__poster bg-cover w-full h-1/2 text-center relative">
-              <Link to={'movie/' + props.data[0].id}>
+              <Link to={'movie/' + data[0].id}>
                 <img
                   src={
                     'https://image.tmdb.org/t/p/original' +
-                    props.data[0].backdrop_path
+                    data[0].backdrop_path
                   }
                   alt="poster"
                 />
@@ -72,17 +74,21 @@ const MovieProjector = (props) => {
                     duration: 1,
                   }}
                 >
-                  <h1 className="ml-4">{props.data[0].original_title}</h1>
+                  <h1 className="ml-4">{data[0].original_title}</h1>
                 </motion.div>
               )}
             </div>
             <div className="movie__description text-gray-200 mt-1 text-lg text-center">
-              <h3 className="description p-6">{props.data[0].overview}</h3>
+              <h3 className="description p-6">{data[0].overview}</h3>
             </div>
           </motion.div>
         </div>
       </div>
     </>
   );
+};
+
+MovieProjector.propTypes = {
+  data: PropTypes.array.isRequired,
 };
 export default MovieProjector;
