@@ -3,6 +3,7 @@ import { motion, useCycle } from 'framer-motion';
 import useDimensions from './useDimensions';
 import Toggler from './Toggler';
 import NavList from './NavList';
+import PropTypes from 'prop-types';
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 86.8% 40px)`,
@@ -49,3 +50,6 @@ export default function SidebarNav({ reset }) {
     </>
   );
 }
+SidebarNav.propTypes = {
+  reset: PropTypes.func.isRequired,
+};

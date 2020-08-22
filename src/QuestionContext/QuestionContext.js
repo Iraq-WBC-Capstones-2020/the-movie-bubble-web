@@ -1,4 +1,5 @@
 import React, { useState, createContext } from 'react';
+import PropTypes from 'prop-types';
 export const QuestionContext = createContext();
 
 export const QuestionProvider = ({ children }) => {
@@ -6,6 +7,7 @@ export const QuestionProvider = ({ children }) => {
   const [result, setResult] = useState([]);
   const [questions, setQuestions] = useState({});
   const [movieResult, setMovieResult] = useState([]);
+  console.log(children);
   return (
     <div>
       <QuestionContext.Provider
@@ -24,4 +26,7 @@ export const QuestionProvider = ({ children }) => {
       </QuestionContext.Provider>
     </div>
   );
+};
+QuestionProvider.prototype = {
+  children: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

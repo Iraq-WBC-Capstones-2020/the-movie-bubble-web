@@ -28,7 +28,7 @@
       {
         "image": "https://image.flaticon.com/icons/png/512/138/138301.png",
         "includeImage": true,
-        "question": "which one was better",
+        "question": "Which one was better",
         "key": "isAnimation",
         "answers": [
           {
@@ -42,56 +42,18 @@
         ]
       },
       {
-        "image": "ans",
+        "image": "./../pick.png",
         "includeImage": true,
-        "question": "q13",
+        "question": "If you have opportunity which one do you pick",
         "key": "isClassic",
         "answers": [
           {
-            "ans": "ans131",
-            "val": "val131"
+            "ans": "https://scalethumb.leparking.fr/unsafe/331x248/smart/https://cloud.leparking.fr/2019/09/08/12/06/ford-mustang-ford-mustang-1995-gt-5-0-v8-290-ps-rouge_7076090830.jpg",
+            "val": true
           },
           {
-            "ans": "ans132",
-            "val": "val132"
-          }
-        ]
-      },
-      {
-        "image": "ans",
-        "includeImage": true,
-        "question": "sdfsdfsdfs",
-        "answers": [
-          {
-            "ans": "img141",
-            "val": "val141"
-          },
-          {
-            "ans": "img142",
-            "val": "val142"
-          }
-        ]
-      },
-      {
-        "image": "ans",
-        "includeImage": false,
-        "question": "q15",
-        "answers": [
-          {
-            "ans": "ans151",
-            "val": "val151"
-          },
-          {
-            "ans": "ans152",
-            "val": "val152"
-          },
-          {
-            "ans": "ans153",
-            "val": "val153"
-          },
-          {
-            "ans": "ans154",
-            "val": "val154"
+            "ans": "https://images-na.ssl-images-amazon.com/images/I/61KPN0wvijL._AC_SL1004_.jpg",
+            "val": false
           }
         ]
       }
@@ -134,66 +96,6 @@
           {
             "ans": "img222",
             "val": "val122"
-          }
-        ]
-      },
-      {
-        "image": "ans",
-        "includeImage": false,
-        "question": "q23",
-        "answers": [
-          {
-            "ans": "ans231",
-            "val": "val231"
-          },
-          {
-            "ans": "ans232",
-            "val": "val232"
-          },
-          {
-            "ans": "ans233",
-            "val": "val233"
-          },
-          {
-            "ans": "ans234",
-            "val": "val234"
-          }
-        ]
-      },
-      {
-        "image": "ans",
-        "includeImage": true,
-        "answers": [
-          {
-            "ans": "img241",
-            "val": "val241"
-          },
-          {
-            "ans": "img242",
-            "val": "val242"
-          }
-        ]
-      },
-      {
-        "image": "ans",
-        "includeImage": false,
-        "question": "q15",
-        "answers": [
-          {
-            "ans": "ans251",
-            "val": "val251"
-          },
-          {
-            "ans": "ans252",
-            "val": "val252"
-          },
-          {
-            "ans": "ans253",
-            "val": "val253"
-          },
-          {
-            "ans": "ans254",
-            "val": "val254"
           }
         ]
       }

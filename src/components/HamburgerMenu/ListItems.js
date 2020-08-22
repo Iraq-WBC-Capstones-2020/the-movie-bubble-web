@@ -12,7 +12,10 @@ export default function ListItems({ toggler, reset }) {
       >
         <Link to="/">
           <button
-            onClick={toggler}
+            onClick={() => {
+              toggler();
+              reset();
+            }}
             className="w-full py-2 focus:outline-none text-white"
           >
             Home
@@ -55,4 +58,5 @@ export default function ListItems({ toggler, reset }) {
 }
 ListItems.propTypes = {
   toggler: PropTypes.func.isRequired,
+  reset: PropTypes.func.isRequired,
 };

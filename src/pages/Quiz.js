@@ -6,17 +6,6 @@ import PropTypes from 'prop-types';
 export default function Quiz({ result, index, prog }) {
   const [questions, setQuestions] = useState([]);
   const [progress, setProgress] = prog;
-
-  // useEffect(async () => {
-  //   try {
-  //     const response = await fetch('questiondata/question.json');
-  //     const allQuestions = await response.json();
-  //     // console.log(Math.round(Math.random() * 1));
-  //     setQuestions(allQuestions[0].questions);
-  //   } catch (e) {
-  //     console.error(e);
-  //   }
-  // }, []);
   useEffect(() => {
     fetch('questiondata/question.json')
       .then((response) => response.json())
@@ -28,21 +17,21 @@ export default function Quiz({ result, index, prog }) {
       })
       .catch();
   }, []);
-
   return (
     <div className=" relative bg-darkgray h-auto">
-      <div className="flex justify-end absolute right-0">
+      <div className="flex justify-end md:absolute md:right-0">
         <div className="mr-8">
           <ProgressBar progress={progress} width={150} height={150} />
         </div>
       </div>
-      <div className="max-h-screen">
-        {questions.length != 0 && (
+      <div className="">
+        {questions.length !== 0 && (
           <Questions
             question={questions[index[0]]}
             progress={setProgress}
             result={result}
             index={index}
+            numOfQ={questions.length}
           />
         )}
       </div>
@@ -52,7 +41,8 @@ export default function Quiz({ result, index, prog }) {
     </div>
   );
 }
-
-Quiz.prototype = {
+Quiz.propTypes = {
   result: PropTypes.func.isRequired,
+  index: PropTypes.array.isRequired,
+  prog: PropTypes.array.isRequired,
 };

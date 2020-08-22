@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/Aboutpage/Aboutpage';
 import Quiz from './pages/Quiz';
@@ -12,7 +12,7 @@ import Result from './pages/ResultPage/ResultPage';
 function App() {
   const [result, setResult] = useState([]);
   const [index, setIndex] = useState(0);
-  const [progress, setProgress] = useState(() => 50);
+  const [progress, setProgress] = useState(() => 0);
   console.log(result);
   const reset = () => {
     setIndex(0);
@@ -29,7 +29,7 @@ function App() {
           <Route path="/profile" component={Profile} />
           <Route
             path="/quiz"
-            component={() => (
+            render={() => (
               <Quiz
                 result={setResult}
                 index={[index, setIndex]}
@@ -37,9 +37,8 @@ function App() {
               />
             )}
           />
-
-          <Route path="/movie/:id" component={Movie} />
           <Route Path="/result" component={Result} />
+          <Route path="/movie/:id" component={Movie} />
           <Route component={Error404} />
         </Switch>
       </BrowserRouter>

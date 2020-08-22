@@ -12,17 +12,25 @@ function Answers({
   console.log(key1);
   return (
     <button
-      className={`transform main-gradient hover:scale-105 rounded-lg p-1 flex justify-center min-h-16 items-center ${
-        image ? 'xl:w-64 ml-56 min-h-16 mx-10 ' : 'lg:mx-32'
+      className={`transform main-gradient hover:scale-105 rounded-lg p-1 flex justify-center max-w-70 min-h-16 items-center w-full ${
+        image ? 'xl:w-64 xl:ml-56 min-h-16 mx-4 w-full ' : 'lg:mx-32'
       }`}
       onClick={() => {
-        progress((pr) => pr + 20);
+        progress((pr) => pr + 33.3334);
         index((pr) => pr + 1);
         result((pr) => [...pr, { [key1]: questionVal }]);
         console.log(questionVal);
       }}
     >
-      <div className="p-4 h-full w-full bg-darkgray rounded-lg flex items-center justify-center">
+      <div
+        className="p-4 min-h-full min-w-full bg-darkgray rounded-lg flex items-center justify-center"
+        onClick={() => {
+          progress((pr) => pr + 33.3334);
+          index((pr) => pr + 1);
+          result((pr) => [...pr, { [key1]: questionVal }]);
+          console.log(questionVal);
+        }}
+      >
         {image && (
           <img
             src={answer}

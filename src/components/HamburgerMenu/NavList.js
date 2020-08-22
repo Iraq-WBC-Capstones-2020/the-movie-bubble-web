@@ -38,4 +38,5 @@ export default function NavList({ toggle, reset }) {
 }
 NavList.propTypes = {
   toggle: PropTypes.func.isRequired,
+  reset: PropTypes.func.isRequired,
 };

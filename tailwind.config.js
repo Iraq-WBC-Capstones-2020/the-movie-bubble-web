@@ -30,15 +30,18 @@ module.exports = {
       minHeight: {
         '10': '2.5rem',
         '16': '4rem',
+        full: '100%',
       },
       maxHeight: {
         '70': '17rem',
       },
       minWidth: {
         '20': '7rem',
+        full: '100%',
       },
       maxWidth: {
-        '70': '17rem',
+        '70': '27rem',
+        full: '100%',
       },
       inset: {
         '10%': '10%',
