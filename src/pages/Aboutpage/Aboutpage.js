@@ -26,7 +26,7 @@ const Aboutpage = () => {
         <div className="text-3xl flex flex-col justify-center items-center h-full">
           <p className="font-bold text-center">
             Don&apos;t get lost in the internet looking for a movie to watch,
-            with us you can find it in a minute.
+            with us you can find a movie in a minute.
           </p>
           <p className="text-xl opacity-75 pt-5">
             Built with love{' '}
@@ -36,8 +36,8 @@ const Aboutpage = () => {
           </p>
         </div>
       </div>
-      <TeamMember isRight name="Wissam Naji" role="Team Leader" image={Img1} />
-      <TeamMember name="Osama Abdullah" role="Team Leader" image={Img2} />
+      <TeamMember isRight name="Osama Abdullah" role="Team Leader" image={Img2} />
+      <TeamMember name="Wissam Naji" role="Team Leader" image={Img1} />
       <TeamMember isRight name="Revan Sarbast" role="Team Member" image={Img3} />
       <TeamMember name="Randa Yahya" role="Team Member" image={Img4} />
       <TeamMember isRight name="Hewr Srood" role="Team Member" image={Img5} />
