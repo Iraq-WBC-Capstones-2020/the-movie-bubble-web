@@ -10,7 +10,7 @@ const MovieProjector = (props) => {
     <>
       <div className="flex items-center mx-4">
         <motion.div
-          className="circle hidden lg:block -mr-48 z-10 w-48 h-48 -mt-6 "
+          className="circle hidden lg:block -mr-48 w-48 h-48 -mt-6 "
           initial={{ rotate: -90 }}
           animate={{ rotate: 0 }}
           transition={{ duration: 1,
@@ -22,7 +22,7 @@ const MovieProjector = (props) => {
           <img src={cam} alt="logo" className="logo w-24 h-24" />
         </div>
         <motion.div
-          className="camera__light hidden lg:block w-64 h-64 -ml-4 -mt-6 bg-white z-50"
+          className="camera__light hidden lg:block w-64 h-64 -ml-4 -mt-6 bg-white"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.1 }}
           transition={{
