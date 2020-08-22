@@ -15,7 +15,7 @@ const MovieProjector = (props) => {
           animate={{ rotate: 0 }}
           transition={{
             duration: 1,
-            delay: 0.5
+            delay: 0.5,
           }}
         >
           <img src={circle} alt="cirlce" />
@@ -30,12 +30,14 @@ const MovieProjector = (props) => {
           transition={{
             delay: 1.5,
             duration: 0.8,
-            yoyo: Infinity
+            yoyo: Infinity,
           }}
         ></motion.div>
-        <div className="projector__container flex flex-col items-center overflow-hidden w-full lg:w-1/2 mt-6 mb-4"
+        <div
+          className="projector__container flex flex-col items-center overflow-hidden w-full lg:w-1/2 mt-6 mb-4"
           onMouseEnter={() => setIsShown(true)}
-          onMouseLeave={() => setIsShown(false)}>
+          onMouseLeave={() => setIsShown(false)}
+        >
           <motion.div
             className="flex flex-col items-center"
             initial={{ opacity: 0 }}
@@ -46,30 +48,33 @@ const MovieProjector = (props) => {
             }}
           >
             <div className="projector__poster bg-cover w-full h-1/2 text-center relative">
-              <Link to={"movie/" + props.data[0].id}>
-                <img src={"https://image.tmdb.org/t/p/original" + props.data[0].backdrop_path}
+              <Link to={'movie/' + props.data[0].id}>
+                <img
+                  src={
+                    'https://image.tmdb.org/t/p/original' +
+                    props.data[0].backdrop_path
+                  }
                   alt="poster"
                 />
               </Link>
-              {isShown &&
-                <motion.div className="text-white text-lg flex w-full bg-black bg-opacity-50 -mt-8 absolute"
-                  initial=
-                  {{
+              {isShown && (
+                <motion.div
+                  className="text-white text-lg flex w-full bg-black bg-opacity-50 -mt-8 absolute"
+                  initial={{
                     opacity: 0,
-                    x: -160
+                    x: -160,
                   }}
-                  animate=
-                  {{
+                  animate={{
                     opacity: 1,
-                    x: 0
+                    x: 0,
                   }}
                   transition={{
-                    duration: 1
+                    duration: 1,
                   }}
                 >
                   <h1 className="ml-4">{props.data[0].original_title}</h1>
                 </motion.div>
-              }
+              )}
             </div>
             <div className="movie__description text-gray-200 mt-1 text-lg text-center">
               <h3 className="description p-6">{props.data[0].overview}</h3>
@@ -79,6 +84,5 @@ const MovieProjector = (props) => {
       </div>
     </>
   );
-
-}
+};
 export default MovieProjector;

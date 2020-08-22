@@ -6,8 +6,8 @@ import Quiz from './pages/Quiz';
 import Profile from './pages/Profile';
 import Error404 from './pages/Error/Error404';
 import Movie from './pages/MoviePage/MoviePage';
-import Navbar from './components/Navbar'
-import Result from './pages/ResultPage/ResultPage'
+import Navbar from './components/Navbar';
+import Result from './pages/ResultPage/ResultPage';
 
 function App() {
   return (
