@@ -37,6 +37,7 @@ function Questions({ question, progress, result, index, numOfQ }) {
                   result={result}
                   progress={progress}
                   key1={question.key}
+                  numOfQ={numOfQ}
                 />
               ))}
             </div>

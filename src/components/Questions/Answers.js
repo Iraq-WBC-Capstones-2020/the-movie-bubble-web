@@ -8,29 +8,22 @@ function Answers({
   index,
   progress,
   key1,
+  numOfQ,
 }) {
   console.log(key1);
   return (
     <button
       className={`transform main-gradient hover:scale-105 rounded-lg p-1 flex justify-center max-w-70 min-h-16 items-center w-full ${
-        image ? 'xl:w-64 xl:ml-56 min-h-16 mx-4 w-full ' : 'lg:mx-32'
+        image ? ' xl:ml-48 h-full mx-4 w-full ' : 'lg:mx-32'
       }`}
       onClick={() => {
-        progress((pr) => pr + 33.3334);
+        progress((pr) => pr + 100 / numOfQ);
         index((pr) => pr + 1);
         result((pr) => [...pr, { [key1]: questionVal }]);
         console.log(questionVal);
       }}
     >
-      <div
-        className="p-4 min-h-full min-w-full bg-darkgray rounded-lg flex items-center justify-center"
-        onClick={() => {
-          progress((pr) => pr + 33.3334);
-          index((pr) => pr + 1);
-          result((pr) => [...pr, { [key1]: questionVal }]);
-          console.log(questionVal);
-        }}
-      >
+      <div className="p-4 min-h-full min-w-full bg-darkgray rounded-lg flex items-center justify-center">
         {image && (
           <img
             src={answer}
@@ -51,5 +44,6 @@ Answers.propTypes = {
   index: PropTypes.func.isRequired,
   progress: PropTypes.func.isRequired,
   key1: PropTypes.string.isRequired,
+  numOfQ: PropTypes.number.isRequired,
 };
 export default Answers;

@@ -2,9 +2,9 @@
   {
     "questions": [
       {
-        "image": "http://cbsnews1.cbsistatic.com/hub/i/2015/10/08/8d19e39d-0cde-4943-92a9-fb34470552ae/girl-drinking-glass-of-water.jpg",
+        "image": "https://images.vexels.com/media/users/3/149901/isolated/preview/ce2b2af590255fa8bb51db82087ef750-leprechaun-drinking-beer-cartoon-by-vexels.png",
         "includeImage": false,
-        "question": "What do you like to drink now?",
+        "question": "What do you like to drink now ?",
         "key": "genre",
         "answers": [
           {
@@ -42,17 +42,17 @@
         ]
       },
       {
-        "image": "./../pick.png",
+        "image": "https://i.imgur.com/EgpV3Wj.png",
         "includeImage": true,
-        "question": "If you have opportunity which one do you pick",
+        "question": "If you have opportunity which one do you pick ?",
         "key": "isClassic",
         "answers": [
           {
-            "ans": "https://scalethumb.leparking.fr/unsafe/331x248/smart/https://cloud.leparking.fr/2019/09/08/12/06/ford-mustang-ford-mustang-1995-gt-5-0-v8-290-ps-rouge_7076090830.jpg",
+            "ans": "https://purepng.com/public/uploads/large/purepng.com-red-ford-mustang-mach-carcarvehicletransportford-961524664679bl2rw.png",
             "val": true
           },
           {
-            "ans": "https://images-na.ssl-images-amazon.com/images/I/61KPN0wvijL._AC_SL1004_.jpg",
+            "ans": "https://thenewswheel.com/wp-content/uploads/2019/10/2020-Mustang-Shelby-GT500-Ford-Performance-Blue.png",
             "val": false
           }
         ]
@@ -62,40 +62,118 @@
   {
     "questions": [
       {
-        "image": "ans",
+        "image": "https://images.vexels.com/media/users/3/137780/isolated/preview/aa79c431c07c235705a69157af4c3b98-colorful-drawn-rainbow-by-vexels.png",
         "includeImage": false,
-        "question": "q21",
+        "question": "What's your favorite color ?",
+        "key": "genre",
         "answers": [
           {
-            "ans": "ans211",
-            "val": "val211"
+            "ans": "Red",
+            "val": "romance"
           },
           {
-            "ans": "ans212",
-            "val": "val212"
+            "ans": "Yellow",
+            "val": "comedy"
           },
           {
-            "ans": "ans213",
-            "val": "val213"
+            "ans": "Black",
+            "val": "horror"
           },
           {
-            "ans": "ans214",
-            "val": "val214"
+            "ans": "Blue",
+            "val": "action"
           }
         ]
       },
       {
-        "image": "ans",
+        "image": "https://www.clipartmax.com/png/full/106-1062530_woman-girl-clip-art-girl-thinking-cartoon-png.png",
         "includeImage": true,
-        "question": "q222",
+        "question": "Which one was better ?",
+        "key": "isAnimation",
         "answers": [
           {
-            "ans": "img221",
-            "val": "val121"
+            "ans": "http://cliparts.co/cliparts/dT4/o9B/dT4o9B7yc.png",
+            "val": true
           },
           {
-            "ans": "img222",
-            "val": "val122"
+            "ans": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14f797d9-ce55-4dad-a2e3-966ae51122f0/dd3av8p-be24be99-af46-4485-a677-11158365ad1a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMTRmNzk3ZDktY2U1NS00ZGFkLWEyZTMtOTY2YWU1MTEyMmYwXC9kZDNhdjhwLWJlMjRiZTk5LWFmNDYtNDQ4NS1hNjc3LTExMTU4MzY1YWQxYS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.Iu2yvM8FSu4xk5av5novVcj9swEPftU5pWQ77-vAwS4&fbclid=IwAR2ehjQuOjPVXzCDx9RBjZdJulPYpJ9cGi0iuAufSQigbemWBJzUEmYudAo",
+            "val": false
+          }
+        ]
+      },
+      {
+        "image": "http://www.pngall.com/wp-content/uploads/2016/07/Fashion-PNG-HD.png",
+        "includeImage": true,
+        "question": "Which style you think is better ?",
+        "key": "isClassic",
+        "answers": [
+          {
+            "ans": "https://1.bp.blogspot.com/-iN80CnKEtYw/W6VsDAJ8EZI/AAAAAAAAj4A/HL_sa4sq7iMyRCs0R9dIvbZArf_XheIEgCLcBGAs/s1600/victorian-woman-fashion-dress-clipart-01-png-2.png",
+            "val": true
+          },
+          {
+            "ans": "https://4.bp.blogspot.com/-gi9noB45O6E/U2jgAheDYqI/AAAAAAAADpY/dHXNJ9w-vbE/s1600/Shopping_girls3.png",
+            "val": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questions": [
+      {
+        "image": "http://www.destinedtodiscover.com/wp-content/uploads/2018/02/MH-music-icon.png",
+        "includeImage": false,
+        "question": "What music do you like ?",
+        "key": "genre",
+        "answers": [
+          {
+            "ans": "Quiet music",
+            "val": "romance"
+          },
+          {
+            "ans": "Country Music",
+            "val": "comedy"
+          },
+          {
+            "ans": "Sad music",
+            "val": "horror"
+          },
+          {
+            "ans": "Rap and hip-hop",
+            "val": "action"
+          }
+        ]
+      },
+      {
+        "image": "https://www.designbolts.com/wp-content/uploads/2013/07/DESPICABLE-ME-2-Tim-The-Minion-PNG.png",
+        "includeImage": true,
+        "question": "Which one was better ?",
+        "key": "isAnimation",
+        "answers": [
+          {
+            "ans": "https://www.kingschurchuckfield.org.uk/wp-content/uploads/2015/02/the-lion-king-4fbe6d1710625.png?fbclid=IwAR2Tx1zS90jACBA5Zt1D9kphQSC3iELC4fm2kzZSJ9PtRrT07BPsOv0rySU",
+            "val": true
+          },
+          {
+            "ans": "https://www.berkeleypubliclibrary.org/sites/default/files/images/featured/lion_king.png?slideshow=true&slideshowAuto=false&slideshowSpeed=4000&speed=350&transition=fade",
+            "val": false
+          }
+        ]
+      },
+      {
+        "image": "https://i0.kym-cdn.com/photos/images/newsfeed/000/664/116/5ff.png",
+        "includeImage": true,
+        "question": "Which house is better to live in ?",
+        "key": "isClassic",
+        "answers": [
+          {
+            "ans": "https://purepng.com/public/uploads/thumbnail/purepng.com-old-left-househousebuildingleft-houseold-housebroken-house-691522600703vbcm2.png",
+            "val": true
+          },
+          {
+            "ans": "https://4.bp.blogspot.com/-4EgqJMWLc3c/UXEUJvlARwI/AAAAAAAAqq0/FrApqI7G8Gc/s1600/Simple+small+modern+homes+exterior+designs+ideas..png",
+            "val": false
           }
         ]
       }

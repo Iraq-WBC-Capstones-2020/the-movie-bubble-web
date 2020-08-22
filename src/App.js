@@ -37,7 +37,7 @@ function App() {
               />
             )}
           />
-          <Route Path="/result" component={Result} />
+          <Route path="/result" component={Result} />
           <Route path="/movie/:id" component={Movie} />
           <Route component={Error404} />
         </Switch>
