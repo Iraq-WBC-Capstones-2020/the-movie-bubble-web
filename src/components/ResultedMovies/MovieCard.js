@@ -22,5 +22,5 @@ export default function MovieCard({ movie }) {
   );
 }
 MovieCard.propTypes = {
-  movie: object
+  movie: object,
 };
