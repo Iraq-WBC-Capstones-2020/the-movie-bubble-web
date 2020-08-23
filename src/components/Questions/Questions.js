@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 
 Questions.propTypes = {
-  question: PropTypes.objectOf(PropTypes.array).isRequired,
+  question: PropTypes.object.isRequired,
   progress: PropTypes.func.isRequired,
   result: PropTypes.func.isRequired,
-  index: PropTypes.number.isRequired,
+  index: PropTypes.array.isRequired,
   numOfQ: PropTypes.number.isRequired,
 };
 

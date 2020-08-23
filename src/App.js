@@ -18,6 +18,7 @@ function App() {
     setResult([]);
     setProgress(0);
   };
+  console.log(result);
   return (
     <>
       <BrowserRouter>
