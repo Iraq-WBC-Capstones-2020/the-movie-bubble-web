@@ -2,7 +2,7 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-export default function ListItems({ toggler }) {
+export default function ListItems({ toggler, reset }) {
   return (
     <>
       <motion.li
@@ -12,7 +12,10 @@ export default function ListItems({ toggler }) {
       >
         <Link to="/">
           <button
-            onClick={toggler}
+            onClick={() => {
+              toggler();
+              reset();
+            }}
             className="w-full py-2 focus:outline-none text-white"
           >
             Home
@@ -26,7 +29,10 @@ export default function ListItems({ toggler }) {
       >
         <Link to="/quiz">
           <button
-            onClick={toggler}
+            onClick={() => {
+              toggler();
+              reset();
+            }}
             className="w-full py-2 focus:outline-none text-white"
           >
             Take a quiz
@@ -52,4 +58,5 @@ export default function ListItems({ toggler }) {
 }
 ListItems.propTypes = {
   toggler: PropTypes.func.isRequired,
+  reset: PropTypes.func.isRequired,
 };

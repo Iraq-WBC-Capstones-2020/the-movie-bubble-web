@@ -20,6 +20,7 @@ module.exports = {
         '0.08': '0.08rem',
         '-20r': '-20rem',
         '-10': '-10rem',
+        '0.2': '0.1rem',
       },
       width: {
         '300p': '300px',
@@ -28,9 +29,19 @@ module.exports = {
       },
       minHeight: {
         '10': '2.5rem',
+        '16': '4rem',
+        full: '100%',
+      },
+      maxHeight: {
+        '70': '17rem',
       },
       minWidth: {
         '20': '7rem',
+        full: '100%',
+      },
+      maxWidth: {
+        '70': '27rem',
+        full: '100%',
       },
       inset: {
         '10%': '10%',

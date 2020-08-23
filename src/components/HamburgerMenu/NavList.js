@@ -22,14 +22,14 @@ const variants = {
   },
 };
 
-export default function NavList({ toggle }) {
+export default function NavList({ toggle, reset }) {
   return (
     <>
       <motion.ul
         className="p-2 absolute  w-full flex flex-col items-center h-screen "
         variants={variants}
       >
-        <ListItem toggler={toggle} />
+        <ListItem toggler={toggle} reset={reset} />
 
         <h1 className="absolute bottom-0 mb-10 ">All Rights Reserved.</h1>
       </motion.ul>
@@ -38,4 +38,5 @@ export default function NavList({ toggle }) {
 }
 NavList.propTypes = {
   toggle: PropTypes.func.isRequired,
+  reset: PropTypes.func.isRequired,
 };

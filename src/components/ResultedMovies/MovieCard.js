@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { object } from 'prop-types';
 
 export default function MovieCard({ movie }) {
   return (
@@ -22,11 +22,5 @@ export default function MovieCard({ movie }) {
   );
 }
 MovieCard.propTypes = {
-  movie: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      Title: PropTypes.string,
-      poster_path: PropTypes.string,
-    })
-  ),
+  movie: object
 };
