@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { object } from 'prop-types';
 
 export default function MovieCard({ movie }) {
   return (
-
     <div className="movie-card cursor-pointer overflow-hidden">
       <h1 className="hidden">{movie.id}</h1>
-  
+
       <img
         className="w-64 h-64 p-1 movie-card__poster overflow-hidden  object-cover  opacity-50"
         src={movie.poster_path}
@@ -23,11 +22,5 @@ export default function MovieCard({ movie }) {
   );
 }
 MovieCard.propTypes = {
-  movie: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      Title: PropTypes.string,
-      poster_path: PropTypes.string,
-    })
-  ),
+  movie: object
 };

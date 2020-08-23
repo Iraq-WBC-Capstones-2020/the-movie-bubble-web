@@ -3,9 +3,9 @@ import './FireWave.css';
 export default function FireWave() {
   return (
     <div>
-      <div className="absolute d-flex justify-center align-center bottom-0 w-full">
+      <div className="sticky d-flex justify-center align-center bottom-0 w-full">
         <svg
-          className="absolute  bottom-0 w-full sm:h-20r"
+          className="sticky  bottom-0 w-full sm:h-20r"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
         >

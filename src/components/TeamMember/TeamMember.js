@@ -1,7 +1,7 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 import '../TeamMember/TeamMember.css';
-
+import PropTypes from 'prop-types';
 export default function TeamMember({ isRight, name, role, image }) {
   if (isRight)
     return (
@@ -25,7 +25,7 @@ export default function TeamMember({ isRight, name, role, image }) {
   return (
     <div className="teammember w-full  flex flex-row-reverse overflow-hidden mt-10">
       <div className="member-img-left  h-full" data-aos="fade-left">
-        <img className="bg-cover" alt="team member" src={image}></img>
+        <img className="bg-cover w-full h-full object-cover" alt="team member" src={image}></img>
       </div>
       <div
         className="member-caption-left flex flex-col justify-center items-center"
@@ -37,3 +37,9 @@ export default function TeamMember({ isRight, name, role, image }) {
     </div>
   );
 }
+TeamMember.propTypes = {
+  isRight: PropTypes.bool,
+  name: PropTypes.string,
+  role: PropTypes.string,
+  image: PropTypes.string.isRequired,
+};

@@ -21,8 +21,8 @@ export default function Error404() {
               <li>Reload page or even restart your browser</li>
               <li>Test your net connection (No internet connection)</li>
               <li>
-                Make sure your security software isn't blocking Movie bubble
-                website
+                Make sure your security software isn&apos;t blocking Movie
+                bubble website
               </li>
             </ul>
 
