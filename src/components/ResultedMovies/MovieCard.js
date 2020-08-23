@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { object } from 'prop-types';
+import { object } from 'prop-types';
 
 export default function MovieCard({ movie }) {
   return (
@@ -22,5 +22,5 @@ export default function MovieCard({ movie }) {
   );
 }
 MovieCard.propTypes = {
-  movie: object
+  movie: object,
 };

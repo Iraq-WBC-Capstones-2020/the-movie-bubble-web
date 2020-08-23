@@ -9,19 +9,28 @@
         "answers": [
           {
             "ans": "Coffee",
-            "val": "romance"
+            "val": {
+              "id": 10749,
+              "name": "Romance"
+            }
           },
           {
             "ans": "Smoothie",
-            "val": "comedy"
+            "val": {
+              "id": 35,
+              "name": "Comedy"
+            }
           },
           {
             "ans": "Hot chocolate",
-            "val": "horror"
+            "val": {
+              "id": 27,
+              "name": "Horror"
+            }
           },
           {
             "ans": "Cola",
-            "val": "action"
+            "val": { "id": 28, "name": "Action" }
           }
         ]
       },
@@ -69,19 +78,31 @@
         "answers": [
           {
             "ans": "Red",
-            "val": "romance"
+            "val": {
+              "id": 10749,
+              "name": "Romance"
+            }
           },
           {
             "ans": "Yellow",
-            "val": "comedy"
+            "val": {
+              "id": 35,
+              "name": "Comedy"
+            }
           },
           {
             "ans": "Black",
-            "val": "horror"
+            "val": {
+              "id": 27,
+              "name": "Horror"
+            }
           },
           {
             "ans": "Blue",
-            "val": "action"
+            "val": {
+              "id": 28,
+              "name": "Action"
+            }
           }
         ]
       },
@@ -129,19 +150,31 @@
         "answers": [
           {
             "ans": "Quiet music",
-            "val": "romance"
+            "val": {
+              "id": 10749,
+              "name": "Romance"
+            }
           },
           {
             "ans": "Country Music",
-            "val": "comedy"
+            "val": {
+              "id": 35,
+              "name": "Comedy"
+            }
           },
           {
             "ans": "Sad music",
-            "val": "horror"
+            "val": {
+              "id": 27,
+              "name": "Horror"
+            }
           },
           {
             "ans": "Rap and hip-hop",
-            "val": "action"
+            "val": {
+              "id": 28,
+              "name": "Action"
+            }
           }
         ]
       },

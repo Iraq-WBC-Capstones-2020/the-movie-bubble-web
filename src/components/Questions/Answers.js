@@ -37,8 +37,8 @@ function Answers({
 Answers.propTypes = {
   answer: PropTypes.string.isRequired,
   image: PropTypes.bool.isRequired,
-  questionVal: PropTypes.string.isRequired,
-  result: PropTypes.arrayOf(PropTypes.string).isRequired,
+  questionVal: PropTypes.any.isRequired,
+  result: PropTypes.func.isRequired,
   index: PropTypes.func.isRequired,
   progress: PropTypes.func.isRequired,
   key1: PropTypes.string.isRequired,

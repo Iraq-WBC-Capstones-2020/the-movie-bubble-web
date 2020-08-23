@@ -34,7 +34,7 @@ export default function BubbleButton() {
               alignmentBaseline="middle"
               textAnchor="middle"
               fontSize="18"
-              y="20"
+              y="0"
               fontWeight="bold"
             >
               Take a quiz
