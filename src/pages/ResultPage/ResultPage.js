@@ -3,7 +3,7 @@ import MovieProjector from '../../components/MovieProjector/MovieProjector';
 import MovieGrid from '../../components/ResultedMovies/MovieGrid';
 import { Spin } from 'react-loading-io';
 import './resultpage.css';
-const ResutlPage = () => {
+const ResutlPage = ({ result }) => {
   useEffect(() => {
     getPosters();
   }, []);
@@ -14,7 +14,6 @@ const ResutlPage = () => {
     const info = await fetch(url + api_key);
     const result = await info.json();
     setPoster(result.results);
-    console.log(result.results);
   };
   if (poster.length > 0) {
     return (
