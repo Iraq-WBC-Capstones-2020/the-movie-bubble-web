@@ -36,13 +36,28 @@ const Aboutpage = () => {
           </p>
         </div>
       </div>
-      <TeamMember isRight name="Osama Abdullah" role="Team Leader" image={Img2} />
+      <TeamMember
+        isRight
+        name="Osama Abdullah"
+        role="Team Leader"
+        image={Img2}
+      />
       <TeamMember name="Wissam Naji" role="Team Leader" image={Img1} />
-      <TeamMember isRight name="Revan Sarbast" role="Team Member" image={Img3} />
+      <TeamMember
+        isRight
+        name="Revan Sarbast"
+        role="Team Member"
+        image={Img3}
+      />
       <TeamMember name="Randa Yahya" role="Team Member" image={Img4} />
       <TeamMember isRight name="Hewr Srood" role="Team Member" image={Img5} />
       <TeamMember name="Shadan Abdulkarim" role="Team Member" image={Img6} />
-      <TeamMember isRight name="Abdulrahman Maher" role="Team Member" image={Img7} />
+      <TeamMember
+        isRight
+        name="Abdulrahman Maher"
+        role="Team Member"
+        image={Img7}
+      />
       <div className="h-24 flex justify-center items-center">
         <p className="text-white bg-orange-600 px-4 py-2">
           All rights reserved © The Movie Bubble 2020
