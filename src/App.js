@@ -37,7 +37,7 @@ function App() {
               />
             )}
           />
-          <Route path="/result" render={() => <Result result={result} />} />
+          <Route path="/result" render={() => <Result data={result} />} />
           <Route path="/movie/:id" component={Movie} />
           <Route component={Error404} />
         </Switch>
