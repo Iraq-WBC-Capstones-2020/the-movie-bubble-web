@@ -3,9 +3,9 @@ import MovieCard from '../../components/ResultedMovies/MovieCard';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 export default function MovieGrid({ data }) {
-  const num1 = Math.floor(Math.random() * (18 - 0 + 2)) + 0;
-   const num2 = Math.floor(Math.random() * (17 - 0 + 3)) + 0;
-    const num3 = Math.floor(Math.random() * (16 - 0 + 4)) + 0;
+  const num1 = Math.floor(Math.random() * (17 - 0 + 1)) + 0;
+   const num2 = num1 + 1
+    const num3 = num1 + 2
   const movieData = [
     {
       id: data[num1].id,
