@@ -35,7 +35,7 @@ const MoviePage = () => {
     return (
       <>
         <div
-          className="poster__container flex flex-col items-center absolute w-full h-auto overflow-hidden bg-cover"
+          className="poster__container flex flex-col items-center absolute w-full overflow-hidden bg-cover lg:h-120"
           style={posterUrl}
         >
           <motion.div
@@ -61,7 +61,7 @@ const MoviePage = () => {
               PG-13
             </div>
           </div>
-          <div className="movie__info flex mt-4 space-y-2 self-center space-x-12  lg:space-x-24  lg:self-start ml-4 ">
+          <div className="movie__info flex mt-4 ml-4 flex-col space-y-2 self-start space-y-2 lg:flex-row lg:space-x-4 lg:space-y-0">
             <div className="movie__duration text-xl text-gray-200 font-thin flex items-center justify-center italic w-32 h-12 bg-contain bg-no-repeat">
               {display(movie.runtime)}
             </div>
@@ -73,11 +73,11 @@ const MoviePage = () => {
             </div>
           </div>
           <div />
-          <div className="flex space-x-16 ml-4 sm:flex-col flex-wrap md:flex-row">
-            <div className="description w-2/3 text-lg text-gray-400 italic mt-8">
+          <div className="flex ml-4 flex-col lg:flex-row lg:space-x-16 ">
+            <div className="description w-full text-lg text-gray-400 italic mt-8 lg:w-2/3">
               {movie.overview}
             </div>
-            <div className="rating__container flex space-x-16 -mt-20 sm:mt-10 self-center sapce-x-0">
+            <div className="rating__container mt-16 flex self-center space-x-10 lg:space-x-16 lg:-mt-20 lg:self-end">
               <div className="space-y-6 flex flex-col items-center justify-center">
                 <motion.div
                   className="users__rating flex flex-col items-center justify-center w-32 h-32 bg-contain bg-no-repeat"

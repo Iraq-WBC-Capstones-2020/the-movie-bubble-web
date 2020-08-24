@@ -11,7 +11,7 @@ const ResutlPage = (props) => {
     if (props.data.length <= 0) {
       history.push('/quiz');
     } else {
-      const genre = props.data[1].isAnimation ? 16 + ',' + 35 : 35;
+      const genre = props.data[1].isAnimation ? 16 + ',' + props.data[0].genre.id  : props.data[0].genre.id;
       const withOut = props.data[1].isAnimation ? 67676 : 16;
       const min = props.data[2].isClassic ? 1970 : 2000;
       const max = props.data[2].isClassic ? 2000 : 2020;
