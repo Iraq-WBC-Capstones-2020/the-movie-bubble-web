@@ -5,7 +5,8 @@ import circle from './circle.svg';
 import { Link } from 'react-router-dom';
 import './MovieProjector.css';
 import PropTypes from 'prop-types';
-
+const num = Math.floor(Math.random() * (19 - 0 + 1)) + 0;
+console.log(num)
 const MovieProjector = ({ data }) => {
   const [isShown, setIsShown] = useState(false);
   return (
@@ -50,11 +51,11 @@ const MovieProjector = ({ data }) => {
             }}
           >
             <div className="projector__poster bg-cover w-full h-1/2 text-center relative">
-              <Link to={'movie/' + data[0].id}>
+              <Link to={'movie/' + data[num].id}>
                 <img
                   src={
                     'https://image.tmdb.org/t/p/original' +
-                    data[0].backdrop_path
+                    data[num].backdrop_path
                   }
                   alt="poster"
                 />
@@ -74,12 +75,12 @@ const MovieProjector = ({ data }) => {
                     duration: 1,
                   }}
                 >
-                  <h1 className="ml-4">{data[0].original_title}</h1>
+                  <h1 className="ml-4">{data[num].original_title}</h1>
                 </motion.div>
               )}
             </div>
             <div className="movie__description text-gray-200 mt-1 text-lg text-center">
-              <h3 className="description p-6">{data[0].overview}</h3>
+              <h3 className="description p-6">{data[num].overview}</h3>
             </div>
           </motion.div>
         </div>
