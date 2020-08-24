@@ -13,7 +13,7 @@
 
 .movie-card:hover .movie-card__poster {
   position: absolute;
-  opacity: 100%;
+  opacity: 1;
 }
 
 .movie-card:hover .title-display {

@@ -26,14 +26,14 @@ export default function ActorList(props) {
       items: 2,
     },
   };
-  const actors = props.cast
+  const actors = props.cast;
   const result = [];
   for (const x of actors) {
-    if(x.profile_path) {
-        result.push(x)
+    if (x.profile_path) {
+      result.push(x);
     }
-}
-console.log(result)
+  }
+  console.log(result);
   return (
     <div className="w-11/12 h-screen mt-10">
       <Carousel responsive={responsive} className="pl-12 h-64">
@@ -51,11 +51,5 @@ console.log(result)
 }
 
 ActorList.propTypes = {
-  actors: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number,
-      name: PropTypes.string,
-      profile_path: PropTypes.string,
-    })
-  ),
+  cast: PropTypes.array.isRequired,
 };
