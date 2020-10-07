@@ -1,0 +1,21 @@
+.move__label {
+  background-color: #e6b31e;
+}
+
+.movie__duration,
+.movie__genre {
+  background-image: url('./images/bubble2.svg');
+}
+
+.movie__release {
+  background-image: url('./images/bubble1.svg');
+}
+
+.users__rating,
+.IMDB__rating {
+  background-image: url('./images/bubble.png');
+}
+
+.rating__lable {
+  background-color: #91cb5c;
+}
